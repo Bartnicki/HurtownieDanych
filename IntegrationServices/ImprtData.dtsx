@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/5/2018 11:00:35 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-TOTQ1SK"
+  DTS:CreatorName="DESKTOP-TOTQ1SK\barte"
+  DTS:Description="SSIS Package Description"
+  DTS:DTSID="{C3480927-7E1D-4BFF-97EC-D8734FDBC078}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LocaleID="1033"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="ImprtData"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{5AF13F89-A02B-4EF7-A2C6-7611CD353529}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6B502804-39A9-40B8-B695-EB567D1442D6}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11;Auto Translate=false;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIe87m20KOkWXYzklbTizowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABobd2b7DfjU1CnXJromOlNDGyrBhUqlUWEfBiWzr2nLgAAAAAOgAAAAAIAACAAAAB9db/mJFVF/6QM5hfFCbqr8qy5ITNXj8ULT58L5bSj/yAAAABCm6XsmAM64Qc7aVWBdIYX3wvq2dRp63JGwj0YHZpTokAAAADnNIF83asiCphTRxo546LoduIkh7BiPUegSMGzs8CL1pFB5GWWRwKmfAs1x/GJo4gTD7v9KdJ3yMZz7ZG6U3yv</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EB14DF77-A8A3-4BDE-8AB2-2C10A899E5B0}"
+      DTS:ObjectName="SourceConnectionFlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\barte\Desktop\HD_projekt_event tydz 1 listopad 2015_sample.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Date&quot;"
+              DTS:DTSID="{BE3DC71E-5193-44A7-96E8-21EDC1845F54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Channel&quot;"
+              DTS:DTSID="{40DFFF8D-F089-4AC6-9052-6607B6579FF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="70"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Description&quot;"
+              DTS:DTSID="{A85068F1-F19F-4F65-8A86-89BE94909AB5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="70"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;2nd Description&quot;"
+              DTS:DTSID="{B5712556-D9A0-48A8-841B-9CE004368BDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Start time&quot;"
+              DTS:DTSID="{A336CC95-6E91-4042-91EC-164C0BC6F967}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Duration&quot;"
+              DTS:DTSID="{66A81BB9-56E3-4A50-A0D8-26BBB665A382}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Variable Target&quot;"
+              DTS:DTSID="{39FBF9E8-1DD9-4445-A10D-406A94651C16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Total Individuals&quot;"
+              DTS:DTSID="{3B5B48DE-9C28-4269-8631-5D758AD193EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Podgrupa&quot;"
+              DTS:DTSID="{6A1F1CF2-FF81-4378-A0AC-6E92CDF5B19A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;A16-49&quot;"
+              DTS:DTSID="{B84D893F-2D3B-42A1-8E3E-83613E6E60CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;M16-49&quot;"
+              DTS:DTSID="{D7D87780-2C2C-4C74-ACDB-C2DE94DA3A59}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;A4-15&quot;"
+              DTS:DTSID="{3820B70F-B235-45BF-8405-A084C6AE31AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;A4-9&quot;"
+              DTS:DTSID="{72ED42A8-586B-41F9-8C9D-A8E29DEB9C15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 13"
+              DTS:DTSID="{E9B783DC-1373-4326-AEEB-25E24795DD74}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{E79D84A7-686E-4A0D-AC47-CD4E47BD64B2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Destination - HD_projekt_event tydz 1 listopad 2015_sample"
+              usesDispositions="true"
+              validateExternalMetadata="False"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[HD_projekt_event tydz 1 listopad 2015_sample]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Date&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Date&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Date&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Date&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Channel&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Channel&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Channel&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Channel&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Description&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="&quot;Description&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Description&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Description&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;2nd Description&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="&quot;2nd Description&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;2nd Description&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;2nd Description&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Start time&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Start time&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Start time&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Start time&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Duration&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Duration&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Duration&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Duration&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Variable Target&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Variable Target&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Variable Target&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Variable Target&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Total Individuals&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Total Individuals&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Total Individuals&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Total Individuals&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;Podgrupa&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;Podgrupa&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Podgrupa&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Podgrupa&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;A16-49&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;A16-49&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;A16-49&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A16-49&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;M16-49&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;M16-49&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;M16-49&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;M16-49&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;A4-15&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;A4-15&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;A4-15&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A4-15&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[&quot;A4-9&quot;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&quot;A4-9&quot;"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;A4-9&quot;]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A4-9&quot;]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].Columns[Column 13]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Column 13"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[Column 13]"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[Column 13]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Date&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Date&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Channel&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Channel&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="&quot;Description&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;2nd Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="&quot;2nd Description&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Start time&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Start time&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Duration&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Duration&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Variable Target&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Variable Target&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Total Individuals&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Total Individuals&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;Podgrupa&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Podgrupa&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;A16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;A16-49&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;M16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;M16-49&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;A4-15&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;A4-15&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[&quot;A4-9&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;A4-9&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input].ExternalColumns[Column 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 13" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Source - HD_projekt_event tydz 1 listopad 2015_sample_txt"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Date&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Date&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Date&quot;]"
+                      name="&quot;Date&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Channel&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Channel&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Channel&quot;]"
+                      name="&quot;Channel&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Description&quot;]"
+                      length="70"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Description&quot;]"
+                      name="&quot;Description&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;2nd Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;2nd Description&quot;]"
+                      length="70"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;2nd Description&quot;]"
+                      name="&quot;2nd Description&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Start time&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Start time&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Start time&quot;]"
+                      name="&quot;Start time&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Duration&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Duration&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Duration&quot;]"
+                      name="&quot;Duration&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Variable Target&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Variable Target&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Variable Target&quot;]"
+                      name="&quot;Variable Target&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Total Individuals&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Total Individuals&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Total Individuals&quot;]"
+                      name="&quot;Total Individuals&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Podgrupa&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Podgrupa&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;Podgrupa&quot;]"
+                      name="&quot;Podgrupa&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A16-49&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A16-49&quot;]"
+                      name="&quot;A16-49&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;M16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;M16-49&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;M16-49&quot;]"
+                      name="&quot;M16-49&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A4-15&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-15&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A4-15&quot;]"
+                      name="&quot;A4-15&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A4-9&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-9&quot;]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[&quot;A4-9&quot;]"
+                      name="&quot;A4-9&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[Column 13]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].Columns[Column 13]"
+                      name="Column 13"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Date&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Date&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Channel&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Channel&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="&quot;Description&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;2nd Description&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="&quot;2nd Description&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Start time&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Start time&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Duration&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Duration&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Variable Target&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Variable Target&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Total Individuals&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Total Individuals&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;Podgrupa&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;Podgrupa&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;A16-49&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;M16-49&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;M16-49&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-15&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;A4-15&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[&quot;A4-9&quot;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&quot;A4-9&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column 13" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample.Inputs[Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 1"
+          TopLeft="20.5,107.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="362,42"
+          Id="Package\Data Flow Task 1\Source - HD_projekt_event tydz 1 listopad 2015_sample_txt"
+          TopLeft="7,5.5" />
+        <NodeLayout
+          Size="365,42"
+          Id="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample"
+          TopLeft="5.50000000000003,107.5" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+          TopLeft="188,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\Destination - HD_projekt_event tydz 1 listopad 2015_sample">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
