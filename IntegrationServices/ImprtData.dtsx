@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="ImprtData"
-  DTS:VersionBuild="43"
-  DTS:VersionGUID="{D15F8782-FA89-4F86-9992-EFA7A36051B7}">
+  DTS:VersionBuild="44"
+  DTS:VersionGUID="{C8D7256F-72BC-4026-B6EB-4A81DC05D491}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -556,6 +556,21 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
+      DTS:ObjectName="hd.database.windows.net.HurtownieDanych.kamil 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIe87m20KOkWXYzklbTizowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAX3apeC2MKM9iybsmCIU3OQiHmP98yn4nY3QOcSkO29gAAAAAOgAAAAAIAACAAAAAc9/YKZAS1CuKLrH57Dm09tgm7Zr7y51fAxmKVXW1tayAAAACzpSkyuJDR+jVpVUVYhpcaadlkYGxLd/Elr1DZkZGEdkAAAACmxkunEa7KQ7v7gx1jJPygxsW1UKUc40bnGeBKkqKLjTHoH4E/z/ZqaSw+KsBnJdkOnMagwmSgjsybpq6VZ5RM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{EB14DF77-A8A3-4BDE-8AB2-2C10A899E5B0}"
@@ -851,14 +866,14 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Imprt data drom text file"
+      DTS:refId="Package\Imprt txt"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:Disabled="True"
       DTS:DTSID="{E49D7FBB-1516-43EA-9324-00172E45AB38}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Imprt data drom text file"
+      DTS:ObjectName="Imprt txt"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -866,7 +881,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Imprt data drom text file\Flat File Source"
+              refId="Package\Imprt txt\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -886,25 +901,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Imprt data drom text file\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Imprt txt\Flat File Source.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
                   connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Column13]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Column13]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Column13]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Column13]"
                       name="Column13"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -919,14 +934,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
                       name="Date"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -941,14 +956,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Channel]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Channel]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Channel]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Channel]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Channel]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Channel]"
                       name="Channel"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -963,14 +978,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Description]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Description]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
                       length="70"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Description]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Description]"
                       name="Description"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -985,14 +1000,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[SecondDescription]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[SecondDescription]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2nd Description]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2nd Description]"
                       length="70"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[SecondDescription]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[SecondDescription]"
                       name="SecondDescription"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1007,14 +1022,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[StartTime]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[StartTime]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start time]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start time]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[StartTime]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[StartTime]"
                       name="StartTime"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1029,14 +1044,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Duration]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Duration]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]"
                       name="Duration"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1051,14 +1066,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[VariableTarget]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[VariableTarget]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Variable Target]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Variable Target]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[VariableTarget]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[VariableTarget]"
                       name="VariableTarget"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1073,14 +1088,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[TotalIndividuals]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[TotalIndividuals]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Individuals]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Individuals]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[TotalIndividuals]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[TotalIndividuals]"
                       name="TotalIndividuals"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1095,14 +1110,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Podgrupa]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Podgrupa]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Podgrupa]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Podgrupa]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Podgrupa]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Podgrupa]"
                       name="Podgrupa"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1117,14 +1132,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A16-49]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A16-49]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A16-49]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A16-49]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A16-49]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A16-49]"
                       name="A16-49"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1139,14 +1154,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[M16-49]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[M16-49]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[M16-49]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[M16-49]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[M16-49]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[M16-49]"
                       name="M16-49"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1161,14 +1176,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A4-15]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A4-15]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-15]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-15]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A4-15]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A4-15]"
                       name="A4-15"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1183,14 +1198,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A4-9]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A4-9]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-9]"
+                      externalMetadataColumnId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-9]"
                       length="50"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A4-9]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A4-9]"
                       name="A4-9"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1208,85 +1223,85 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 13]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column 13" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Date" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Channel]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Channel]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Channel" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
                       codePage="1252"
                       dataType="str"
                       length="70"
                       name="Description" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2nd Description]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[2nd Description]"
                       codePage="1252"
                       dataType="str"
                       length="70"
                       name="2nd Description" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start time]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start time]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Start time" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Duration]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Duration]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Duration" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Variable Target]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Variable Target]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Variable Target" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Individuals]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Individuals]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Total Individuals" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Podgrupa]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Podgrupa]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Podgrupa" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A16-49]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="A16-49" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[M16-49]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[M16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="M16-49" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-15]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-15]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="A4-15" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-9]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[A4-9]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -1294,27 +1309,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1323,7 +1338,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Imprt data drom text file\OLE DB Destination"
+              refId="Package\Imprt txt\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -1380,7 +1395,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Imprt data drom text file\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Imprt txt\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
                   connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1388,207 +1403,207 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column13]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column13]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Column13"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Column13]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Column13]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Date"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Date]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Date]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channel]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channel]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Channel"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Channel]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Channel]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Description]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Description]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="70"
                       cachedName="Description"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Description]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Description]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SecondDescription]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SecondDescription]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="70"
                       cachedName="SecondDescription"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SecondDescription]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[SecondDescription]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SecondDescription]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[SecondDescription]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StartTime]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StartTime]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="StartTime"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartTime]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[StartTime]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartTime]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[StartTime]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Duration]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Duration]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Duration"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VariableTarget]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VariableTarget]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="VariableTarget"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VariableTarget]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[VariableTarget]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VariableTarget]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[VariableTarget]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalIndividuals]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalIndividuals]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="TotalIndividuals"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalIndividuals]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[TotalIndividuals]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalIndividuals]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[TotalIndividuals]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Podgrupa]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Podgrupa]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Podgrupa"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Podgrupa]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[Podgrupa]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Podgrupa]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Podgrupa]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[A16-49]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[A16-49]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="A16-49"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A16-49]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A16-49]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A16-49]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A16-49]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[M16-49]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[M16-49]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="M16-49"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[M16-49]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[M16-49]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[M16-49]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[M16-49]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[A4-15]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[A4-15]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="A4-15"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-15]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A4-15]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-15]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A4-15]" />
                     <inputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[A4-9]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[A4-9]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="A4-9"
-                      externalMetadataColumnId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-9]"
-                      lineageId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output].Columns[A4-9]" />
+                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-9]"
+                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[A4-9]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Column13" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Date" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Channel" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
                       codePage="1252"
                       dataType="str"
                       length="70"
                       name="Description" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SecondDescription]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SecondDescription]"
                       codePage="1252"
                       dataType="str"
                       length="70"
                       name="SecondDescription" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartTime]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartTime]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="StartTime" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Duration" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VariableTarget]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VariableTarget]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="VariableTarget" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalIndividuals]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalIndividuals]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="TotalIndividuals" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Podgrupa]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Podgrupa]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Podgrupa" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A16-49]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="A16-49" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[M16-49]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[M16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="M16-49" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-15]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-15]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="A4-15" />
                     <externalMetadataColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-9]"
+                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[A4-9]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -1598,22 +1613,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Imprt data drom text file\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Imprt txt\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Imprt txt\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Imprt data drom text file\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Imprt txt\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Imprt data drom text file\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Imprt txt\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Imprt data drom text file\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Imprt txt\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1624,10 +1639,10 @@
           </components>
           <paths>
             <path
-              refId="Package\Imprt data drom text file.Paths[Flat File Source Output]"
-              endId="Package\Imprt data drom text file\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Imprt txt.Paths[Flat File Source Output]"
+              endId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Imprt data drom text file\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3458,6 +3473,42 @@ namespace SC_f70e77784bbf408f8390f3eadadc1b74.Properties {
               startId="Package\Populate Target\Script Component.Outputs[Output 0]" />
           </paths>
         </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tworzenie czasów"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{CB0618AF-AA3C-416B-92B9-3D7D499FF244}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tworzenie czasów"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
+          SQLTask:SqlStatementSource="CREATE TABLE [DimTime](&#xA;&#xA;[TimeKey] [int] NOT NULL,&#xA;&#xA;[Hour] [int] NULL,&#xA;&#xA;[HourTV] [int] NULL,&#xA;&#xA;[Minute] [int] NULL,&#xA;&#xA;[Second] [int] NULL,&#xA;&#xA;[Time] [time](7) NULL,&#xA;&#xA;CONSTRAINT [PK_DimTime] PRIMARY KEY CLUSTERED&#xA;&#xA;(&#xA;&#xA;[TimeKey] ASC&#xA;&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;&#xA;) ON [PRIMARY]&#xA;&#xA;&#xA;declare @hour int&#xA;&#xA;declare @minute int&#xA;&#xA;declare @second int&#xA;&#xA;&#xA;set @hour=0&#xA;&#xA;&#xA;while @hour&lt;24&#xA;&#xA;begin&#xA;&#xA;set @minute=0&#xA;&#xA;while @minute&lt;60&#xA;&#xA;begin&#xA;&#xA;set @second=0&#xA;&#xA;while @second&lt;60&#xA;&#xA;begin&#xA;&#xA;&#xA;INSERT INTO [dbo].[DimTime]&#xA;&#xA;([TimeKey]&#xA;&#xA;,[Hour]&#xA;,[HourTV]&#xA;,[Minute]&#xA;,[Second]&#xA;,[Time])&#xA;&#xA;&#xA;select&#xA;&#xA;(@hour*10000) + (@minute*100) + @second as TimeKey,&#xA;&#xA;@hour as [Hour],&#xA;&#xA;(case when @hour=0 then 24&#xA;&#x9; when @hour=1 then 25&#xA;&#x9; else @hour end) as [HourTV],&#xA;&#xA;&#xA;@minute as [Minute],&#xA;&#xA;@second as [Second],&#xA;&#xA;convert(time,right('0'+convert(varchar(2),@hour),2)+':'+&#xA;&#xA;right('0'+convert(varchar(2),@minute),2)+':'+&#xA;&#xA;right('0'+convert(varchar(2),@second),2)) as [FullTime]&#xA;&#xA;set @second=@second+1&#xA;&#xA;&#xA;end&#xA;&#xA;set @minute=@minute+1&#xA;&#xA;end&#xA;&#xA;set @hour=@hour+1&#xA;&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tworzenie dat"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{02E46BC1-EBBD-416A-BFC8-3BCF6E00D0B3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tworzenie dat"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
+          SQLTask:SqlStatementSource="&#xA;&#xA;--************************************** [tDateTable]&#xA;&#xA;CREATE TABLE [tDateTable]&#xA;(&#xA; [tdateTableID] INT IDENTITY (1, 1) NOT NULL ,&#xA; [date]         DATE NOT NULL ,&#xA; [year]         INT NOT NULL ,&#xA; [month]        INT NOT NULL ,&#xA; [day]          INT NOT NULL ,&#xA; [dw]           INT NOT NULL ,&#xA; [dy]           INT NOT NULL ,&#xA; [wy]           INT NOT NULL ,&#xA; [qy]           INT NOT NULL ,&#xA; [Mname]        NVARCHAR(30) NOT NULL ,&#xA; [Dname]        NVARCHAR(30) NOT NULL ,&#xA; [endm]         INT NOT NULL ,&#xA; [StartDay]     DATETIME NOT NULL ,&#xA; [EndDay]       DATETIME NOT NULL ,&#xA; [dfloat]       FLOAT NOT NULL ,&#xA; [dint]         INT NOT NULL ,&#xA;&#xA; CONSTRAINT [PK_tDateTable] PRIMARY KEY CLUSTERED ([tdateTableID] ASC)&#xA;);&#xA;GO&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;set language Polish;&#xA;WITH DatesTable&#xA;AS&#xA;(&#xA;  SELECT CAST('19000101' as date) AS [date], year('19000101') [year],MONTH('19000101') [month], DAY('19000101') [day], DATEpart(dw,'19000101') dw&#xA;  , DATEpart(dy,'19000101') dy&#xA;  , DATEpart(wk,'19000101') wy&#xA;  , DATEpart(q,'19000101') qy&#xA;  , datename(month,'19000101') Mname&#xA;  , datename(dw,'19000101') Dname&#xA;  , 0 endm&#xA;  , CAST('19000101' as datetime) StartDay&#xA;  , dateadd(s,-1,dateadd(dd,1,CAST('19000101' as datetime))) EndDay&#xA;  , cast(CAST('19000101' as datetime) as float) dfloat&#xA;  ,YEAR(CAST('19000101' as date))*100000+MONTH(CAST('19000101' as date))*1000+DAY(CAST('19000101' as date)) dint&#xA;  UNION ALL&#xA;  SELECT DATEADD(dd, 1, [date]), year(DATEADD(dd, 1, [date])) year, MONTH(DATEADD(dd, 1, [date])) month, DAY(DATEADD(dd, 1, [date])) day, &#xA;  DATEpart(dw,DATEADD(dd, 1, [date])) dateofweek&#xA;  , DATEpart(dy,DATEADD(dd, 1, [date])) dateofyear&#xA;  , DATEpart(wk,DATEADD(dd, 1, [date])) weekofyear&#xA;  , DATEpart(q,DATEADD(dd, 1, [date])) quarterofyear&#xA;  , datename(month,DATEADD(dd, 1, [date])) Mname&#xA;  , datename(dw,DATEADD(dd, 1, [date])) Dname&#xA;  , case when  CAST(DATEADD(dd, 1, [date]) as date) = cast(dateadd(s,-1,dateadd(month,1,(CONVERT(datetime,'01-'+right('0'+convert(char(2),MONTH(DATEADD(dd, 1, [date]))),2)+'-'+convert(char(4),YEAR(DATEADD(dd, 1, [date]))),0)))) as date) then 1 else 0 end endm&#xA;  , CAST('19000101' as datetime) StartDay&#xA;  , dateadd(s,-1,dateadd(dd,1,DATEADD(dd, 1, cast([date] as datetime)))) EndDay&#xA;  , cast(CAST( DATEADD(dd, 1, [date]) as datetime) as float) dfloat&#xA;  ,YEAR(DATEADD(dd, 1, [date]))*100000+MONTH(DATEADD(dd, 1, [date]))*1000+DAY(DATEADD(dd, 1, [date])) dint&#xA;  FROM DatesTable&#xA;  WHERE DATEADD(dd, 1, [date]) &lt;= '20300101'&#xA;)&#xA;&#xA;INSERT INTO tDateTable&#xA;SELECT * FROM DatesTable&#xA;OPTION (MAXRECURSION 0);&#xA; &#xA; &#xA; &#xA;go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5646,7 +5697,513 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Uzupełnianie transmision"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{E8695BB4-4AE3-410E-B80C-5C038AEE8F87}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Uzupełnianie transmision"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Uzupełnianie transmision\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[StageTableKey]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Uzupełnianie transmision\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StageTableKeyID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StageTableKeyID]"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StageTableKeyID]"
+                      name="StageTableKeyID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[DateID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DateID]"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[DateID]"
+                      name="DateID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChannelID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChannelID]"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChannelID]"
+                      name="ChannelID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StartTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StartTime]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StartTime]"
+                      name="StartTime"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Duration]"
+                      dataType="dbTime2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Duration]"
+                      name="Duration"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[VariableTarget]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VariableTarget]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[VariableTarget]"
+                      name="VariableTarget"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalIndividuals]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalIndividuals]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalIndividuals]"
+                      name="TotalIndividuals"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Podgrupa]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Podgrupa]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Podgrupa]"
+                      name="Podgrupa"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A16-49]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A16-49]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A16-49]"
+                      name="A16-49"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[M16-49]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[M16-49]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[M16-49]"
+                      name="M16-49"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-15]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-15]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-15]"
+                      name="A4-15"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-9]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-9]"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-9]"
+                      name="A4-9"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StageTableKeyID]"
+                      dataType="i4"
+                      name="StageTableKeyID" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DateID]"
+                      dataType="i4"
+                      name="DateID" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChannelID]"
+                      dataType="i4"
+                      name="ChannelID" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StartTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StartTime" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
+                      dataType="dbTime2"
+                      name="Duration"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VariableTarget]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="VariableTarget" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalIndividuals]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TotalIndividuals" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Podgrupa]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Podgrupa" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A16-49]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="A16-49" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[M16-49]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="M16-49" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-15]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="A4-15" />
+                    <externalMetadataColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="A4-9" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StageTableKeyID]"
+                      dataType="i4"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StageTableKeyID]"
+                      name="StageTableKeyID" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DateID]"
+                      dataType="i4"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DateID]"
+                      name="DateID" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChannelID]"
+                      dataType="i4"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChannelID]"
+                      name="ChannelID" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StartTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StartTime]"
+                      name="StartTime" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
+                      dataType="dbTime2"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
+                      name="Duration"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VariableTarget]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VariableTarget]"
+                      name="VariableTarget" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalIndividuals]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalIndividuals]"
+                      name="TotalIndividuals" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Podgrupa]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Podgrupa]"
+                      name="Podgrupa" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A16-49]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A16-49]"
+                      name="A16-49" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[M16-49]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[M16-49]"
+                      name="M16-49" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-15]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-15]"
+                      name="A4-15" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-9]"
+                      name="A4-9" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Uzupełnianie transmision\Script Component"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component"
+              version="11">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_5a0d301142b843d5bda65b3bb67cf110</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE"></property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Uzupełnianie transmision\Script Component.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Uzupełnianie transmision\Script Component.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Uzupełnianie transmision\Script Component.Inputs[Input 0]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Uzupełnianie transmision.Paths[OLE DB Source Output]"
+              endId="Package\Uzupełnianie transmision\Script Component.Inputs[Input 0]"
+              name="OLE DB Source Output"
+              startId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Zamiana na klucze obce"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{70F86A1E-A085-4C6D-8EDE-BAD6CB4C63CD}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Zamiana na klucze obce"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
+          SQLTask:SqlStatementSource="&#xA;DROP TABLE [StageTableKey];&#xA;GO&#xA;&#xA;&#xA;--************************************** [StageTableKey]&#xA;&#xA;CREATE TABLE [StageTableKey]&#xA;(&#xA; [StageTableKeyID]  INT IDENTITY (1, 1) NOT NULL ,&#xA; [DateID]           INT NOT NULL ,&#xA; [ChannelID]        INT NOT NULL ,&#xA; [StartTime]&#x9;&#x9;VARCHAR(50) NOT NULL ,&#xA; [Duration]         TIME(7) NOT NULL ,&#xA; [VariableTarget]   VARCHAR(50) NOT NULL ,&#xA; [TotalIndividuals] VARCHAR(50) NOT NULL ,&#xA; [Podgrupa]         VARCHAR(50) NOT NULL ,&#xA; [A16-49]           VARCHAR(50) NOT NULL ,&#xA; [M16-49]           VARCHAR(50) NOT NULL ,&#xA; [A4-15]            VARCHAR(50) NOT NULL ,&#xA; [A4-9]             VARCHAR(50) NOT NULL ,&#xA;&#xA; CONSTRAINT [PK_StageTableKey] PRIMARY KEY CLUSTERED ([StageTableKeyID] ASC)&#xA;);&#xA;GO&#xA;&#xA;INSERT INTO [StageTableKey]&#xA;([DateID]&#xA;,[ChannelID]&#xA;,[StartTime]&#xA;,[Duration]&#xA;,[VariableTarget]&#xA;,[TotalIndividuals]&#xA;,[Podgrupa]&#xA;,[A16-49]&#xA;,[M16-49]&#xA;,[A4-15]&#xA;,[A4-9])&#xA;&#xA;SELECT &#xA;&#xA;(SELECT tdateTableID&#xA;FROM tDateTable&#xA;WHERE dbo.tDateTable.date = dbo.StageTableTransf.Date&#xA;) as DateID, &#xA;&#xA;(SELECT ChannelID&#xA;FROM Channel&#xA;WHERE dbo.Channel.ChannelName = dbo.StageTableTransf.Channel&#xA;) as ChannelID,&#xA;&#xA;StageTableTransf.StartTime as StartTime,&#xA;StageTableTransf.Duration as Duration,&#xA;StageTableTransf.VariableTarget as VariableTarget,&#xA;StageTableTransf.TotalIndividuals as TotalIndividuals,&#xA;StageTableTransf.Podgrupa as Podgrupa,&#xA;StageTableTransf.[A16-49] as [A16-49],&#xA;StageTableTransf.[M16-49] as [M16-49],&#xA;StageTableTransf.[A4-15] as [A4-15],&#xA;StageTableTransf.[A4-9] as [A4-9]&#xA;&#xA;FROM dbo.StageTableTransf&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{E8BEF9BE-E2A0-4B29-B02E-E35A46069C35}"
+      DTS:From="Package\Imprt txt"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Uzupelnienie pustych pol" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{39BA3AD4-199B-415E-9C1B-BEDF8C888DE2}"
+      DTS:From="Package\Uzupelnienie pustych pol"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Zamiana na klucze obce" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{AF07745C-308F-4C39-B8C7-1F259D7B929C}"
+      DTS:From="Package\Zamiana na klucze obce"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Uzupełnianie transmision" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -5658,45 +6215,151 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="196,42"
-          Id="Package\Imprt data drom text file"
-          TopLeft="140,112" />
+          Id="Package\Imprt txt"
+          TopLeft="138,37" />
         <NodeLayout
           Size="159,42"
           Id="Package\Populate channel"
-          TopLeft="776.5,117.5" />
+          TopLeft="611.5,25.5" />
         <NodeLayout
           Size="163,42"
           Id="Package\Populate Program"
-          TopLeft="241,239" />
+          TopLeft="444,83" />
         <NodeLayout
           Size="154,42"
           Id="Package\Populate Target"
-          TopLeft="800,243" />
+          TopLeft="747,99" />
         <NodeLayout
           Size="196,42"
           Id="Package\Uzupelnienie pustych pol"
-          TopLeft="382,111" />
+          TopLeft="97,131" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Zamiana na klucze obce"
+          TopLeft="104,258" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Tworzenie dat"
+          TopLeft="651,181" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Tworzenie czasów"
+          TopLeft="412,154" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="236,79">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-41,52"
+              Start="0,0"
+              End="-41,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="-4,26" />
+                  <mssgle:LineSegment
+                    End="-37,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-37,26"
+                    Point2="-41,26"
+                    Point3="-41,30" />
+                  <mssgle:LineSegment
+                    End="-41,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="197.5,173">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85"
+              Start="0,0"
+              End="0,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Uzupełnianie transmision"
+          TopLeft="86,348" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="200,300">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-16,48"
+              Start="0,0"
+              End="-16,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="-4,24" />
+                  <mssgle:LineSegment
+                    End="-12,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-12,24"
+                    Point2="-16,24"
+                    Point3="-16,28" />
+                  <mssgle:LineSegment
+                    End="-16,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Imprt data drom text file">
+    design-time-name="Package\Imprt txt">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
-          Id="Package\Imprt data drom text file\OLE DB Destination"
+          Id="Package\Imprt txt\OLE DB Destination"
           TopLeft="285,252" />
         <NodeLayout
           Size="151,42"
-          Id="Package\Imprt data drom text file\Flat File Source"
+          Id="Package\Imprt txt\Flat File Source"
           TopLeft="220,67" />
         <EdgeLayout
-          Id="Package\Imprt data drom text file.Paths[Flat File Source Output]"
+          Id="Package\Imprt txt.Paths[Flat File Source Output]"
           TopLeft="295.5,109">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -5733,7 +6396,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Imprt data drom text file\OLE DB Destination">
+    design-time-name="Package\Imprt txt\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5751,51 +6414,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Populate channel\OLE DB Source"
-          TopLeft="196,55" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Populate channel\OLE DB Destination"
           TopLeft="188,326" />
         <NodeLayout
+          Size="150,42"
+          Id="Package\Populate channel\OLE DB Source"
+          TopLeft="196,55" />
+        <NodeLayout
           Size="127,42"
           Id="Package\Populate channel\Aggregate"
           TopLeft="237,186" />
-        <EdgeLayout
-          Id="Package\Populate channel.Paths[OLE DB Source Output]"
-          TopLeft="271,97">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="29.5,89"
-              Start="0,0"
-              End="29.5,81.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40.5"
-                    Point2="0,44.5"
-                    Point3="4,44.5" />
-                  <mssgle:LineSegment
-                    End="25.5,44.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25.5,44.5"
-                    Point2="29.5,44.5"
-                    Point3="29.5,48.5" />
-                  <mssgle:LineSegment
-                    End="29.5,81.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Populate channel.Paths[Aggregate Output 1]"
           TopLeft="300.5,228">
@@ -5822,6 +6451,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     Point3="-27,53" />
                   <mssgle:LineSegment
                     End="-27,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate channel.Paths[OLE DB Source Output]"
+          TopLeft="271,97">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.5,89"
+              Start="0,0"
+              End="29.5,81.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.5"
+                    Point2="0,44.5"
+                    Point3="4,44.5" />
+                  <mssgle:LineSegment
+                    End="25.5,44.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.5,44.5"
+                    Point2="29.5,44.5"
+                    Point3="29.5,48.5" />
+                  <mssgle:LineSegment
+                    End="29.5,81.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6139,6 +6802,69 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Uzupelnienie pustych pol\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Uzupełnianie transmision">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Uzupełnianie transmision\OLE DB Source"
+          TopLeft="210,35" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Uzupełnianie transmision\Script Component"
+          TopLeft="305,192" />
+        <EdgeLayout
+          Id="Package\Uzupełnianie transmision.Paths[OLE DB Source Output]"
+          TopLeft="285,77">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="101.5,115"
+              Start="0,0"
+              End="101.5,107.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,53.5"
+                    Point2="0,57.5"
+                    Point3="4,57.5" />
+                  <mssgle:LineSegment
+                    End="97.5,57.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="97.5,57.5"
+                    Point2="101.5,57.5"
+                    Point3="101.5,61.5" />
+                  <mssgle:LineSegment
+                    End="101.5,107.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Uzupełnianie transmision\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
