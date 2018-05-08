@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="ImprtData"
-  DTS:VersionBuild="44"
-  DTS:VersionGUID="{C8D7256F-72BC-4026-B6EB-4A81DC05D491}">
+  DTS:VersionBuild="96"
+  DTS:VersionGUID="{C534315C-8D2D-4325-BD6D-3FE07E412425}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -114,6 +114,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11;Auto Translate=false;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{09700DA8-A238-4143-A323-B6548DDA4F86}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\barte\Desktop\New Microsoft Excel Worksheet.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -546,6 +556,150 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{31B6C08F-3674-4837-8DA4-DB8E3B87112E}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\barte\Desktop\New Text Document.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ChannelID"
+              DTS:DTSID="{7E1099C5-3E0E-4666-B14D-6D9E3EA8F591}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ChannelName"
+              DTS:DTSID="{E30DCC8E-DFC2-4BA8-89CE-3963D5A73054}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{BA8EA62E-7958-4072-8EEC-895138E79204}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="70"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Description"
+              DTS:DTSID="{8187DEC6-AC94-48F6-A6D1-00D7B7B32622}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="70"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SecondDescription"
+              DTS:DTSID="{90E2DC70-D141-4173-B709-98410EC402E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StartTime"
+              DTS:DTSID="{5F367CA0-E50F-4CB6-852F-BC3B6CEEC682}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Duration"
+              DTS:DTSID="{E279F27A-A791-4D79-A032-C753B736264D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VariableTarget"
+              DTS:DTSID="{20A66CC8-4314-472D-8083-3960E65ADF11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalIndividuals"
+              DTS:DTSID="{7C544508-9482-4949-8563-BEAA64C03F0B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="A16-49"
+              DTS:DTSID="{AFB1080B-7673-455E-A43E-120CFBD12126}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Podgrupa"
+              DTS:DTSID="{A088F6C1-646B-4C06-B472-F666A1420095}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="M16-49"
+              DTS:DTSID="{77D93A65-B7B3-4D21-B7E6-3D1897A7BD67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="A4-15"
+              DTS:DTSID="{0A482889-B4FD-4D3A-A645-E4A0FFF62088}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="A4-9"
+              DTS:DTSID="{399A58C9-B2B8-4CA2-BF4E-44BD78C999D8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{B1098FDA-F99F-4893-9B1F-48251661777C}"
@@ -566,7 +720,22 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIe87m20KOkWXYzklbTizowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAX3apeC2MKM9iybsmCIU3OQiHmP98yn4nY3QOcSkO29gAAAAAOgAAAAAIAACAAAAAc9/YKZAS1CuKLrH57Dm09tgm7Zr7y51fAxmKVXW1tayAAAACzpSkyuJDR+jVpVUVYhpcaadlkYGxLd/Elr1DZkZGEdkAAAACmxkunEa7KQ7v7gx1jJPygxsW1UKUc40bnGeBKkqKLjTHoH4E/z/ZqaSw+KsBnJdkOnMagwmSgjsybpq6VZ5RM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIe87m20KOkWXYzklbTizowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADjFubctF/4aSeHL2pDokDrDGFQUW9DlE7q8ebF225s8gAAAAAOgAAAAAIAACAAAABcYz1Uqa0X7p9G991+7HCQZwVU73aDhKGlN++KWog89SAAAAA3o+20bK7Wn+VN9Nen+nbllabdlMwBltTvqBpHBEXh20AAAADYg9hu5x8w9r3Ba15pIRBLMLQ0BfgsDqPTKwziaMvxU+TRat3hMTGogAcDf2I7vUOGH3+3SfGFrk0MNffZA+YK</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{ED4EC087-A828-4A19-9FA1-8C6ECC9579A0}"
+      DTS:ObjectName="hd.database.windows.net.HurtownieDanych.kamil 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIe87m20KOkWXYzklbTizowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAyGOUPXH+ryOAp+GgZLD3n660G1LCGpDLVszSKHPR+JwAAAAAOgAAAAAIAACAAAAD283wLLkpBrTgfsqMDqqjCB4TVPRcd/PsYIDYHy9+VmSAAAACdPt4HHLn4U/14KfTsVy6bKe6+n1e9/gSm160r9HEPI0AAAAAWS1laTvJQoUz808TgTwb8kLy8WMZ0z0dWScWzsw+Oi+hfwP9RRo5rDYKciMHktFlsc1m4alYh5rZEhsF1PUBb</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3485,7 +3654,7 @@ namespace SC_f70e77784bbf408f8390f3eadadc1b74.Properties {
       DTS:LocaleID="-1"
       DTS:ObjectName="Tworzenie czasów"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3503,7 +3672,7 @@ namespace SC_f70e77784bbf408f8390f3eadadc1b74.Properties {
       DTS:LocaleID="-1"
       DTS:ObjectName="Tworzenie dat"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5698,14 +5867,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Uzupełnianie transmision"
+      DTS:refId="Package\Zamiana kolum i wierszy miejscami"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:Disabled="True"
-      DTS:DTSID="{E8695BB4-4AE3-410E-B80C-5C038AEE8F87}"
+      DTS:DTSID="{BDCD57A2-3643-43C9-A003-FD63B6294F4F}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Uzupełnianie transmision"
+      DTS:ObjectName="Zamiana kolum i wierszy miejscami"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -5713,7 +5882,274 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           version="1">
           <components>
             <component
-              refId="Package\Uzupełnianie transmision\OLE DB Source"
+              refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[StageChangedColumns]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TransmitionID]"
+                      cachedDataType="i4"
+                      cachedName="TransmitionID"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TransmitionID]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TransmitionID]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TargetID]"
+                      cachedDataType="i4"
+                      cachedName="TargetID"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetID]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TargetID]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AMR]"
+                      cachedDataType="r8"
+                      cachedName="AMR"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMR]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMR]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AMRpct]"
+                      cachedDataType="r8"
+                      cachedName="AMRpct"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMRpct]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMRpct]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RCH]"
+                      cachedDataType="r8"
+                      cachedName="RCH"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCH]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCH]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RCHpct]"
+                      cachedDataType="r8"
+                      cachedName="RCHpct"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCHpct]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCHpct]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SHRpct]"
+                      cachedDataType="r8"
+                      cachedName="SHRpct"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHRpct]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SHRpct]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SecondDescription]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="SecondDescription"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SecondDescription]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SecondDescription]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="Description"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Description]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Channel"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Channel]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Duration]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Duration"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Duration]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StartTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StartTime"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartTime]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[StartTime]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TimeID]"
+                      cachedDataType="i4"
+                      cachedName="TimeID"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeID]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TimeID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TransmitionID]"
+                      dataType="i4"
+                      name="TransmitionID" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetID]"
+                      dataType="i4"
+                      name="TargetID" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMR]"
+                      dataType="r8"
+                      name="AMR" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMRpct]"
+                      dataType="r8"
+                      name="AMRpct" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCH]"
+                      dataType="r8"
+                      name="RCH" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCHpct]"
+                      dataType="r8"
+                      name="RCHpct" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHRpct]"
+                      dataType="r8"
+                      name="SHRpct" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SecondDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="SecondDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Channel" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StartTime" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeID]"
+                      dataType="i4"
+                      name="TimeID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
@@ -5728,7 +6164,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[StageTableKey]</property>
+                  name="OpenRowset">[dbo].[StageTableTransf]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5762,206 +6198,243 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Uzupełnianie transmision\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 1]"
+                  refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StageTableKeyID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StageTableKeyID]"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StageTableKeyID]"
-                      name="StageTableKeyID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[DateID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DateID]"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[DateID]"
-                      name="DateID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChannelID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChannelID]"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[ChannelID]"
-                      name="ChannelID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StartTime]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Date]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StartTime]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[StartTime]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Channel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Channel]"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Channel]"
+                      name="Channel"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Description]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Description]"
+                      length="70"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Description]"
+                      name="Description"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[SecondDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SecondDescription]"
+                      length="70"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[SecondDescription]"
+                      name="SecondDescription"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[StartTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StartTime]"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[StartTime]"
                       name="StartTime"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Duration]"
-                      dataType="dbTime2"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Duration]"
-                      name="Duration"
-                      scale="7"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[VariableTarget]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[DurationIN]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VariableTarget]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[VariableTarget]"
-                      name="VariableTarget"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[DurationIN]"
+                      name="DurationIN"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalIndividuals]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[VariableTargetIN]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalIndividuals]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VariableTarget]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalIndividuals]"
-                      name="TotalIndividuals"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[VariableTargetIN]"
+                      name="VariableTargetIN"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Podgrupa]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalIndividualsIN]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Podgrupa]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalIndividuals]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[Podgrupa]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalIndividualsIN]"
+                      name="TotalIndividualsIN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Podgrupa]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Podgrupa]"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Podgrupa]"
                       name="Podgrupa"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A16-49]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A16-49]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A16-49]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A16-49]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A16-49]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A16-49]"
                       name="A16-49"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[M16-49]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[M16-49]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[M16-49]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[M16-49]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[M16-49]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[M16-49]"
                       name="M16-49"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-15]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-15]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-15]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-15]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-15]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-15]"
                       name="A4-15"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-9]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-9]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-9]"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-9]"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-9]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-9]"
                       name="A4-9"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StageTableKeyID]"
-                      dataType="i4"
-                      name="StageTableKeyID" />
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Column13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column13" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DateID]"
-                      dataType="i4"
-                      name="DateID" />
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ChannelID]"
-                      dataType="i4"
-                      name="ChannelID" />
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Channel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Channel" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StartTime]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SecondDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="SecondDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StartTime]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="StartTime" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
-                      dataType="dbTime2"
-                      name="Duration"
-                      scale="7" />
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Duration" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VariableTarget]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VariableTarget]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="VariableTarget" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalIndividuals]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalIndividuals]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="TotalIndividuals" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Podgrupa]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Podgrupa]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="Podgrupa" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A16-49]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="A16-49" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[M16-49]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[M16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="M16-49" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-15]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-15]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="A4-15" />
                     <externalMetadataColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-9]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[A4-9]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -5969,97 +6442,111 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StageTableKeyID]"
-                      dataType="i4"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StageTableKeyID]"
-                      name="StageTableKeyID" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DateID]"
-                      dataType="i4"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DateID]"
-                      name="DateID" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChannelID]"
-                      dataType="i4"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ChannelID]"
-                      name="ChannelID" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StartTime]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Date]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StartTime]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Channel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Channel]"
+                      name="Channel" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Description]"
+                      name="Description" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SecondDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SecondDescription]"
+                      name="SecondDescription" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StartTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StartTime]"
                       name="StartTime" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
-                      dataType="dbTime2"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
-                      name="Duration"
-                      scale="7" />
-                    <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VariableTarget]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VariableTarget]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
+                      name="Duration" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VariableTarget]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VariableTarget]"
                       name="VariableTarget" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalIndividuals]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalIndividuals]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalIndividuals]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalIndividuals]"
                       name="TotalIndividuals" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Podgrupa]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Podgrupa]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Podgrupa]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Podgrupa]"
                       name="Podgrupa" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A16-49]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A16-49]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A16-49]"
                       name="A16-49" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[M16-49]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[M16-49]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[M16-49]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[M16-49]"
                       name="M16-49" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-15]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-15]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-15]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-15]"
                       name="A4-15" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-9]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-9]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-9]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[A4-9]"
                       name="A4-9" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -6068,11 +6555,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </outputs>
             </component>
             <component
-              refId="Package\Uzupełnianie transmision\Script Component"
+              refId="Package\Zamiana kolum i wierszy miejscami\Script Component"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
               description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
               name="Script Component"
+              validateExternalMetadata="False"
               version="11">
               <properties>
                 <property
@@ -6082,7 +6570,1482 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   name="SourceCode"
                   state="cdata">
                   <arrayElements
-                    arrayElementCount="0" />
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_e0822422bda7429097c85c67ec36100e.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ff5e0a7d-b324-4e6b-a137-3f70e201d457}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_e0822422bda7429097c85c67ec36100e</RootNamespace>
+    <AssemblyName>SC_e0822422bda7429097c85c67ec36100e</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_e0822422bda7429097c85c67ec36100e" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC140</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    private int itr = 0;
+
+    private double[,] values = new double[5,6];
+
+    private int transID = 1;
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+
+        int rest = itr % 5;        
+            
+        switch (rest)
+        {
+            case 0:
+                ProcessNoPctValues(rest, Row);
+                break;
+            case 1:
+                ProcessPctValues(rest, Row);
+                break;
+            case 2:
+                ProcessPctValues(rest, Row);
+                break;
+            case 3:
+                ProcessPctValues(rest, Row);
+                break;
+            case 4:
+                ProcessNoPctValues(rest, Row);
+
+                for (int i = 0; i < 6; i++)
+                {
+                    PivotBuffer.AddRow();
+
+
+                    PivotBuffer.AMR = values[0, i];
+                    PivotBuffer.AMRpct = values[1, i];
+                    PivotBuffer.SHRpct = values[2, i];
+                    PivotBuffer.RCHpct = values[3, i];
+                    PivotBuffer.RCH = values[4, i];
+
+                    PivotBuffer.TransmitionID = transID; transID++;
+                    PivotBuffer.TargetID = i + 1;
+                    PivotBuffer.Channel = Row.Channel;
+                    PivotBuffer.Date = Row.Date;
+                    PivotBuffer.Description = Row.Description;
+                    PivotBuffer.SecondDescription = Row.SecondDescription;
+                    PivotBuffer.StartTime = Row.StartTime;
+                    PivotBuffer.Duration = Row.DurationIN;
+
+                    PivotBuffer.TimeID = GetTimeID(Row);
+                    
+
+                }
+                break;
+        }
+        itr++;
+    }
+
+    private double GetGoodFloatNoPctValue(string s)
+    {
+        string ss = s.Replace(((char)194).ToString(), string.Empty);
+        ss = ss.Replace(((char)160).ToString(), string.Empty);
+        if (ss == "n.a.") return 0f;
+        return (double.Parse(ss));
+    }
+    private double GetGoodFloatPctValue(string s)
+    {
+        string ss = s.Replace(((char)194).ToString(), string.Empty);
+        ss = ss.Replace(((char)160).ToString(), string.Empty);
+        ss = ss.Replace(',', '.');
+        if (ss == "n.a.") return 0f;
+        return double.Parse(ss.Substring(0,ss.Length-2));
+    }
+    private void ProcessPctValues(int rest, Input0Buffer Row)
+    {
+        values[rest, 0] = GetGoodFloatPctValue(Row.TotalIndividualsIN);
+        values[rest, 1] = GetGoodFloatPctValue(Row.Podgrupa);
+        values[rest, 2] = GetGoodFloatPctValue(Row.A1649);
+        values[rest, 3] = GetGoodFloatPctValue(Row.M1649);
+        values[rest, 4] = GetGoodFloatPctValue(Row.A415);
+        values[rest, 5] = GetGoodFloatPctValue(Row.A49);
+        
+    }
+
+    private void ProcessNoPctValues(int rest, Input0Buffer Row)
+    {
+        values[rest, 0] = GetGoodFloatNoPctValue(Row.TotalIndividualsIN);
+        values[rest, 1] = GetGoodFloatNoPctValue(Row.Podgrupa);
+        values[rest, 2] = GetGoodFloatNoPctValue(Row.A1649);
+        values[rest, 3] = GetGoodFloatNoPctValue(Row.M1649);
+        values[rest, 4] = GetGoodFloatNoPctValue(Row.A415);
+        values[rest, 5] = GetGoodFloatNoPctValue(Row.A49);
+    }
+
+    private int GetTimeID(Input0Buffer Row)
+    {
+        var time = Row.StartTime.Split(':');
+        int hour = int.Parse(time[0]);
+        int min = int.Parse(time[1]);
+        int sec = int.Parse(time[2]);
+
+        return hour * 10000 + min * 100 + sec;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String Date
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool Date_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String Channel
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+    }
+    public bool Channel_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public String Description
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[2]);
+        }
+    }
+    public bool Description_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public String SecondDescription
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[3]);
+        }
+    }
+    public bool SecondDescription_IsNull
+    {
+        get
+        {
+            return IsNull(3);
+        }
+    }
+
+    public String StartTime
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[4]);
+        }
+    }
+    public bool StartTime_IsNull
+    {
+        get
+        {
+            return IsNull(4);
+        }
+    }
+
+    public String DurationIN
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[5]);
+        }
+    }
+    public bool DurationIN_IsNull
+    {
+        get
+        {
+            return IsNull(5);
+        }
+    }
+
+    public String VariableTargetIN
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[6]);
+        }
+    }
+    public bool VariableTargetIN_IsNull
+    {
+        get
+        {
+            return IsNull(6);
+        }
+    }
+
+    public String TotalIndividualsIN
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[7]);
+        }
+    }
+    public bool TotalIndividualsIN_IsNull
+    {
+        get
+        {
+            return IsNull(7);
+        }
+    }
+
+    public String Podgrupa
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[8]);
+        }
+    }
+    public bool Podgrupa_IsNull
+    {
+        get
+        {
+            return IsNull(8);
+        }
+    }
+
+    public String A1649
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[9]);
+        }
+    }
+    public bool A1649_IsNull
+    {
+        get
+        {
+            return IsNull(9);
+        }
+    }
+
+    public String M1649
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[10]);
+        }
+    }
+    public bool M1649_IsNull
+    {
+        get
+        {
+            return IsNull(10);
+        }
+    }
+
+    public String A415
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[11]);
+        }
+    }
+    public bool A415_IsNull
+    {
+        get
+        {
+            return IsNull(11);
+        }
+    }
+
+    public String A49
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[12]);
+        }
+    }
+    public bool A49_IsNull
+    {
+        get
+        {
+            return IsNull(12);
+        }
+    }
+
+    public Int32 TransmitionID
+    {
+        set
+        {
+            this[13] = value;
+        }
+    }
+    public bool TransmitionID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(13);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Single AMR
+    {
+        set
+        {
+            this[14] = value;
+        }
+    }
+    public bool AMR_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(14);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 TargetID
+    {
+        set
+        {
+            this[15] = value;
+        }
+    }
+    public bool TargetID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(15);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Single AMRpct
+    {
+        set
+        {
+            this[16] = value;
+        }
+    }
+    public bool AMRpct_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(16);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Single SHRpct
+    {
+        set
+        {
+            this[17] = value;
+        }
+    }
+    public bool SHRpct_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(17);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Single RCHpct
+    {
+        set
+        {
+            this[18] = value;
+        }
+    }
+    public bool RCHpct_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(18);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Single RCH
+    {
+        set
+        {
+            this[19] = value;
+        }
+    }
+    public bool RCH_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(19);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 TimeID
+    {
+        set
+        {
+            this[20] = value;
+        }
+    }
+    public bool TimeID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(20);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+
+public class PivotBuffer: ScriptBuffer
+
+{
+    public PivotBuffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public Int32 TransmitionID
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool TransmitionID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 TargetID
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool TargetID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Double AMR
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool AMR_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Double AMRpct
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool AMRpct_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Double RCH
+    {
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool RCH_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Double RCHpct
+    {
+        set
+        {
+            this[5] = value;
+        }
+    }
+    public bool RCHpct_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(5);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Double SHRpct
+    {
+        set
+        {
+            this[6] = value;
+        }
+    }
+    public bool SHRpct_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(6);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String SecondDescription
+    {
+        set
+        {
+            this[7] = value;
+        }
+    }
+    public bool SecondDescription_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(7);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Description
+    {
+        set
+        {
+            this[8] = value;
+        }
+    }
+    public bool Description_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(8);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Channel
+    {
+        set
+        {
+            this[9] = value;
+        }
+    }
+    public bool Channel_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(9);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Date
+    {
+        set
+        {
+            this[10] = value;
+        }
+    }
+    public bool Date_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(10);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Duration
+    {
+        set
+        {
+            this[11] = value;
+        }
+    }
+    public bool Duration_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(11);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String StartTime
+    {
+        set
+        {
+            this[12] = value;
+        }
+    }
+    public bool StartTime_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(12);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 TimeID
+    {
+        set
+        {
+            this[13] = value;
+        }
+    }
+    public bool TimeID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(13);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public PivotBuffer PivotBuffer;
+
+    int InputsFinished = 0;
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+        if (Buffer.EndOfRowset)
+        {
+            InputsFinished = InputsFinished + 1;
+            if (InputsFinished == 1)
+            {
+                FinishOutputs();
+                MarkOutputsFinished();
+            }
+        }
+
+    }
+
+    public virtual void FinishOutputs()
+    {
+    }
+
+    private void MarkOutputsFinished()
+    {
+
+        if (null != PivotBuffer)
+        {
+            PivotBuffer.SetEndOfRowset();
+            PivotBuffer = null;
+        }
+
+    }
+
+    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
+    {
+       for(int Idx = 0; Idx < Outputs; Idx++)
+       {
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Pivot"))
+            {
+                PivotBuffer = new PivotBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+        }
+
+        CreateNewOutputRows();
+
+    }
+
+    public virtual void CreateNewOutputRows()
+    {
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e0822422bda7429097c85c67ec36100e.Properties.Settings.get_Default():SC_e0822422bda7429097c85c67ec36100e.Properties.Sett" +
+    "ings")]
+
+namespace SC_e0822422bda7429097c85c67ec36100e.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_e0822422bda7429097c85c67ec36100e</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_e0822422bda7429097c85c67ec36100e</msb:DisplayName>
+    <msb:ProjectId>{F9662306-4296-4032-AC7F-0B657E6FB525}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_e0822422bda7429097c85c67ec36100e.csproj" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_e0822422bda7429097c85c67ec36100e")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_e0822422bda7429097c85c67ec36100e")]
+[assembly: AssemblyCopyright("Copyright @  2018")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e0822422bda7429097c85c67ec36100e.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e0822422bda7429097c85c67ec36100e.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e0822422bda7429097c85c67ec36100e.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_e0822422bda7429097c85c67ec36100e.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_e0822422bda7429097c85c67ec36100e.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
                 </property>
                 <property
                   dataType="System.String"
@@ -6091,13 +8054,251 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   name="BinaryCode"
                   state="cdata">
                   <arrayElements
-                    arrayElementCount="0" />
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_e0822422bda7429097c85c67ec36100e.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAER+8VoAAAAAAAAAAOAAIiALATAAACoAAAAIAAAAAAAAvkkA
+AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACgAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAGxJAABPAAAAAGAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAxCkAAAAgAAAAKgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAYAAAAAYAAAAsAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAIAAAAACAAAAMgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACg
+SQAAAAAAAEgAAAACAAUA5CoAANAdAAABAAAAAAAAALRIAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAQArQEAAAEAABECewEAAAQb
+XQoGRQUAAAAFAAAAEgAAAB8AAAAsAAAAOQAAADh2AQAAAgYDKAcAAAY4aQEAAAIGAygGAAAGOFwB
+AAACBgMoBgAABjhPAQAAAgYDKAYAAAY4QgEAAAIGAygHAAAGFgs4LAEAAAJ7BgAABG9UAAAGAnsG
+AAAEAnsCAAAEFgcoEgAACm88AAAGAnsGAAAEAnsCAAAEFwcoEgAACm8+AAAGAnsGAAAEAnsCAAAE
+GAcoEgAACm9EAAAGAnsGAAAEAnsCAAAEGQcoEgAACm9CAAAGAnsGAAAEAnsCAAAEGgcoEgAACm9A
+AAAGAnsGAAAEAnsDAAAEbzgAAAYCAnsDAAAEF1h9AwAABAJ7BgAABAcXWG86AAAGAnsGAAAEA28N
+AAAGb0oAAAYCewYAAAQDbwsAAAZvTAAABgJ7BgAABANvDwAABm9IAAAGAnsGAAAEA28RAAAGb0YA
+AAYCewYAAAQDbxMAAAZvUAAABgJ7BgAABANvFQAABm9OAAAGAnsGAAAEAgMoCAAABm9SAAAGBxdY
+CwccP83+//8CAnsBAAAEF1h9AQAABCoAAAATMAMAUAAAAAIAABEDIMIAAAALEgEoEwAACn4UAAAK
+bxUAAAoKBiCgAAAACxIBKBMAAAp+FAAACm8VAAAKCgZyAQAAcCgWAAAKLAojAAAAAAAAAAAqBigX
+AAAKKhMwBABpAAAAAgAAEQMgwgAAAAsSASgTAAAKfhQAAApvFQAACgoGIKAAAAALEgEoEwAACn4U
+AAAKbxUAAAoKBh8sHy5vGAAACgoGcgEAAHAoFgAACiwKIwAAAAAAAAAAKgYWBm8ZAAAKGFlvGgAA
+CigXAAAKKgAAABMwBQCXAAAAAAAAAAJ7AgAABAMWAgRvGQAABigFAAAGKBsAAAoCewIAAAQDFwIE
+bxsAAAYoBQAABigbAAAKAnsCAAAEAxgCBG8dAAAGKAUAAAYoGwAACgJ7AgAABAMZAgRvHwAABigF
+AAAGKBsAAAoCewIAAAQDGgIEbyEAAAYoBQAABigbAAAKAnsCAAAEAxsCBG8jAAAGKAUAAAYoGwAA
+CioAEzAFAJcAAAAAAAAAAnsCAAAEAxYCBG8ZAAAGKAQAAAYoGwAACgJ7AgAABAMXAgRvGwAABigE
+AAAGKBsAAAoCewIAAAQDGAIEbx0AAAYoBAAABigbAAAKAnsCAAAEAxkCBG8fAAAGKAQAAAYoGwAA
+CgJ7AgAABAMaAgRvIQAABigEAAAGKBsAAAoCewIAAAQDGwIEbyMAAAYoBAAABigbAAAKKgATMAUA
+PwAAAAMAABEDbxMAAAYXjRoAAAElFh86nW8cAAAKJRaaKB0AAAoKJReaKB0AAAoLGJooHQAACgwG
+IBAnAABaBx9kWlgIWCpuAhsccx4AAAp9AgAABAIXfQMAAAQCKFcAAAYqKgIDBAUoHwAACipSAnsg
+AAAKAnshAAAKFpRvIgAACioiAhYoIwAACipSAnsgAAAKAnshAAAKF5RvIgAACioiAhcoIwAACipS
+AnsgAAAKAnshAAAKGJRvIgAACioiAhgoIwAACipSAnsgAAAKAnshAAAKGZRvIgAACioiAhkoIwAA
+CipSAnsgAAAKAnshAAAKGpRvIgAACioiAhooIwAACipSAnsgAAAKAnshAAAKG5RvIgAACioiAhso
+IwAACipSAnsgAAAKAnshAAAKHJRvIgAACioiAhwoIwAACipSAnsgAAAKAnshAAAKHZRvIgAACioi
+Ah0oIwAACipSAnsgAAAKAnshAAAKHpRvIgAACioiAh4oIwAACipWAnsgAAAKAnshAAAKHwmUbyIA
+AAoqJgIfCSgjAAAKKlYCeyAAAAoCeyEAAAofCpRvIgAACiomAh8KKCMAAAoqVgJ7IAAACgJ7IQAA
+Ch8LlG8iAAAKKiYCHwsoIwAACipWAnsgAAAKAnshAAAKHwyUbyIAAAoqJgIfDCgjAAAKKj4CHw0D
+jB0AAAEoJAAACipeAywJAh8NKCUAAAoqcgsAAHBzJgAACno+Ah8OA4wfAAABKCQAAAoqXgMsCQIf
+DiglAAAKKnILAABwcyYAAAp6PgIfDwOMHQAAASgkAAAKKl4DLAkCHw8oJQAACipyCwAAcHMmAAAK
+ej4CHxADjB8AAAEoJAAACipeAywJAh8QKCUAAAoqcgsAAHBzJgAACno+Ah8RA4wfAAABKCQAAAoq
+XgMsCQIfESglAAAKKnILAABwcyYAAAp6PgIfEgOMHwAAASgkAAAKKl4DLAkCHxIoJQAACipyCwAA
+cHMmAAAKej4CHxMDjB8AAAEoJAAACipeAywJAh8TKCUAAAoqcgsAAHBzJgAACno+Ah8UA4wdAAAB
+KCQAAAoqXgMsCQIfFCglAAAKKnILAABwcyYAAAp6HgIoJwAACioeAigoAAAKKjoCFgOMHQAAASgk
+AAAKKloDLAgCFiglAAAKKnILAABwcyYAAAp6OgIXA4wdAAABKCQAAAoqWgMsCAIXKCUAAAoqcgsA
+AHBzJgAACno6AhgDjBwAAAEoJAAACipaAywIAhgoJQAACipyCwAAcHMmAAAKejoCGQOMHAAAASgk
+AAAKKloDLAgCGSglAAAKKnILAABwcyYAAAp6OgIaA4wcAAABKCQAAAoqWgMsCAIaKCUAAAoqcgsA
+AHBzJgAACno6AhsDjBwAAAEoJAAACipaAywIAhsoJQAACipyCwAAcHMmAAAKejoCHAOMHAAAASgk
+AAAKKloDLAgCHCglAAAKKnILAABwcyYAAAp6JgIdAygkAAAKKloDLAgCHSglAAAKKnILAABwcyYA
+AAp6JgIeAygkAAAKKloDLAgCHiglAAAKKnILAABwcyYAAAp6KgIfCQMoJAAACipeAywJAh8JKCUA
+AAoqcgsAAHBzJgAACnoqAh8KAygkAAAKKl4DLAkCHwooJQAACipyCwAAcHMmAAAKeioCHwsDKCQA
+AAoqXgMsCQIfCyglAAAKKnILAABwcyYAAAp6KgIfDAMoJAAACipeAywJAh8MKCUAAAoqcgsAAHBz
+JgAACnoeAigpAAAKKh4CKCoAAAoqfgIoKwAACgICc18AAAZ9BAAABAICc2AAAAZ9BQAABCoTMAQA
+TwAAAAAAAAAEcqgAAHAabywAAAosFQIFAgMoLQAACg4EcwoAAAZvXQAABgVvLgAACiwjAgJ7BwAA
+BBdYfQcAAAQCewcAAAQXMwwCb1kAAAYCKFoAAAYqBipuAnsGAAAELBICewYAAARvVQAABgIUfQYA
+AAQqAAAAEzAFAD0AAAAEAAARFgorLgQGlA4EcrgAAHAoLwAACjMZAgUGmgIEBpQoLQAACg4EczcA
+AAZ9BgAABAYXWAoGAzLOAm9cAAAGKkorBwIDb14AAAYDbzUAAAYt8So6AigwAAAKAgN9CAAABCo6
+AigwAAAKAgN9CQAABCoeAigwAAAKKq5+CgAABC0ecsQAAHDQCAAAAigxAAAKbzIAAApzMwAACoAK
+AAAEfgoAAAQqGn4LAAAEKh4CgAsAAAQqGn4MAAAEKh4CKDQAAAoqLnNmAAAGgAwAAAQqQlNKQgEA
+AQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAA4A4AACN+AABMDwAA7AoAACNTdHJpbmdzAAAA
+ADgaAAA4AQAAI1VTAHAbAAAQAAAAI0dVSUQAAACAGwAAUAIAACNCbG9iAAAAAAAAAAIAAAFXFaIJ
+CQEAAAD6ATMAFgAAAQAAACMAAAAJAAAADAAAAGcAAABHAAAANAAAABAAAAAEAAAABAAAAEkAAABK
+AAAAAQAAAAEAAAAEAAAAAQAAAAAAhwQBAAAAAAAGABwDYggGALADYggGAGgCTwgPANYIAAAGAJUC
+OQcGAP8COQcGAOACOQcGAJcDOQcGADwDOQcGAFUDOQcGAKwCOQcGAMcCFwQKAHADnQEKABMInQEO
+APgHnQEKAM4HnQEKADMKnQEGALQJ5AYGAEsCTwgGACQIgggGAMIHJAcSABsCWQQSAHwCWQQSAOsB
+DwcGADACYggGAOYH5AYGAD0E5AYGAEUB5AYGAAEA5AYGAEsH5AYGAHAB5AYGALEH5AYGAL4B5AYG
+AEwB5AYGANAKOQcAAAAALAAAAAAAAQABAAEAEAD3BgAAFAABAAEAAQAQAOsHAAA5AAQACgABABAA
+BwgAADkABAA3AAEAEAAVCgAARQAEAFcAAQAQAH4JAABJAAgAXwABABAAFAkAAEkACQBgAAAAEACJ
+COUISQAKAGEAAAEQAG4J5QhhAAwAZQABAEEI4gABAEIJ5QABAFwA4gAGAH4J7gAGABQJ8gAGAAcI
+9gABAOYA4gABACMK+gABACMK+gARAOsG/gARANsBAgERADUBBgFQIAAAAADGAM4DBgABAFggAAAA
+AMYA2QMGAAEAYCAAAAAAxgCtCgoBAQAcIgAAAACBAOUDEAECAHgiAAAAAIEA/AMQAQMA8CIAAAAA
+gQAxCRUBBACUIwAAAACBAB4JFQEGADgkAAAAAIEAQAAcAQgAgyQAAAAAhhg0CAYACQCfJAAAAACG
+GDQIegAJAKokAAAAAIYICQIzAAwAvyQAAAAAhgjbBZwADADIJAAAAACGCG8EMwAMAN0kAAAAAIYI
++wWcAAwA5iQAAAAAhghlBzMADAD7JAAAAACGCDUGnAAMAAQlAAAAAIYIhQczAAwAGSUAAAAAhghj
+BpwADAAiJQAAAACGCIEBMwAMADclAAAAAIYIsQWcAAwAQCUAAAAAhgiNADMADABVJQAAAACGCD4F
+nAAMAF4lAAAAAIYIswAzAAwAcyUAAAAAhghyBZwADAB8JQAAAACGCJwAMwAMAJElAAAAAIYIVAWc
+AAwAmiUAAAAAhgjQADMADACvJQAAAACGCJ0FnAAMALglAAAAAIYIEAAzAAwAziUAAAAAhgi/BJwA
+DADYJQAAAACGCBoAMwAMAO4lAAAAAIYI0AScAAwA+CUAAAAAhggHADMADAAOJgAAAACGCK8EnAAM
+ABgmAAAAAIYIJAAzAAwALiYAAAAAhgjhBJwADAA4JgAAAACGCEoAAQAMAEgmAAAAAIYIAgUiAQ0A
+YCYAAAAAhgjIACcBDgBwJgAAAACGCI4FIgEPAIgmAAAAAIYIZAABABAAmCYAAAAAhggbBSIBEQCw
+JgAAAACGCNEJJwESAMAmAAAAAIYIwQYiARMA2CYAAAAAhgjGCScBFADoJgAAAACGCK8GIgEVAAAn
+AAAAAIYIuwknARYAECcAAAAAhgidBiIBFwAoJwAAAACGCIUAJwEYADgnAAAAAIYILwUiARkAUCcA
+AAAAhgg1AAEAGgBgJwAAAACGCPAEIgEbAHgnAAAAAIYAxAqcABwAgCcAAAAAhgD3CZwAHACfJAAA
+AACGGDQIegAcAIgnAAAAAIYISgABAB8AlycAAAAAhggCBSIBIACuJwAAAACGCGQAAQAhAL0nAAAA
+AIYIGwUiASIA1CcAAAAAhgjIACwBIwDjJwAAAACGCI4FIgEkAPonAAAAAIYI0QksASUACSgAAAAA
+hgjBBiIBJgAgKAAAAACGCIUALAEnAC8oAAAAAIYILwUiASgARigAAAAAhgi7CSwBKQBVKAAAAACG
+CJ0GIgEqAGwoAAAAAIYIxgksASsAeygAAAAAhgivBiIBLACSKAAAAACGCJsHEAAtAJwoAAAAAIYI
+gAYiAS4AsygAAAAAhgh1BxAALwC9KAAAAACGCEwGIgEwANQoAAAAAIYIewQQADEA3ygAAAAAhggO
+BiIBMgD3KAAAAACGCBICEAAzAAIpAAAAAIYI6wUiATQAGikAAAAAhggCBxAANQAlKQAAAACGCCEG
+IgE2AD0pAAAAAIYIjwEQADcASCkAAAAAhgjGBSIBOAA4JgAAAACGCDUAAQA5AEgmAAAAAIYI8AQi
+AToAYCkAAAAAhgCmCgYAOwBoKQAAAACGAPQJBgA7AIAnAAAAAIYA9wmcADsAcCkAAAAAhhg0CAYA
+OwCQKQAAAADGAI0KMQE7AOspAAAAAMYBkgkGAD8A7SkAAAAAgQD1AAYAPwAMKgAAAADGAJoKOwE/
+AOspAAAAAMYBoAkGAEMAVSoAAAAAxgGGCgoBQwDrKQAAAADGAa0KCgFEAGgqAAAAAIYYNAhHAUUA
+dyoAAAAAhhg0CEcBRgCGKgAAAACDGDQIBgBHAI4qAAAAAJMIIAhNAUcAuioAAAAAkwjDAVIBRwDB
+KgAAAACTCM8BVwFHAMkqAAAAAJYICQpdAUgA0CoAAAAAhhg0CAYASADYKgAAAACRGDoIYgFIAAAA
+AQDICgAAAQCyCQAAAQCyCQAAAQBgCgAAAgDICgAAAQBgCgAAAgDICgAAAQDICgAAAQAZCAAAAgBJ
+CQAAAwDcBwAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAA
+AQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQAZCAAAAgBJ
+CQAAAwDcBwAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAA
+AQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQAR
+BAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAA
+AQARBAAAAQBxAAAAAgB3AQAAAwAZCAAABADcBwAAAQCYCQAAAgBFCAAAAwCKCQAABADcBwAAAQAZ
+CAAAAQDICgAAAQA5CgAAAQA5CgAAAQARBAkANAgBABEANAgGABkANAgKACkANAgQADEANAgQADkA
+NAgQAEEANAgQAEkANAgQAFEANAgQAFkANAgQAGEANAgQAGkANAgGAJkANAgGALkANAgVAMkANAgG
+AIkAzgMGAIkA2QMGAAwA3AkoANEAMQQzANkA5Qo3ANkALQE6ANkA2QpAAOEAAwJGANkALQFLANkA
+TgRRANkARARVAAwA4AlbANkAAwpoAOkAAwJvAAwANAh0AHEANAh6AHEAGQiEAHEASQmIAHkAOgSM
+AHEAzAaRAHEA2waWAHEA0wYBAPEANAgQAHEAxAqcAHEA9wmcAHEApgoGAHEA9AkGAIkANAgGANkA
+dwmgAIkAXQmoAHkA5AmcAIkAeQCyAJEANAgGAAkBXgG5AAkBzArCAKEANAjIAMEANAgGAC4ACwCJ
+AS4AEwCSAS4AGwCxAS4AIwC6AS4AKwDjAS4AMwDjAS4AOwDjAS4AQwC6AS4ASwDpAS4AUwDjAS4A
+WwAAAkMAYwBKAgMBawBKAoEBewBKAukIcwCxAQkJcwCxARsALgBiAK4AAwABAAQAKwAIAEcACQBJ
+AAAAFgJmAQAA7wVqAQAAfwRmAQAAEgZqAQAApQdmAQAAigZqAQAAnwdmAQAAhAZqAQAAkwFmAQAA
+ygVqAQAAkQBmAQAAQgVqAQAAtwBmAQAAdgVqAQAAoABmAQAAWAVqAQAA1ABmAQAAoQVqAQAAFABm
+AQAAwwRqAQAAHgBmAQAA1ARqAQAACwBmAQAAswRqAQAAKABmAQAA5QRqAQAATgBuAQAABgVqAQAA
+zAByAQAAkgVqAQAAaABuAQAAHwVqAQAA1QlyAQAAxQZqAQAAyglyAQAAswZqAQAAvwlyAQAAoQZq
+AQAAiQByAQAAMwVqAQAAQwBuAQAA9ARqAQAATgBuAQAABgVqAQAAaABuAQAAHwVqAQAAzAB2AQAA
+kgVqAQAA1Ql2AQAAxQZqAQAAiQB2AQAAMwVqAQAAvwl2AQAAoQZqAQAAygl2AQAAswZqAQAAnwdm
+AQAAhAZqAQAApQdmAQAAigZqAQAAfwRmAQAAEgZqAQAAFgJmAQAA7wVqAQAABgdmAQAAJQZqAQAA
+kwFmAQAAygVqAQAAQwBuAQAA9ARqAQAAJAh6AQAA4wF/AQAADQqEAQIACwADAAIADAAFAAIADQAH
+AAIADgAJAAIADwALAAIAEAANAAIAEQAPAAIAEgARAAIAEwATAAIAFAAVAAIAFQAXAAIAFgAZAAIA
+FwAbAAIAGAAdAAIAGQAfAAIAGgAhAAIAGwAjAAIAHAAlAAIAHQAnAAIAHgApAAIAHwArAAIAIAAt
+AAIAIQAvAAIAIgAxAAIAIwAzAAIAJAA1AAEAJQA3AAEAJgA5AAEAJwA7AAEAKAA9AAEAKQA/AAEA
+KgBBAAEAKwBDAAEALABFAAEALQBHAAEALgBJAAEALwBLAAEAMABNAAEAMQBPAAEAMgBRAAEAMwBT
+AAEANABVAAEAOABXAAEAOQBZAAEAOgBbAAEAOwBdAAEAPABfAAEAPQBhAAEAPgBjAAEAPwBlAAEA
+QABnAAEAQQBpAAEAQgBrAAEAQwBtAAEARABvAAEARQBxAAEARgBzAAEARwB1AAEASAB3AAEASQB5
+AAEASgB7AAEASwB9AAEATAB/AAEATQCBAAEATgCDAAEATwCFAAEAUACHAAEAUQCJAAEAUgCLAAEA
+UwCNAAIAYgCPAAIAYwCRAAEAZACRAAIAZQCTACAABIAAAAEAAAAAAAAAAAAAAAAACQEAAAQAAAAA
+AAAAAAAAANAA3QAAAAAADgAAAAAAAAAAAAAA2QBDCgAAAAAOAAAAAAAAAAAAAADZAGUKAAAAAAQA
+AAAAAAAAAAAAANAA5AYAAAAAAAAAAAEAAACTCAAAAAAAAABJbnQzMgBnZXRfQTQxNQBnZXRfQTE2
+NDkAZ2V0X00xNjQ5AGdldF9BNDkAPE1vZHVsZT4Ac2V0X1RpbWVJRABHZXRUaW1lSUQAc2V0X1Ry
+YW5zbWl0aW9uSUQAdHJhbnNJRABzZXRfVGFyZ2V0SUQASW5wdXRJRABHZXRPdXRwdXRJRABzZXRf
+UkNIAGdldF9EdXJhdGlvbklOAGdldF9Ub3RhbEluZGl2aWR1YWxzSU4AZ2V0X1ZhcmlhYmxlVGFy
+Z2V0SU4Ac2V0X0FNUgBnZXRfUG9kZ3J1cGEAbXNjb3JsaWIASW5wdXRzRmluaXNoZWQATWFya091
+dHB1dHNGaW5pc2hlZABTQ19lMDgyMjQyMmJkYTc0MjkwOTdjODVjNjdlYzM2MTAwZQBSZXBsYWNl
+AGRlZmF1bHRJbnN0YW5jZQBEb3VibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5k
+bGUAU2luZ2xlAElucHV0TmFtZQBnZXRfU3RhcnRUaW1lAHNldF9TdGFydFRpbWUATWljcm9zb2Z0
+LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNv
+dXJjZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAUGFyc2UAZ2V0X0RhdGUAc2V0X0Rh
+dGUARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdn
+ZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmli
+dXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1
+dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0
+cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0
+ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlB
+dHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhl
+Y3V0ZQBHZXRHb29kRmxvYXROb1BjdFZhbHVlAEdldEdvb2RGbG9hdFBjdFZhbHVlAHZhbHVlAFN5
+c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcAR2V0U3RyaW5nAFN1YnN0cmluZwBnZXRf
+TGVuZ3RoAFN5c3RlbS5Db21wb25lbnRNb2RlbABnZXRfQ2hhbm5lbABzZXRfQ2hhbm5lbABTQ19l
+MDgyMjQyMmJkYTc0MjkwOTdjODVjNjdlYzM2MTAwZS5kbGwAZ2V0X0E0MTVfSXNOdWxsAGdldF9B
+MTY0OV9Jc051bGwAZ2V0X00xNjQ5X0lzTnVsbABnZXRfQTQ5X0lzTnVsbABzZXRfVGltZUlEX0lz
+TnVsbABzZXRfVHJhbnNtaXRpb25JRF9Jc051bGwAc2V0X1RhcmdldElEX0lzTnVsbABzZXRfUkNI
+X0lzTnVsbABnZXRfRHVyYXRpb25JTl9Jc051bGwAZ2V0X1RvdGFsSW5kaXZpZHVhbHNJTl9Jc051
+bGwAZ2V0X1ZhcmlhYmxlVGFyZ2V0SU5fSXNOdWxsAHNldF9BTVJfSXNOdWxsAGdldF9Qb2RncnVw
+YV9Jc051bGwAZ2V0X1N0YXJ0VGltZV9Jc051bGwAc2V0X1N0YXJ0VGltZV9Jc051bGwAZ2V0X0Rh
+dGVfSXNOdWxsAHNldF9EYXRlX0lzTnVsbABnZXRfQ2hhbm5lbF9Jc051bGwAc2V0X0NoYW5uZWxf
+SXNOdWxsAHNldF9EdXJhdGlvbl9Jc051bGwAZ2V0X0Rlc2NyaXB0aW9uX0lzTnVsbABzZXRfRGVz
+Y3JpcHRpb25fSXNOdWxsAGdldF9TZWNvbmREZXNjcmlwdGlvbl9Jc051bGwAc2V0X1NlY29uZERl
+c2NyaXB0aW9uX0lzTnVsbABzZXRfUkNIcGN0X0lzTnVsbABzZXRfU0hScGN0X0lzTnVsbABzZXRf
+QU1ScGN0X0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQByZXNvdXJjZU1hbgBTY3JpcHRN
+YWluAHNldF9EdXJhdGlvbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlv
+bgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAGdldF9EZXNjcmlw
+dGlvbgBzZXRfRGVzY3JpcHRpb24AZ2V0X1NlY29uZERlc2NyaXB0aW9uAHNldF9TZWNvbmREZXNj
+cmlwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0
+TWFwAENoYXIASW5wdXQwQnVmZmVyAFBpcGVsaW5lQnVmZmVyAFBpdm90QnVmZmVyAFNjcmlwdEJ1
+ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9yAC5jY3RvcgBpdHIAT3V0cHV0SURzAFN5c3Rl
+bS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNv
+dXJjZXMAU0NfZTA4MjI0MjJiZGE3NDI5MDk3Yzg1YzY3ZWMzNjEwMGUuUHJvcGVydGllcy5SZXNv
+dXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDX2UwODIyNDIyYmRhNzQyOTA5N2M4NWM2
+N2VjMzYxMDBlLlByb3BlcnRpZXMAVmFyaWFibGVzAFByb2Nlc3NOb1BjdFZhbHVlcwBQcm9jZXNz
+UGN0VmFsdWVzAHZhbHVlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENvbHVtbkluZGV4ZXMAU2V0
+dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAEJ1ZmZlcnMARmluaXNoT3V0cHV0cwBDcmVhdGVOZXdP
+dXRwdXRSb3dzAE9iamVjdABzZXRfUkNIcGN0AHNldF9TSFJwY3QAc2V0X0FNUnBjdABHZXQAU2V0
+AGdldF9FbmRPZlJvd3NldABTZXRFbmRPZlJvd3NldABTcGxpdABnZXRfRGVmYXVsdABVc2VyQ29t
+cG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQATWljcm9zb2Z0LlNxbFNlcnZl
+ci5UeFNjcmlwdAByZXN0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AElucHV0MF9Q
+cm9jZXNzSW5wdXQAUHJpbWVPdXRwdXQAQWRkUm93AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cATmV4
+dFJvdwBnZXRfQXNzZW1ibHkAb3BfRXF1YWxpdHkARW1wdHkAAAAJbgAuAGEALgAAgJtJAHMATgB1
+AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8A
+IABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABl
+ACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQAIAAwAAALUABpAHYA
+bwB0AABxUwBDAF8AZQAwADgAMgAyADQAMgAyAGIAZABhADcANAAyADkAMAA5ADcAYwA4ADUAYwA2
+ADcAZQBjADMANgAxADAAMABlAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMA
+ZQBzAAAAAAVUrsw43lVJvOKwCLsTMpcABCABAQgDIAABBSABARERBCABAQ4FIAEBEVkEBwIICAcU
+DQIAAgAABSACDQgIBAcCDgMDIAAOAgYOBSACDg4OBQACAg4OBAABDQ4FIAIOAwMDIAAIBSACDggI
+BiADAQgIDQUHAwgICAYgAR0OHQMEAAEIDgUgAgEICAkgAwESPR0IEkEDBhI9AwYdCAQgAQ4IBCAB
+AggFIAIBCBwDIAACByACAg4RgIEFIAEdCAgDBwEIBgACCBJBDggAARKAhRGAiQUgABKAjQcgAgEO
+EoCNCLd6XFYZNOCJCImEXc2AgMyRAgYICAYUDQIAAgAAAwYSGAMGEhwDBhIQAwYSRQMGElEDBhJV
+AwYSJAUgAQESDAQgAQ0OBiACAQgSDAUgAQgSDAQgAQECBCABAQwEIAEBDQkgBAEIDhI9EkELIAQB
+CB0IHRI9EkEFIAEBEkUEAAASUQQAABJVBQABARJVBAAAEiQDAAABAygADgMoAAIDKAAIAygADAMo
+AA0ECAASUQQIABJVBAgAEiQIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MB
+CAEAAgAAAAAAKAEAI1NDX2UwODIyNDIyYmRhNzQyOTA5N2M4NWM2N2VjMzYxMDBlAAAFAQAAAAAW
+AQARQ29weXJpZ2h0IEAgIDIwMTgAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNQEAVA4U
+RnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC41BAEAAAAAtAAAAM7K774BAAAA
+kQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00
+LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkj
+U3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAA
+AJRJAAAAAAAAAAAAAK5JAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgSQAAAAAAAAAAAAAAAF9D
+b3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAABgA
+AIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYYAAA7AMA
+AAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEA
+AAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBG
+AGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAAAACwBEwD
+AAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAAMAA0AGIAMAAA
+ABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4AYQBtAGUA
+AAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBDAF8AZQAw
+ADgAMgAyADQAMgAyAGIAZABhADcANAAyADkAMAA5ADcAYwA4ADUAYwA2ADcAZQBjADMANgAxADAA
+MABlAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAALgAwAAAAcAAo
+AAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwBlADAAOAAyADIANAAyADIAYgBkAGEA
+NwA0ADIAOQAwADkANwBjADgANQBjADYANwBlAGMAMwA2ADEAMAAwAGUALgBkAGwAbAAAAEgAEgAB
+AEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAAQAAgACAA
+MgAwADEAOAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAAAAAAeAAo
+AAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfAGUAMAA4ADIAMgA0ADIA
+MgBiAGQAYQA3ADQAMgA5ADAAOQA3AGMAOAA1AGMANgA3AGUAYwAzADYAMQAwADAAZQAuAGQAbABs
+AAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwBlADAAOAAyADIANAAyADIA
+YgBkAGEANwA0ADIAOQAwADkANwBjADgANQBjADYANwBlAGMAMwA2ADEAMAAwAGUAAAA0AAgAAQBQ
+AHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEAQQBzAHMA
+ZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAADAAAAMA5AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
                 </property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
                   name="VSTAProjectName"
-                  typeConverter="NOTBROWSABLE">SC_5a0d301142b843d5bda65b3bb67cf110</property>
+                  typeConverter="NOTBROWSABLE">SC_e0822422bda7429097c85c67ec36100e</property>
                 <property
                   dataType="System.String"
                   description="Specifies the programming language used by the script."
@@ -6126,24 +8327,249 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
                   name="MetadataChecksum140"
-                  typeConverter="NOTBROWSABLE"></property>
+                  typeConverter="NOTBROWSABLE">00</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
               </properties>
               <inputs>
                 <input
-                  refId="Package\Uzupełnianie transmision\Script Component.Inputs[Input 0]"
+                  refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0]"
                   hasSideEffects="true"
                   name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[Channel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Channel"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Channel]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[Description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="Description"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Description]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[SecondDescription]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="SecondDescription"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[SecondDescription]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[StartTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StartTime"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[StartTime]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[DurationIN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DurationIN"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[DurationIN]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[VariableTargetIN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="VariableTargetIN"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[VariableTargetIN]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[TotalIndividualsIN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TotalIndividualsIN"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalIndividualsIN]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[Podgrupa]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Podgrupa"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[Podgrupa]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[A16-49]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="A16-49"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A16-49]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[M16-49]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="M16-49"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[M16-49]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[A4-15]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="A4-15"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-15]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0].Columns[A4-9]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="A4-9"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].Columns[A4-9]" />
+                  </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Uzupełnianie transmision\Script Component.Outputs[Output 0]"
+                  refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0]"
                   name="Output 0"
-                  synchronousInputId="Package\Uzupełnianie transmision\Script Component.Inputs[Input 0]">
+                  synchronousInputId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[TransmitionID]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[TransmitionID]"
+                      name="TransmitionID" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[AMR]"
+                      dataType="r4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[AMR]"
+                      name="AMR" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[TargetID]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[TargetID]"
+                      name="TargetID" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[AMRpct]"
+                      dataType="r4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[AMRpct]"
+                      name="AMRpct" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[SHRpct]"
+                      dataType="r4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[SHRpct]"
+                      name="SHRpct" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[RCHpct]"
+                      dataType="r4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[RCHpct]"
+                      name="RCHpct" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[RCH]"
+                      dataType="r4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[RCH]"
+                      name="RCH" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[TimeID]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Output 0].Columns[TimeID]"
+                      name="TimeID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot]"
+                  hasSideEffects="true"
+                  name="Pivot">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TransmitionID]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TransmitionID]"
+                      name="TransmitionID" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TargetID]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TargetID]"
+                      name="TargetID" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMR]"
+                      dataType="r8"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMR]"
+                      name="AMR" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMRpct]"
+                      dataType="r8"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMRpct]"
+                      name="AMRpct" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCH]"
+                      dataType="r8"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCH]"
+                      name="RCH" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCHpct]"
+                      dataType="r8"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCHpct]"
+                      name="RCHpct" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SHRpct]"
+                      dataType="r8"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SHRpct]"
+                      name="SHRpct" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SecondDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SecondDescription]"
+                      name="SecondDescription" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Description]"
+                      name="Description" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Channel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Channel]"
+                      name="Channel" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Duration]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[Duration]"
+                      name="Duration" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[StartTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[StartTime]"
+                      name="StartTime" />
+                    <outputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TimeID]"
+                      dataType="i4"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TimeID]"
+                      name="TimeID" />
+                  </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -6151,30 +8577,34 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </components>
           <paths>
             <path
-              refId="Package\Uzupełnianie transmision.Paths[OLE DB Source Output]"
-              endId="Package\Uzupełnianie transmision\Script Component.Inputs[Input 0]"
+              refId="Package\Zamiana kolum i wierszy miejscami.Paths[OLE DB Source Output]"
+              endId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0]"
               name="OLE DB Source Output"
-              startId="Package\Uzupełnianie transmision\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Zamiana kolum i wierszy miejscami.Paths[Pivot]"
+              endId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Pivot"
+              startId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Zamiana na klucze obce"
+      DTS:refId="Package\Zamiana na klucze obce i wypelnienie tabeli faktow"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{70F86A1E-A085-4C6D-8EDE-BAD6CB4C63CD}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Zamiana na klucze obce"
+      DTS:ObjectName="Zamiana na klucze obce i wypelnienie tabeli faktow"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
-          SQLTask:SqlStatementSource="&#xA;DROP TABLE [StageTableKey];&#xA;GO&#xA;&#xA;&#xA;--************************************** [StageTableKey]&#xA;&#xA;CREATE TABLE [StageTableKey]&#xA;(&#xA; [StageTableKeyID]  INT IDENTITY (1, 1) NOT NULL ,&#xA; [DateID]           INT NOT NULL ,&#xA; [ChannelID]        INT NOT NULL ,&#xA; [StartTime]&#x9;&#x9;VARCHAR(50) NOT NULL ,&#xA; [Duration]         TIME(7) NOT NULL ,&#xA; [VariableTarget]   VARCHAR(50) NOT NULL ,&#xA; [TotalIndividuals] VARCHAR(50) NOT NULL ,&#xA; [Podgrupa]         VARCHAR(50) NOT NULL ,&#xA; [A16-49]           VARCHAR(50) NOT NULL ,&#xA; [M16-49]           VARCHAR(50) NOT NULL ,&#xA; [A4-15]            VARCHAR(50) NOT NULL ,&#xA; [A4-9]             VARCHAR(50) NOT NULL ,&#xA;&#xA; CONSTRAINT [PK_StageTableKey] PRIMARY KEY CLUSTERED ([StageTableKeyID] ASC)&#xA;);&#xA;GO&#xA;&#xA;INSERT INTO [StageTableKey]&#xA;([DateID]&#xA;,[ChannelID]&#xA;,[StartTime]&#xA;,[Duration]&#xA;,[VariableTarget]&#xA;,[TotalIndividuals]&#xA;,[Podgrupa]&#xA;,[A16-49]&#xA;,[M16-49]&#xA;,[A4-15]&#xA;,[A4-9])&#xA;&#xA;SELECT &#xA;&#xA;(SELECT tdateTableID&#xA;FROM tDateTable&#xA;WHERE dbo.tDateTable.date = dbo.StageTableTransf.Date&#xA;) as DateID, &#xA;&#xA;(SELECT ChannelID&#xA;FROM Channel&#xA;WHERE dbo.Channel.ChannelName = dbo.StageTableTransf.Channel&#xA;) as ChannelID,&#xA;&#xA;StageTableTransf.StartTime as StartTime,&#xA;StageTableTransf.Duration as Duration,&#xA;StageTableTransf.VariableTarget as VariableTarget,&#xA;StageTableTransf.TotalIndividuals as TotalIndividuals,&#xA;StageTableTransf.Podgrupa as Podgrupa,&#xA;StageTableTransf.[A16-49] as [A16-49],&#xA;StageTableTransf.[M16-49] as [M16-49],&#xA;StageTableTransf.[A4-15] as [A4-15],&#xA;StageTableTransf.[A4-9] as [A4-9]&#xA;&#xA;FROM dbo.StageTableTransf&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="&#xA;GO&#xA; &#xA; &#xA;--************************************** [Transmision]&#xA; &#xA;CREATE TABLE [Transmision]&#xA;(&#xA; [TransmitionID]        INT IDENTITY (1, 1)  NOT NULL ,&#xA; [TargetID]                     INT NULL ,&#xA; [AMR]                  FLOAT NULL ,&#xA; [AMRpct]               FLOAT NULL ,&#xA; [RCH]                          FLOAT NULL ,&#xA; [RCHpct]                       FLOAT NULL ,&#xA; [SHRpct]                       FLOAT NULL ,&#xA; [TimeID]                       INT NULL   ,&#xA; [ChannelID]            INT NULL   ,&#xA; [ProgramID]            INT NULL   ,&#xA; [Duration]                     TIME(7) NULL  ,&#xA; [DateID]                       INT NULL   ,&#xA; [DateTVID]                     INT NULL   ,&#xA; &#xA; CONSTRAINT [PK_Transmision] PRIMARY KEY CLUSTERED ([TransmitionID] ASC)&#xA;);&#xA;GO&#xA; &#xA;INSERT INTO [Transmision]&#xA;([TargetID],&#xA; [AMR],&#xA; [AMRpct],&#xA; [RCH],&#xA; [RCHpct],&#xA; [SHRpct],&#xA; [TimeID],&#xA; [Duration],&#xA; [ChannelID],&#xA; [ProgramID],&#xA; [DateID],&#xA; [DateTVID]&#xA;)&#xA; &#xA;SELECT &#xA; &#xA;StageChangedColumns.TargetID as TargetID,&#xA;StageChangedColumns.AMR as AMR,&#xA;StageChangedColumns.AMRpct as AMRpct,&#xA;StageChangedColumns.RCH as RCH,&#xA;StageChangedColumns.RCHpct as RCHpct,&#xA;StageChangedColumns.SHRpct as SHRpct,&#xA; &#xA;StageChangedColumns.TimeID as TimeID,&#xA;StageChangedColumns.Duration as Duration,&#xA; &#xA;(SELECT ChannelID&#xA;FROM Channel&#xA;WHERE dbo.Channel.ChannelName = dbo.StageChangedColumns.Channel&#xA;) as ChannelID,&#xA; &#xA;(SELECT ProgramID&#xA;FROM Program&#xA;WHERE dbo.Program.Description = dbo.StageChangedColumns.Description AND dbo.Program.SecondDescription = dbo.StageChangedColumns.SecondDescription&#xA;) as ProgramID,&#xA; &#xA; &#xA;(SELECT tdateTableID&#xA;FROM tDateTable&#xA;WHERE dbo.tDateTable.date = dbo.StageChangedColumns.date&#xA;) as DateTVID,&#xA; &#xA;(case when TimeID &lt; 240000 then (SELECT tdateTableID &#xA;         FROM tDateTable &#xA;         WHERE dbo.tDateTable.date = dbo.StageChangedColumns.Date)  &#xA; &#xA;                 else (SELECT tdateTableID &#xA;         FROM tDateTable &#xA;         WHERE dbo.tDateTable.date = DATEADD(day,1,(dbo.StageChangedColumns.Date))) end) as DateID&#xA; &#xA; &#xA;FROM dbo.StageChangedColumns" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -6190,19 +8620,59 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{39BA3AD4-199B-415E-9C1B-BEDF8C888DE2}"
+      DTS:DTSID="{0F8BA2DA-6EA8-4CF8-AE99-E9B025478FF2}"
       DTS:From="Package\Uzupelnienie pustych pol"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Zamiana na klucze obce" />
+      DTS:To="Package\Zamiana kolum i wierszy miejscami" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{AF07745C-308F-4C39-B8C7-1F259D7B929C}"
-      DTS:From="Package\Zamiana na klucze obce"
+      DTS:DTSID="{AC9D2696-03A8-4831-887F-A0FC39D4A6A0}"
+      DTS:From="Package\Zamiana kolum i wierszy miejscami"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Uzupełnianie transmision" />
+      DTS:To="Package\Tworzenie czasów" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{642B96A0-676C-4152-B78D-39F3F9873EB4}"
+      DTS:From="Package\Tworzenie czasów"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Populate Program" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{926C2C8C-B3BE-4DDE-AAB3-9EF3DE73787C}"
+      DTS:From="Package\Populate Program"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Populate channel" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{FF95428A-3CB4-48FD-B10D-C6B232F63E98}"
+      DTS:From="Package\Populate channel"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Populate Target" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{B5A7E0FA-0E08-497B-93B2-BDFB5F3CA2F2}"
+      DTS:From="Package\Populate Target"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Tworzenie dat" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{B600CBE3-54E9-47B2-AFDF-8E3C89D80989}"
+      DTS:From="Package\Tworzenie dat"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Zamiana na klucze obce i wypelnienie tabeli faktow" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -6215,7 +8685,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="196,42"
           Id="Package\Imprt txt"
@@ -6233,27 +8703,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Populate Target"
           TopLeft="747,99" />
         <NodeLayout
+          Size="245,42"
+          Id="Package\Zamiana kolum i wierszy miejscami"
+          TopLeft="83,227" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Tworzenie czasów"
+          TopLeft="412,154" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Tworzenie dat"
+          TopLeft="702.25,269.75" />
+        <NodeLayout
           Size="196,42"
           Id="Package\Uzupelnienie pustych pol"
           TopLeft="97,131" />
         <NodeLayout
           Size="192,42"
-          Id="Package\Zamiana na klucze obce"
-          TopLeft="104,258" />
-        <NodeLayout
-          Size="146,42"
-          Id="Package\Tworzenie dat"
-          TopLeft="651,181" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Tworzenie czasów"
-          TopLeft="412,154" />
+          Id="Package\Zamiana na klucze obce i wypelnienie tabeli faktow"
+          TopLeft="78,314.75" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="236,79">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="-41,52"
               Start="0,0"
               End="-41,44.5">
@@ -6284,18 +8758,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="197.5,173">
+          TopLeft="195,173">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,85"
+              StartConnector="{x:Null}"
+              EndConnector="10.5,54"
               Start="0,0"
-              End="0,77.5">
+              End="10.5,46.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.5" />
+                    End="0,23" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23"
+                    Point2="0,27"
+                    Point3="4,27" />
+                  <mssgle:LineSegment
+                    End="6.5,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.5,27"
+                    Point2="10.5,27"
+                    Point3="10.5,31" />
+                  <mssgle:LineSegment
+                    End="10.5,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6304,36 +8790,196 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="196,42"
-          Id="Package\Uzupełnianie transmision"
-          TopLeft="86,348" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="200,300">
+          TopLeft="245,227">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-16,48"
+              StartConnector="{x:Null}"
+              EndConnector="253,-31"
               Start="0,0"
-              End="-16,40.5">
+              End="253,-23.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20" />
+                    End="0,-8.52068126520681" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20"
-                    Point2="0,24"
-                    Point3="-4,24" />
+                    Point1="0,-8.52068126520681"
+                    Point2="0,-12.5206812652068"
+                    Point3="4,-12.5206812652068" />
                   <mssgle:LineSegment
-                    End="-12,24" />
+                    End="249,-12.5206812652068" />
                   <mssgle:CubicBezierSegment
-                    Point1="-12,24"
-                    Point2="-16,24"
-                    Point3="-16,28" />
+                    Point1="249,-12.5206812652068"
+                    Point2="253,-12.5206812652068"
+                    Point3="253,-16.5206812652068" />
                   <mssgle:LineSegment
-                    End="-16,40.5" />
+                    End="253,-23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="498,154">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="27.5,-29"
+              Start="0,0"
+              End="27.5,-21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-10.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-10.5"
+                    Point2="0,-14.5"
+                    Point3="4,-14.5" />
+                  <mssgle:LineSegment
+                    End="23.5,-14.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.5,-14.5"
+                    Point2="27.5,-14.5"
+                    Point3="27.5,-18.5" />
+                  <mssgle:LineSegment
+                    End="27.5,-21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="525.5,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="86,-36.5"
+              Start="0,0"
+              End="78.5,-36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-32.5"
+                    Point2="0,-36.5"
+                    Point3="4,-36.5" />
+                  <mssgle:LineSegment
+                    End="78.5,-36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="691,67.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="133,31.5"
+              Start="0,0"
+              End="133,24">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.75"
+                    Point2="0,15.75"
+                    Point3="4,15.75" />
+                  <mssgle:LineSegment
+                    End="129,15.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="129,15.75"
+                    Point2="133,15.75"
+                    Point3="133,19.75" />
+                  <mssgle:LineSegment
+                    End="133,24" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="824,141">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="-48.75,128.75"
+              Start="0,0"
+              End="-48.75,121.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60.375"
+                    Point2="0,64.375"
+                    Point3="-4,64.375" />
+                  <mssgle:LineSegment
+                    End="-44.75,64.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-44.75,64.375"
+                    Point2="-48.75,64.375"
+                    Point3="-48.75,68.375" />
+                  <mssgle:LineSegment
+                    End="-48.75,121.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="702.25,290.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="-432.25,45.0000000000001"
+              Start="0,0"
+              End="-424.75,45.0000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-212.125,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-212.125,0"
+                    Point2="-216.125,0"
+                    Point3="-216.125,4" />
+                  <mssgle:LineSegment
+                    End="-216.125,41.0000000000001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-216.125,41.0000000000001"
+                    Point2="-216.125,45.0000000000001"
+                    Point3="-220.125,45.0000000000001" />
+                  <mssgle:LineSegment
+                    End="-424.75,45.0000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6349,7 +8995,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Imprt txt">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Imprt txt\OLE DB Destination"
@@ -6363,7 +9009,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="295.5,109">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="75,143"
               Start="0,0"
               End="75,135.5">
@@ -6389,7 +9035,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6412,7 +9060,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Populate channel">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Populate channel\OLE DB Destination"
@@ -6430,7 +9078,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="300.5,228">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="-27,98"
               Start="0,0"
               End="-27,90.5">
@@ -6456,7 +9104,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6464,7 +9114,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="271,97">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="29.5,89"
               Start="0,0"
               End="29.5,81.5">
@@ -6490,7 +9140,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6526,7 +9178,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Populate Program">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Populate Program\OLE DB Source"
@@ -6544,7 +9196,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="253,96">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="75.5,102"
               Start="0,0"
               End="75.5,94.5">
@@ -6570,7 +9222,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6578,7 +9232,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="328.5,240">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="-101,91"
               Start="0,0"
               End="-101,83.5">
@@ -6604,7 +9258,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6640,7 +9296,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Populate Target">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Populate Target\OLE DB Destination"
@@ -6654,7 +9310,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="362.5,303">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="54,83"
               Start="0,0"
               End="54,75.5">
@@ -6680,7 +9336,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6700,10 +9358,140 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Zamiana kolum i wierszy miejscami">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Zamiana kolum i wierszy miejscami\OLE DB Source"
+          TopLeft="236,79" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Zamiana kolum i wierszy miejscami\Script Component"
+          TopLeft="313,172" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination"
+          TopLeft="329,318" />
+        <EdgeLayout
+          Id="Package\Zamiana kolum i wierszy miejscami.Paths[Pivot]"
+          TopLeft="394.5,214">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="20,104"
+              Start="0,0"
+              End="20,96.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48"
+                    Point2="0,52"
+                    Point3="4,52" />
+                  <mssgle:LineSegment
+                    End="16,52" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16,52"
+                    Point2="20,52"
+                    Point3="20,56" />
+                  <mssgle:LineSegment
+                    End="20,96.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-1.40138671875,57,22.8027734375,9.470703125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zamiana kolum i wierszy miejscami.Paths[OLE DB Source Output]"
+          TopLeft="311,121">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="83.5,51"
+              Start="0,0"
+              End="83.5,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="4,25.5" />
+                  <mssgle:LineSegment
+                    End="79.5,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.5,25.5"
+                    Point2="83.5,25.5"
+                    Point3="83.5,29.5" />
+                  <mssgle:LineSegment
+                    End="83.5,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="sh"
+          ParentId="Package\Zamiana kolum i wierszy miejscami"
+          Size="40,37"
+          Id="d9fcbe41-5241-4fd5-992f-68dba7e790ad"
+          TopLeft="1912,5.5">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo>
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zamiana kolum i wierszy miejscami\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Uzupelnienie pustych pol">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="163,42"
           Id="Package\Uzupelnienie pustych pol\Script Component"
@@ -6721,7 +9509,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="228.5,227">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="23,132"
               Start="0,0"
               End="23,124.5">
@@ -6747,7 +9535,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6755,7 +9545,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="244,105">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{assembly:Null}"
+              StartConnector="{x:Null}"
               EndConnector="-15.5,80"
               Start="0,0"
               End="-15.5,72.5">
@@ -6781,7 +9571,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6802,69 +9594,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Uzupelnienie pustych pol\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Uzupełnianie transmision">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Uzupełnianie transmision\OLE DB Source"
-          TopLeft="210,35" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Uzupełnianie transmision\Script Component"
-          TopLeft="305,192" />
-        <EdgeLayout
-          Id="Package\Uzupełnianie transmision.Paths[OLE DB Source Output]"
-          TopLeft="285,77">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="101.5,115"
-              Start="0,0"
-              End="101.5,107.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,53.5"
-                    Point2="0,57.5"
-                    Point3="4,57.5" />
-                  <mssgle:LineSegment
-                    End="97.5,57.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="97.5,57.5"
-                    Point2="101.5,57.5"
-                    Point3="101.5,61.5" />
-                  <mssgle:LineSegment
-                    End="101.5,107.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Uzupełnianie transmision\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
