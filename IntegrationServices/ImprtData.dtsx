@@ -8,12 +8,12 @@
   DTS:Description="SSIS Package Description"
   DTS:DTSID="{C3480927-7E1D-4BFF-97EC-D8734FDBC078}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LastModifiedProductVersion="14.0.3002.101"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="ImprtData"
-  DTS:VersionBuild="97"
-  DTS:VersionGUID="{C06BBC59-A7D1-43A9-971F-F91001F07426}">
+  DTS:VersionBuild="148"
+  DTS:VersionGUID="{B4847E25-50C5-4889-BF7F-9318D5975AEE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -716,12 +716,7 @@
       DTS:ObjectName="hd.database.windows.net.HurtownieDanych.kamil 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIe87m20KOkWXYzklbTizowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxEYgy2lNrlhvqptiHGkrwhfKZNTW6ebVSM9ObEzdkWQAAAAAOgAAAAAIAACAAAAAu6ayKCFMw/w9dtk8Zs8hb+KnmpiVr4vurj5FV3019LCAAAAB3NHRTiFrwCNT5E2vKz8eb1o6unxlfX11vRa0c0af3UkAAAABWaYDwMu7VCRRNc8p+xlIuwxrCNsp5xnlb21RmSqmsW29dOx6GL7GlhrjPlx3T+ir2kVNHrV2oGbGibQRE4Na7</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -731,11 +726,36 @@
       DTS:ObjectName="hd.database.windows.net.HurtownieDanych.kamil 2">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5ABD7372-5A4C-4568-9B41-0208836E2611}"
+      DTS:ObjectName="hd.database.windows.net.HurtownieDanych.kamil 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIe87m20KOkWXYzklbTizowAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACK+t8DPHou8u6MMaepxZKeiqBNohKiOpmdfgVpW2rHGgAAAAAOgAAAAAIAACAAAAAUX2nhQbkbT2V9SoCzcG3m97OknDSGGBMPK0x7ZG8cuCAAAABq/zv91Q/6W8IcfnKln7FWl9pao17gjZltUZxajiPHBEAAAACKwWu/jxh+BjBT1oTLItJtP+dHG5Wk+2m8WozB2VPOuQIJBD9EUuYo/ZBhxgRRvxpJgrMjkiGyNvj9+4eb5FBA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAq/403ian6Ea9A8qu9wYfjgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD0WNwDOXYhCkV749ehKtKuB+EGk6tZlmux1eS+Q+kqQgAAAAAOgAAAAAIAACAAAAAfFeE2ykt2JHrCxZLWTBEA25WScy/uVNp0nerB7ehQFSAAAAAAP7L7dkUZSBAd0fHwBrMVJBqQkchxJ8B9OQsZDwjL/UAAAABFh2zvMYnWpFV+Vz7OZXda5TXL44JyjLPGlJwWaa5OrHnkZ/UzuOgmEVpuigiyio7pxqXjMZAaAQb4RWtJp/Fj</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E1910883-7E02-4127-BE86-D46E86D14E4B}"
+      DTS:ObjectName="hd.database.windows.net.HurtownieDanych.kamil 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=hd.database.windows.net;User ID=kamil;Initial Catalog=HurtownieDanych;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAq/403ian6Ea9A8qu9wYfjgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABJdIFYxnBSTLq0Rng4Ft42eYC5q5ssdVstIMX3zdxvUQAAAAAOgAAAAAIAACAAAAC/4ItS0lsMn973MgV+wuI96gXTdpwHW3S2heWAo2TJliAAAADt6bdePhWKlnUW4gAJqLVxYJD/IlpCgjOvAkS+E0XnnEAAAACEYQujzY6iLkmVBUKEnNLrjwtxTFPNWfyQOOguuwRy8dvo1hpaq3L/7CnZwHDMa4DJrbFkfXdiOa8lrW2tJ5Wa</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1565,8 +1585,8 @@
               <connections>
                 <connection
                   refId="Package\Imprt txt\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1578,14 +1598,6 @@
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column13]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Column13"
-                      externalMetadataColumnId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
-                      lineageId="Package\Imprt txt\Flat File Source.Outputs[Flat File Source Output].Columns[Column13]" />
                     <inputColumn
                       refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
                       cachedCodepage="1252"
@@ -1693,12 +1705,6 @@
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Column13" />
                     <externalMetadataColumn
                       refId="Package\Imprt txt\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
                       codePage="1252"
@@ -1986,8 +1992,8 @@
               <connections>
                 <connection
                   refId="Package\Populate channel\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2099,8 +2105,8 @@
               <connections>
                 <connection
                   refId="Package\Populate channel\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2123,12 +2129,6 @@
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Populate channel\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Column13" />
                     <externalMetadataColumn
                       refId="Package\Populate channel\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
                       codePage="1252"
@@ -2459,8 +2459,8 @@
               <connections>
                 <connection
                   refId="Package\Populate Program\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2586,8 +2586,8 @@
               <connections>
                 <connection
                   refId="Package\Populate Program\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2633,12 +2633,6 @@
                       dataType="str"
                       length="70"
                       name="SecondDescription" />
-                    <externalMetadataColumn
-                      refId="Package\Populate Program\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Column13" />
                     <externalMetadataColumn
                       refId="Package\Populate Program\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
                       codePage="1252"
@@ -2763,6 +2757,7 @@
       DTS:refId="Package\Populate Target"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{D1F1C19D-4121-4645-842E-BC5A82524EF1}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -2772,7 +2767,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{ED4EC087-A828-4A19-9FA1-8C6ECC9579A0}"
+          SQLTask:Connection="{5ABD7372-5A4C-4568-9B41-0208836E2611}"
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="INSERT INTO [dbo].[Target]&#xA;           ([TargetName])&#xA;     VALUES&#xA;           ('TotalIndividuals'),&#xA;&#x9;&#x9;   ('Podgrupa'),&#xA;&#x9;&#x9;   ('A16-49'),&#xA;&#x9;&#x9;   ('M16-49'),&#xA;&#x9;&#x9;   ('A4-15'),&#xA;&#x9;&#x9;   ('A4-9')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -2787,11 +2782,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Tworzenie czasów"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
+          SQLTask:Connection="{5ABD7372-5A4C-4568-9B41-0208836E2611}"
           SQLTask:SqlStatementSource="CREATE TABLE [DimTime](&#xA;&#xA;[TimeKey] [int] NOT NULL,&#xA;&#xA;[Hour] [int] NULL,&#xA;&#xA;[HourTV] [int] NULL,&#xA;&#xA;[Minute] [int] NULL,&#xA;&#xA;[Second] [int] NULL,&#xA;&#xA;[Time] [time](7) NULL,&#xA;&#xA;CONSTRAINT [PK_DimTime] PRIMARY KEY CLUSTERED&#xA;&#xA;(&#xA;&#xA;[TimeKey] ASC&#xA;&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;&#xA;) ON [PRIMARY]&#xA;&#xA;&#xA;declare @hour int&#xA;&#xA;declare @minute int&#xA;&#xA;declare @second int&#xA;&#xA;&#xA;set @hour=0&#xA;&#xA;&#xA;while @hour&lt;24&#xA;&#xA;begin&#xA;&#xA;set @minute=0&#xA;&#xA;while @minute&lt;60&#xA;&#xA;begin&#xA;&#xA;set @second=0&#xA;&#xA;while @second&lt;60&#xA;&#xA;begin&#xA;&#xA;&#xA;INSERT INTO [dbo].[DimTime]&#xA;&#xA;([TimeKey]&#xA;&#xA;,[Hour]&#xA;,[HourTV]&#xA;,[Minute]&#xA;,[Second]&#xA;,[Time])&#xA;&#xA;&#xA;select&#xA;&#xA;(@hour*10000) + (@minute*100) + @second as TimeKey,&#xA;&#xA;@hour as [Hour],&#xA;&#xA;(case when @hour=0 then 24&#xA;&#x9; when @hour=1 then 25&#xA;&#x9; else @hour end) as [HourTV],&#xA;&#xA;&#xA;@minute as [Minute],&#xA;&#xA;@second as [Second],&#xA;&#xA;convert(time,right('0'+convert(varchar(2),@hour),2)+':'+&#xA;&#xA;right('0'+convert(varchar(2),@minute),2)+':'+&#xA;&#xA;right('0'+convert(varchar(2),@second),2)) as [FullTime]&#xA;&#xA;set @second=@second+1&#xA;&#xA;&#xA;end&#xA;&#xA;set @minute=@minute+1&#xA;&#xA;end&#xA;&#xA;set @hour=@hour+1&#xA;&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2805,12 +2800,31 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Tworzenie dat"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
+          SQLTask:Connection="{5ABD7372-5A4C-4568-9B41-0208836E2611}"
           SQLTask:SqlStatementSource="&#xA;&#xA;--************************************** [tDateTable]&#xA;&#xA;CREATE TABLE [tDateTable]&#xA;(&#xA; [tdateTableID] INT IDENTITY (1, 1) NOT NULL ,&#xA; [date]         DATE NOT NULL ,&#xA; [year]         INT NOT NULL ,&#xA; [month]        INT NOT NULL ,&#xA; [day]          INT NOT NULL ,&#xA; [dw]           INT NOT NULL ,&#xA; [dy]           INT NOT NULL ,&#xA; [wy]           INT NOT NULL ,&#xA; [qy]           INT NOT NULL ,&#xA; [Mname]        NVARCHAR(30) NOT NULL ,&#xA; [Dname]        NVARCHAR(30) NOT NULL ,&#xA; [endm]         INT NOT NULL ,&#xA; [StartDay]     DATETIME NOT NULL ,&#xA; [EndDay]       DATETIME NOT NULL ,&#xA; [dfloat]       FLOAT NOT NULL ,&#xA; [dint]         INT NOT NULL ,&#xA;&#xA; CONSTRAINT [PK_tDateTable] PRIMARY KEY CLUSTERED ([tdateTableID] ASC)&#xA;);&#xA;GO&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;set language Polish;&#xA;WITH DatesTable&#xA;AS&#xA;(&#xA;  SELECT CAST('19000101' as date) AS [date], year('19000101') [year],MONTH('19000101') [month], DAY('19000101') [day], DATEpart(dw,'19000101') dw&#xA;  , DATEpart(dy,'19000101') dy&#xA;  , DATEpart(wk,'19000101') wy&#xA;  , DATEpart(q,'19000101') qy&#xA;  , datename(month,'19000101') Mname&#xA;  , datename(dw,'19000101') Dname&#xA;  , 0 endm&#xA;  , CAST('19000101' as datetime) StartDay&#xA;  , dateadd(s,-1,dateadd(dd,1,CAST('19000101' as datetime))) EndDay&#xA;  , cast(CAST('19000101' as datetime) as float) dfloat&#xA;  ,YEAR(CAST('19000101' as date))*100000+MONTH(CAST('19000101' as date))*1000+DAY(CAST('19000101' as date)) dint&#xA;  UNION ALL&#xA;  SELECT DATEADD(dd, 1, [date]), year(DATEADD(dd, 1, [date])) year, MONTH(DATEADD(dd, 1, [date])) month, DAY(DATEADD(dd, 1, [date])) day, &#xA;  DATEpart(dw,DATEADD(dd, 1, [date])) dateofweek&#xA;  , DATEpart(dy,DATEADD(dd, 1, [date])) dateofyear&#xA;  , DATEpart(wk,DATEADD(dd, 1, [date])) weekofyear&#xA;  , DATEpart(q,DATEADD(dd, 1, [date])) quarterofyear&#xA;  , datename(month,DATEADD(dd, 1, [date])) Mname&#xA;  , datename(dw,DATEADD(dd, 1, [date])) Dname&#xA;  , case when  CAST(DATEADD(dd, 1, [date]) as date) = cast(dateadd(s,-1,dateadd(month,1,(CONVERT(datetime,'01-'+right('0'+convert(char(2),MONTH(DATEADD(dd, 1, [date]))),2)+'-'+convert(char(4),YEAR(DATEADD(dd, 1, [date]))),0)))) as date) then 1 else 0 end endm&#xA;  , CAST('19000101' as datetime) StartDay&#xA;  , dateadd(s,-1,dateadd(dd,1,DATEADD(dd, 1, cast([date] as datetime)))) EndDay&#xA;  , cast(CAST( DATEADD(dd, 1, [date]) as datetime) as float) dfloat&#xA;  ,YEAR(DATEADD(dd, 1, [date]))*100000+MONTH(DATEADD(dd, 1, [date]))*1000+DAY(DATEADD(dd, 1, [date])) dint&#xA;  FROM DatesTable&#xA;  WHERE DATEADD(dd, 1, [date]) &lt;= '20300101'&#xA;)&#xA;&#xA;INSERT INTO tDateTable&#xA;SELECT * FROM DatesTable&#xA;OPTION (MAXRECURSION 0);&#xA; &#xA; &#xA; &#xA;go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tworzenie tabel wymiarów i faktu"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{D87BB04C-7AA0-48B8-B0E1-9A30D5B4C181}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tworzenie tabel wymiarów i faktu"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5ABD7372-5A4C-4568-9B41-0208836E2611}"
+          SQLTask:SqlStatementSource="-- ****************** SqlDBM: Microsoft SQL Server ******************&#xA;-- ******************************************************************&#xA; &#xA;&#xA; &#xA; &#xA;--************************************** [Target]&#xA; &#xA;CREATE TABLE [Target]&#xA;(&#xA; [TargetID]   INT IDENTITY (1, 1) NOT NULL ,&#xA; [TargetName] VARCHAR(50) NOT NULL ,&#xA; &#xA; CONSTRAINT [PK_Target] PRIMARY KEY CLUSTERED ([TargetID] ASC)&#xA;);&#xA;GO&#xA; &#xA; &#xA; &#xA;--************************************** [Channel]&#xA; &#xA;CREATE TABLE [Channel]&#xA;(&#xA; [ChannelID]   INT IDENTITY (1, 1) NOT NULL ,&#xA; [ChannelName] VARCHAR(50) NOT NULL ,&#xA; &#xA; CONSTRAINT [PK_Channel] PRIMARY KEY CLUSTERED ([ChannelID] ASC)&#xA;);&#xA;GO&#xA; &#xA; &#xA; &#xA;--************************************** [Program]&#xA; &#xA;CREATE TABLE [Program]&#xA;(&#xA; [ProgramID]         INT IDENTITY (1, 1) NOT NULL ,&#xA; [Description]       VARCHAR(70) NULL ,&#xA; [SecondDescription] VARCHAR(70) NULL ,&#xA; &#xA; CONSTRAINT [PK_Program] PRIMARY KEY CLUSTERED ([ProgramID] ASC)&#xA;);&#xA;GO&#xA; &#xA; &#xA; &#xA;--************************************** [Transmition]&#xA; &#xA;CREATE TABLE [Transmition]&#xA;(&#xA; [TransmitionID] INT IDENTITY (1, 1) NOT NULL ,&#xA; [TimeID]        INT NOT NULL ,&#xA; [TargetID]      INT NOT NULL ,&#xA; [ChannelID]     INT NOT NULL ,&#xA; [ProgramID]     INT NOT NULL ,&#xA; [AMR]           FLOAT NOT NULL ,&#xA; [AMRpct]        FLOAT NOT NULL ,&#xA; [RCH]           FLOAT NOT NULL ,&#xA; [RCHpct]        FLOAT NOT NULL ,&#xA; [SHRpct]        FLOAT NOT NULL ,&#xA; [Duration]      TIME(7) NOT NULL ,&#xA; [DateID]        INT NOT NULL ,&#xA; [DateTVID]      INT NOT NULL ,&#xA; &#xA; CONSTRAINT [PK_Transmition] PRIMARY KEY CLUSTERED ([TransmitionID] ASC),&#xA; CONSTRAINT [FK_71] FOREIGN KEY ([TimeID])&#xA;  REFERENCES [DimTime]([TimeKey]),&#xA; CONSTRAINT [FK_75] FOREIGN KEY ([TargetID])&#xA;  REFERENCES [Target]([TargetID]),&#xA; CONSTRAINT [FK_79] FOREIGN KEY ([ChannelID])&#xA;  REFERENCES [Channel]([ChannelID]),&#xA; CONSTRAINT [FK_83] FOREIGN KEY ([ProgramID])&#xA;  REFERENCES [Program]([ProgramID]),&#xA; CONSTRAINT [FK_87] FOREIGN KEY ([DateID])&#xA;  REFERENCES [tDateTable]([tdateTableID]),&#xA; CONSTRAINT [FK_113] FOREIGN KEY ([DateTVID])&#xA;  REFERENCES [tDateTable]([tdateTableID])&#xA;);&#xA;GO&#xA;"
+          SQLTask:TypeConversionMode="None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2844,7 +2858,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[StageTableTransf]</property>
+                  name="OpenRowset">[StageTableFull]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2887,8 +2901,8 @@
               <connections>
                 <connection
                   refId="Package\Uzupelnienie pustych pol\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2900,14 +2914,6 @@
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\Uzupelnienie pustych pol\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column13]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Column13"
-                      externalMetadataColumnId="Package\Uzupelnienie pustych pol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
-                      lineageId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].Columns[Column13]" />
                     <inputColumn
                       refId="Package\Uzupelnienie pustych pol\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
                       cachedCodepage="1252"
@@ -3015,12 +3021,6 @@
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Uzupelnienie pustych pol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Column13" />
                     <externalMetadataColumn
                       refId="Package\Uzupelnienie pustych pol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
                       codePage="1252"
@@ -3178,8 +3178,8 @@
               <connections>
                 <connection
                   refId="Package\Uzupelnienie pustych pol\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3188,17 +3188,6 @@
                   refId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].Columns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Column13]"
-                      length="50"
-                      lineageId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].Columns[Column13]"
-                      name="Column13"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].Columns[Date]"
                       codePage="1252"
@@ -3346,12 +3335,6 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Column13" />
-                    <externalMetadataColumn
                       refId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
                       codePage="1252"
                       dataType="str"
@@ -3436,13 +3419,6 @@
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Column13]"
-                      name="Column13" />
                     <outputColumn
                       refId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Date]"
                       codePage="1252"
@@ -3984,7 +3960,7 @@ public class Input0Buffer: ScriptBuffer
     {
     }
 
-    public String Column13
+    public String Date
     {
         get
         {
@@ -3995,7 +3971,7 @@ public class Input0Buffer: ScriptBuffer
             this[0] = value;
         }
     }
-    public bool Column13_IsNull
+    public bool Date_IsNull
     {
         get
         {
@@ -4014,7 +3990,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String Date
+    public String Channel
     {
         get
         {
@@ -4025,7 +4001,7 @@ public class Input0Buffer: ScriptBuffer
             this[1] = value;
         }
     }
-    public bool Date_IsNull
+    public bool Channel_IsNull
     {
         get
         {
@@ -4044,7 +4020,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String Channel
+    public String Description
     {
         get
         {
@@ -4055,7 +4031,7 @@ public class Input0Buffer: ScriptBuffer
             this[2] = value;
         }
     }
-    public bool Channel_IsNull
+    public bool Description_IsNull
     {
         get
         {
@@ -4074,7 +4050,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String Description
+    public String SecondDescription
     {
         get
         {
@@ -4085,7 +4061,7 @@ public class Input0Buffer: ScriptBuffer
             this[3] = value;
         }
     }
-    public bool Description_IsNull
+    public bool SecondDescription_IsNull
     {
         get
         {
@@ -4104,7 +4080,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String SecondDescription
+    public String StartTime
     {
         get
         {
@@ -4115,7 +4091,7 @@ public class Input0Buffer: ScriptBuffer
             this[4] = value;
         }
     }
-    public bool SecondDescription_IsNull
+    public bool StartTime_IsNull
     {
         get
         {
@@ -4134,7 +4110,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String StartTime
+    public String Duration
     {
         get
         {
@@ -4145,7 +4121,7 @@ public class Input0Buffer: ScriptBuffer
             this[5] = value;
         }
     }
-    public bool StartTime_IsNull
+    public bool Duration_IsNull
     {
         get
         {
@@ -4164,7 +4140,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String Duration
+    public String VariableTarget
     {
         get
         {
@@ -4175,7 +4151,7 @@ public class Input0Buffer: ScriptBuffer
             this[6] = value;
         }
     }
-    public bool Duration_IsNull
+    public bool VariableTarget_IsNull
     {
         get
         {
@@ -4194,7 +4170,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String VariableTarget
+    public String TotalIndividuals
     {
         get
         {
@@ -4205,7 +4181,7 @@ public class Input0Buffer: ScriptBuffer
             this[7] = value;
         }
     }
-    public bool VariableTarget_IsNull
+    public bool TotalIndividuals_IsNull
     {
         get
         {
@@ -4224,48 +4200,18 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String TotalIndividuals
-    {
-        get
-        {
-            return Buffer.GetString(BufferColumnIndexes[8]);
-        }
-        set
-        {
-            this[8] = value;
-        }
-    }
-    public bool TotalIndividuals_IsNull
-    {
-        get
-        {
-            return IsNull(8);
-        }
-        set
-        {
-            if (value)
-            {
-                SetNull(8);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
     public String Podgrupa
     {
         get
         {
-            return Buffer.GetString(BufferColumnIndexes[9]);
+            return Buffer.GetString(BufferColumnIndexes[8]);
         }
     }
     public bool Podgrupa_IsNull
     {
         get
         {
-            return IsNull(9);
+            return IsNull(8);
         }
     }
 
@@ -4273,14 +4219,14 @@ public class Input0Buffer: ScriptBuffer
     {
         get
         {
-            return Buffer.GetString(BufferColumnIndexes[10]);
+            return Buffer.GetString(BufferColumnIndexes[9]);
         }
     }
     public bool A1649_IsNull
     {
         get
         {
-            return IsNull(10);
+            return IsNull(9);
         }
     }
 
@@ -4288,14 +4234,14 @@ public class Input0Buffer: ScriptBuffer
     {
         get
         {
-            return Buffer.GetString(BufferColumnIndexes[11]);
+            return Buffer.GetString(BufferColumnIndexes[10]);
         }
     }
     public bool M1649_IsNull
     {
         get
         {
-            return IsNull(11);
+            return IsNull(10);
         }
     }
 
@@ -4303,14 +4249,14 @@ public class Input0Buffer: ScriptBuffer
     {
         get
         {
-            return Buffer.GetString(BufferColumnIndexes[12]);
+            return Buffer.GetString(BufferColumnIndexes[11]);
         }
     }
     public bool A415_IsNull
     {
         get
         {
-            return IsNull(12);
+            return IsNull(11);
         }
     }
 
@@ -4318,14 +4264,14 @@ public class Input0Buffer: ScriptBuffer
     {
         get
         {
-            return Buffer.GetString(BufferColumnIndexes[13]);
+            return Buffer.GetString(BufferColumnIndexes[12]);
         }
     }
     public bool A49_IsNull
     {
         get
         {
-            return IsNull(13);
+            return IsNull(12);
         }
     }
 
@@ -4395,6 +4341,7 @@ namespace SC_a11187ad05bf4f5e84e8224f7111e650.Properties {
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -4471,23 +4418,23 @@ namespace SC_a11187ad05bf4f5e84e8224f7111e650.Properties {
                       dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
                     <arrayElement
                       dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
   <msb:PropertyGroup>
-    <msb:Language>msBuild</msb:Language>
     <msb:CodeName>SC_a11187ad05bf4f5e84e8224f7111e650</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_a11187ad05bf4f5e84e8224f7111e650</msb:DisplayName>
-    <msb:ProjectId>{5D1893A1-4B1E-466E-A461-57A3582B00A2}</msb:ProjectId>
+    <msb:ProjectId>{672C4DEE-81FB-4358-A3A3-23D59DCF50B5}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_a11187ad05bf4f5e84e8224f7111e650.csproj" />
     <msb:File Include="Properties\Settings.settings" />
     <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
     <msb:File Include="main.cs" />
     <msb:File Include="BufferWrapper.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
     <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
   </msb:ItemGroup>
 </c:Project>]]></arrayElement>
                     <arrayElement
@@ -4623,21 +4570,21 @@ namespace SC_a11187ad05bf4f5e84e8224f7111e650.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[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
-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
+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
-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
+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
-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
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAmB4AAAAgAAAAIAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAiAAAAAAAAAAAAAAAAAABAAABA
-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
+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
@@ -4647,131 +4594,131 @@ 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
-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
-AACGCDgGuAAUAMwjAAAAAIYIyQm0ABUA4SMAAAAAhgjeCRAAFQDrIwAAAACGCOYFQwAWAPQjAAAA
-AIYIAga4ABYACyQAAAAAhgjjALQAFwAhJAAAAACGCNIEQwAXACskAAAAAIYItgC0ABcAQSQAAAAA
-hgihBEMAFwBLJAAAAACGCMAAtAAXAGEkAAAAAIYIsgRDABcAayQAAAAAhgitALQAFwCBJAAAAACG
-CJEEQwAXAIskAAAAAIYIygC0ABcAoSQAAAAAhgjDBEMAFwCrJAAAAACGAOIKQwAXALMkAAAAAIYA
-MwpDABcAuyQAAAAAhhi/CAYAFwDbJAAAAADGAL4KvQAXAAAlAAAAAMYBtwquABsAEyUAAAAAxgHL
-Cq4AHAAVJQAAAACGGL8IxwAdACQlAAAAAIYIBAdlAB4ARSUAAAAAhhi/CMcAHgBUJQAAAACDGL8I
-BgAfAFwlAAAAAJMIRAjNAB8AiCUAAAAAkwi4AdIAHwCPJQAAAACTCMQB1wAfAJclAAAAAJYIPwrd
-ACAAniUAAAAAhhi/CAYAIACmJQAAAACRGMUI4gAgAAAAAQDmCgAAAQA9CAAAAgCbCQAAAwDKBwAA
-AQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDd
-AwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDdAwAAAQDbAAAA
-AgBDAQAAAwA9CAAABADKBwAAAQA9CAAAAQDmCgAAAQBvCgAAAQBvCgAAAQDdAwkAvwgBABEAvwgG
-ABkAvwgKACkAvwgQADEAvwgQADkAvwgQAEEAvwgQAEkAvwgQAFEAvwgQAFkAvwgQAGEAvwgQAGkA
-vwgGAKEAvwgGAMEAvwgVANEAvwgGAIkAxgMGAIkA0QMGANkA9wobAHEAvwghAHEAPQgrAHEAmwkv
-AHkA/QMzAHEAWgY4AHEASwY+AHEAUgYBAOEAvwgQAHEA4gpDAHEAMwpDAIkAvwgGANkA8wlHAIkA
-rwlOAJEAvwgGAIkA8ABUAPEA5AZZAPkATQFeAAEBWAhlAAkBMQFqAAkB6gpzAKkAvwh5AMkAvwgG
-AC4ACwACAS4AEwALAS4AGwAqAS4AIwAzAS4AKwBcAS4AMwBcAS4AOwBcAS4AQwAzAS4ASwBiAS4A
-UwBcAS4AWwB5AUMAYwDDAeMAawDDAaEBewDDAckDcwAqAekDcwAqAQMAAQAFAB0ABwAeAAgAIAAA
-AKQA5gAAAIEE6gAAAA4C5gAAACQF6gAAADkE5gAAAEcF6gAAAJMH5gAAANMF6gAAAH0H5gAAAM0F
-6gAAAIgB5gAAAP8E6gAAAJ8G5gAAAG4F6gAAACQK5gAAADwG6gAAAOIJ5gAAAAYG6gAAAOcA5gAA
-ANYE6gAAALoA5gAAAKUE6gAAAMQA5gAAALYE6gAAALEA5gAAAJUE6gAAAM4A5gAAAMcE6gAAAAgH
-7gAAAEgI8wAAANgB+AAAAEMK/QACAAYAAwABAAcAAwACAAgABQABAAkABQACAAoABwABAAsABwAC
-AAwACQABAA0ACQACAA4ACwABAA8ACwACABAADQABABEADQACABIADwABABMADwACABQAEQABABUA
-EQACABYAEwABABcAEwACABgAFQABABkAFQACABoAFwABABsAFwACABwAGQABAB0AGQACAB4AGwAB
-AB8AGwACACAAHQABACEAHQACACIAHwABACMAHwACACQAIQABACUAIQACACYAIwABACcAIwACACgA
-JQABACkAJQACACoAJwACACsAKQACACwAKwACAC0ALQACAC4ALwACAC8AMQACADAAMwACADEANQAC
-ADIANwACADMAOQACADsAOwACAD4APQACAD8APwABAEAAPwACAEEAQQAEgAAAAQAAAAAAAAAAAAAA
-AABvAAAABAAAAAAAAAAAAAAAgQAGAQAAAAAOAAAAAAAAAAAAAACKAHkKAAAAAA4AAAAAAAAAAAAA
-AIoAlgoAAAAADgAAAAAAAAAAAAAAigDUBwAAAAAEAAAAAAAAAAAAAACBAGMGAAAAAA4AAAAAAAAA
-AAAAAIoA9wcAAAAAAAAAAAEAAAAQCQAAAAAASURUU0NvbXBvbmVudE1ldGFEYXRhMTAwAElEVFNS
-dW50aW1lQ29ubmVjdGlvbkNvbGxlY3Rpb24xMDAASURUU1J1bnRpbWVDb25uZWN0aW9uMTAwAElE
-VFNDb25uZWN0aW9uTWFuYWdlcjEwMABTQ19hMTExODdhZDA1YmY0ZjVlODRlODIyNGY3MTExZTY1
-MABnZXRfQ29sdW1uMTMAc2V0X0NvbHVtbjEzAGdldF9BNDE1AGdldF9BMTY0OQBnZXRfTTE2NDkA
-Z2V0X0E0OQA8TW9kdWxlPgBJbnB1dElEAGdldF9Qb2RncnVwYQBnZXRfQ29tcG9uZW50TWV0YURh
-dGEAbXNjb3JsaWIAZGVmYXVsdEluc3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9t
-SGFuZGxlAElucHV0TmFtZQBHZXRSdW50aW1lQ29ubmVjdGlvbkJ5TmFtZQBnZXRfU3RhcnRUaW1l
-AHNldF9TdGFydFRpbWUAbGFzdFN0YXJ0VGltZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBl
-bGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBBcHBsaWNh
-dGlvblNldHRpbmdzQmFzZQBnZXRfRGF0ZQBzZXRfRGF0ZQBsYXN0RGF0ZQBFZGl0b3JCcm93c2Fi
-bGVTdGF0ZQBDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0
-cmlidXRlAERlYnVnZ2FibGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2Vt
-Ymx5VGl0bGVBdHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3
-b3JrQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2Ny
-aXB0aW9uQXR0cmlidXRlAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQ
-cm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRDb21w
-b25lbnRFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1l
-Q29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBQcmVFeGVjdXRlAFBvc3RFeGVjdXRlAHZhbHVlAFN5c3Rl
-bS5SdW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAFN5c3RlbS5Db21wb25lbnRNb2RlbABnZXRf
-Q2hhbm5lbABzZXRfQ2hhbm5lbABsYXN0Q2hhbm5lbABTQ19hMTExODdhZDA1YmY0ZjVlODRlODIy
-NGY3MTExZTY1MC5kbGwAZ2V0X0NvbHVtbjEzX0lzTnVsbABzZXRfQ29sdW1uMTNfSXNOdWxsAGdl
-dF9BNDE1X0lzTnVsbABnZXRfQTE2NDlfSXNOdWxsAGdldF9NMTY0OV9Jc051bGwAZ2V0X0E0OV9J
-c051bGwAZ2V0X1BvZGdydXBhX0lzTnVsbABnZXRfU3RhcnRUaW1lX0lzTnVsbABzZXRfU3RhcnRU
-aW1lX0lzTnVsbABnZXRfRGF0ZV9Jc051bGwAc2V0X0RhdGVfSXNOdWxsAGdldF9DaGFubmVsX0lz
-TnVsbABzZXRfQ2hhbm5lbF9Jc051bGwAZ2V0X0R1cmF0aW9uX0lzTnVsbABzZXRfRHVyYXRpb25f
-SXNOdWxsAGdldF9EZXNjcmlwdGlvbl9Jc051bGwAc2V0X0Rlc2NyaXB0aW9uX0lzTnVsbABnZXRf
-U2Vjb25kRGVzY3JpcHRpb25fSXNOdWxsAHNldF9TZWNvbmREZXNjcmlwdGlvbl9Jc051bGwAZ2V0
-X1RvdGFsSW5kaXZpZHVhbHNfSXNOdWxsAHNldF9Ub3RhbEluZGl2aWR1YWxzX0lzTnVsbABnZXRf
-VmFyaWFibGVUYXJnZXRfSXNOdWxsAHNldF9WYXJpYWJsZVRhcmdldF9Jc051bGwAU2V0TnVsbABz
-ZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBnZXRfRHVyYXRpb24Ac2V0X0R1
-cmF0aW9uAGxhc3REdXJhdGlvbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXph
-dGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBnZXRfUnVudGltZUNvbm5lY3Rpb25Db2xsZWN0aW9uAGdl
-dF9Db25uZWN0aW9uAEludmFsaWRPcGVyYXRpb25FeGNlcHRpb24AZ2V0X0Rlc2NyaXB0aW9uAHNl
-dF9EZXNjcmlwdGlvbgBnZXRfU2Vjb25kRGVzY3JpcHRpb24Ac2V0X1NlY29uZERlc2NyaXB0aW9u
-AGxhc3RTZWNvbmREZXNjcmlwdGlvbgBsYXN0RGVzY3JpcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBD
-dWx0dXJlSW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABNaWNyb3NvZnQuU3FsU2VydmVyLkRU
-U1J1bnRpbWVXcmFwAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRFRTUGlwZWxpbmVXcmFwAElucHV0MEJ1
-ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgBnZXRf
-Q29ubmVjdGlvbk1hbmFnZXIATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUnVudGltZS5XcmFwcGVy
-AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lLldyYXBwZXIALmN0b3IALmNjdG9yAFN5
-c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5S
-ZXNvdXJjZXMAU0NfYTExMTg3YWQwNWJmNGY1ZTg0ZTgyMjRmNzExMWU2NTAuUHJvcGVydGllcy5S
-ZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDX2ExMTE4N2FkMDViZjRmNWU4NGU4
-MjI0ZjcxMTFlNjUwLlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0
-Q29sdW1uSW5kZXhlcwBTZXR0aW5ncwBnZXRfVG90YWxJbmRpdmlkdWFscwBzZXRfVG90YWxJbmRp
-dmlkdWFscwBFcXVhbHMAQ29ubmVjdGlvbnMAT2JqZWN0AGdldF9WYXJpYWJsZVRhcmdldABzZXRf
-VmFyaWFibGVUYXJnZXQARW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJl
-bnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQA
-TWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1
-dDBfUHJvY2Vzc0lucHV0Um93AE5leHRSb3cAZ2V0X0Fzc2VtYmx5AG9wX0VxdWFsaXR5AAAAAQCA
-m0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUA
-dAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABv
-ACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAD0kAbgBwAHUAdAAgADAA
-ABVDAG8AbgBuAGUAYwB0AGkAbwBuAABxUwBDAF8AYQAxADEAMQA4ADcAYQBkADAANQBiAGYANABm
-ADUAZQA4ADQAZQA4ADIAMgA0AGYANwAxADEAMQBlADYANQAwAC4AUAByAG8AcABlAHIAdABpAGUA
-cwAuAFIAZQBzAG8AdQByAGMAZQBzAAB1aR2YYRLHTaPEkWNqFNeJAAQgAQEIAyAAAQUgAQEREQQg
-AQEOBSABARFdBQACAg4OCSADARI9HQgSQQMGEj0DBh0IBCABDggFIAIBCBwEIAECCAMgAAIGIAIC
-DhF1BSABHQgIBCAAEnkEIAASfQYgARKAgQ4EIAASTQgAARKAhRGAiQUgABKAjQcgAgEOEoCNCLd6
-XFYZNOCJCImEXc2AgMyRAgYOAwYSFAMGEhgDBhJFAwYSVQMGElkDBhIgBSABARIMAyAADgQgAQEC
-CSAEAQgOEj0SQQUgAQESRQQAABJVBAAAElkFAAEBElkEAAASIAMAAAEDKAAOAygAAgQoABJNBAgA
-ElUECAASWQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIA
-AAAAACgBACNTQ19hMTExODdhZDA1YmY0ZjVlODRlODIyNGY3MTExZTY1MAAABQEAAAAAFgEAEUNv
-cHlyaWdodCBAICAyMDE4AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjUBAFQOFEZyYW1l
-d29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNQQBAAAAtAAAAM7K774BAAAAkQAAAGxT
-eXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4w
-LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVt
-LlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAFA/AAAA
-AAAAAAAAAGo/AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcPwAAAAAAAAAAAAAAAF9Db3JEbGxN
-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
+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
+JAAAAACGGH0IxwAbAOMkAAAAAIYIwgZlABwABCUAAAAAhhh9CMcAHAATJQAAAACDGH0IBgAdABsl
+AAAAAJMIAgjNAB0ARyUAAAAAkwieAdIAHQBOJQAAAACTCKoB1wAdAFYlAAAAAJYI/QndAB4AXSUA
+AAAAhhh9CAYAHgBlJQAAAACRGIMI4gAeAAAAAQCkCgAAAQD7BwAAAgBZCQAAAwCIBwAAAQDDAwAA
+AQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDD
+AwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDDAwAAAQDBAAAAAgApAQAAAwD7BwAABACIBwAA
+AQD7BwAAAQCkCgAAAQAtCgAAAQAtCgAAAQDDAwkAfQgBABEAfQgGABkAfQgKACkAfQgQADEAfQgQ
+ADkAfQgQAEEAfQgQAEkAfQgQAFEAfQgQAFkAfQgQAGEAfQgQAGkAfQgGAKEAfQgGAMEAfQgVANEA
+fQgGAIkArAMGAIkAtwMGANkAtQobAHEAfQghAHEA+wcrAHEAWQkvAHkA4wMzAHEAGAY4AHEACQY+
+AHEAEAYBAOEAfQgQAHEAoApDAHEA8QlDAIkAfQgGANkAsQlHAIkAbQlOAJEAfQgGAIkA1gBUAPEA
+ogZZAPkAMwFeAAEBFghlAAkBFwFqAAkBqApzAKkAfQh5AMkAfQgGAC4ACwACAS4AEwALAS4AGwAq
+AS4AIwAzAS4AKwBcAS4AMwBcAS4AOwBcAS4AQwAzAS4ASwBiAS4AUwBcAS4AWwB5AUMAYwDDAeMA
+awDDAaEBewDDAYkDcwAqAakDcwAqAQMAAQAFABsABwAcAAgAHgAAAPQB5gAAAOIE6gAAAB8E5gAA
+AAUF6gAAAFEH5gAAAJEF6gAAADsH5gAAAIsF6gAAAG4B5gAAAL0E6gAAAF0G5gAAACwF6gAAAOIJ
+5gAAAPoF6gAAAKAJ5gAAAMQF6gAAAM0A5gAAAJQE6gAAAKAA5gAAAGME6gAAAKoA5gAAAHQE6gAA
+AJcA5gAAAFME6gAAALQA5gAAAIUE6gAAAMYG7gAAAAYI8wAAAL4B+AAAAAEK/QACAAYAAwABAAcA
+AwACAAgABQABAAkABQACAAoABwABAAsABwACAAwACQABAA0ACQACAA4ACwABAA8ACwACABAADQAB
+ABEADQACABIADwABABMADwACABQAEQABABUAEQACABYAEwABABcAEwACABgAFQABABkAFQACABoA
+FwABABsAFwACABwAGQABAB0AGQACAB4AGwABAB8AGwACACAAHQABACEAHQACACIAHwABACMAHwAC
+ACQAIQABACUAIQACACYAIwACACcAJQACACgAJwACACkAKQACACoAKwACACsALQACACwALwACAC0A
+MQACAC4AMwACAC8ANQACADcANwACADoAOQACADsAOwABADwAOwACAD0APQAEgAAAAQAAAAAAAAAA
+AAAAAABvAAAABAAAAAAAAAAAAAAAgQDsAAAAAAAOAAAAAAAAAAAAAACKADcKAAAAAA4AAAAAAAAA
+AAAAAIoAVAoAAAAADgAAAAAAAAAAAAAAigCSBwAAAAAEAAAAAAAAAAAAAACBACEGAAAAAA4AAAAA
+AAAAAAAAAIoAtQcAAAAAAAAAAAEAAADOCAAAAAAASURUU0NvbXBvbmVudE1ldGFEYXRhMTAwAElE
+VFNSdW50aW1lQ29ubmVjdGlvbkNvbGxlY3Rpb24xMDAASURUU1J1bnRpbWVDb25uZWN0aW9uMTAw
+AElEVFNDb25uZWN0aW9uTWFuYWdlcjEwMABTQ19hMTExODdhZDA1YmY0ZjVlODRlODIyNGY3MTEx
+ZTY1MABnZXRfQTQxNQBnZXRfQTE2NDkAZ2V0X00xNjQ5AGdldF9BNDkAPE1vZHVsZT4ASW5wdXRJ
+RABnZXRfUG9kZ3J1cGEAZ2V0X0NvbXBvbmVudE1ldGFEYXRhAG1zY29ybGliAGRlZmF1bHRJbnN0
+YW5jZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUAR2V0UnVu
+dGltZUNvbm5lY3Rpb25CeU5hbWUAZ2V0X1N0YXJ0VGltZQBzZXRfU3RhcnRUaW1lAGxhc3RTdGFy
+dFRpbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBz
+ZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAZ2V0X0Rh
+dGUAc2V0X0RhdGUAbGFzdERhdGUARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0
+ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmli
+dXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2Vt
+Ymx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNv
+bmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxh
+dGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJs
+eUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0
+ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUA
+UHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAEdl
+dFN0cmluZwBTeXN0ZW0uQ29tcG9uZW50TW9kZWwAZ2V0X0NoYW5uZWwAc2V0X0NoYW5uZWwAbGFz
+dENoYW5uZWwAU0NfYTExMTg3YWQwNWJmNGY1ZTg0ZTgyMjRmNzExMWU2NTAuZGxsAGdldF9BNDE1
+X0lzTnVsbABnZXRfQTE2NDlfSXNOdWxsAGdldF9NMTY0OV9Jc051bGwAZ2V0X0E0OV9Jc051bGwA
+Z2V0X1BvZGdydXBhX0lzTnVsbABnZXRfU3RhcnRUaW1lX0lzTnVsbABzZXRfU3RhcnRUaW1lX0lz
+TnVsbABnZXRfRGF0ZV9Jc051bGwAc2V0X0RhdGVfSXNOdWxsAGdldF9DaGFubmVsX0lzTnVsbABz
+ZXRfQ2hhbm5lbF9Jc051bGwAZ2V0X0R1cmF0aW9uX0lzTnVsbABzZXRfRHVyYXRpb25fSXNOdWxs
+AGdldF9EZXNjcmlwdGlvbl9Jc051bGwAc2V0X0Rlc2NyaXB0aW9uX0lzTnVsbABnZXRfU2Vjb25k
+RGVzY3JpcHRpb25fSXNOdWxsAHNldF9TZWNvbmREZXNjcmlwdGlvbl9Jc051bGwAZ2V0X1RvdGFs
+SW5kaXZpZHVhbHNfSXNOdWxsAHNldF9Ub3RhbEluZGl2aWR1YWxzX0lzTnVsbABnZXRfVmFyaWFi
+bGVUYXJnZXRfSXNOdWxsAHNldF9WYXJpYWJsZVRhcmdldF9Jc051bGwAU2V0TnVsbABzZXRfSXRl
+bQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBnZXRfRHVyYXRpb24Ac2V0X0R1cmF0aW9u
+AGxhc3REdXJhdGlvbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBT
+eXN0ZW0uUmVmbGVjdGlvbgBnZXRfUnVudGltZUNvbm5lY3Rpb25Db2xsZWN0aW9uAGdldF9Db25u
+ZWN0aW9uAEludmFsaWRPcGVyYXRpb25FeGNlcHRpb24AZ2V0X0Rlc2NyaXB0aW9uAHNldF9EZXNj
+cmlwdGlvbgBnZXRfU2Vjb25kRGVzY3JpcHRpb24Ac2V0X1NlY29uZERlc2NyaXB0aW9uAGxhc3RT
+ZWNvbmREZXNjcmlwdGlvbgBsYXN0RGVzY3JpcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJl
+SW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABNaWNyb3NvZnQuU3FsU2VydmVyLkRUU1J1bnRp
+bWVXcmFwAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRFRTUGlwZWxpbmVXcmFwAElucHV0MEJ1ZmZlcgBQ
+aXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgBnZXRfQ29ubmVj
+dGlvbk1hbmFnZXIATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUnVudGltZS5XcmFwcGVyAE1pY3Jv
+c29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lLldyYXBwZXIALmN0b3IALmNjdG9yAFN5c3RlbS5E
+aWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJj
+ZXMAU0NfYTExMTg3YWQwNWJmNGY1ZTg0ZTgyMjRmNzExMWU2NTAuUHJvcGVydGllcy5SZXNvdXJj
+ZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDX2ExMTE4N2FkMDViZjRmNWU4NGU4MjI0Zjcx
+MTFlNjUwLlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0Q29sdW1u
+SW5kZXhlcwBTZXR0aW5ncwBnZXRfVG90YWxJbmRpdmlkdWFscwBzZXRfVG90YWxJbmRpdmlkdWFs
+cwBFcXVhbHMAQ29ubmVjdGlvbnMAT2JqZWN0AGdldF9WYXJpYWJsZVRhcmdldABzZXRfVmFyaWFi
+bGVUYXJnZXQARW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21w
+b25lbnQAU2NyaXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9z
+b2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJv
+Y2Vzc0lucHV0Um93AE5leHRSb3cAZ2V0X0Fzc2VtYmx5AG9wX0VxdWFsaXR5AAAAAAABAICbSQBz
+AE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAA
+dABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0
+AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEAZAAuAAAPSQBuAHAAdQB0ACAAMAAAFUMA
+bwBuAG4AZQBjAHQAaQBvAG4AAHFTAEMAXwBhADEAMQAxADgANwBhAGQAMAA1AGIAZgA0AGYANQBl
+ADgANABlADgAMgAyADQAZgA3ADEAMQAxAGUANgA1ADAALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4A
+UgBlAHMAbwB1AHIAYwBlAHMAAHr1icgvdGBOsoKGVkChuJEABCABAQgDIAABBSABARERBCABAQ4F
+IAEBEV0FAAICDg4JIAMBEj0dCBJBAwYSPQMGHQgEIAEOCAUgAgEIHAQgAQIIAyAAAgYgAgIOEXUF
+IAEdCAgEIAASeQQgABJ9BiABEoCBDgQgABJNCAABEoCFEYCJBSAAEoCNByACAQ4SgI0It3pcVhk0
+4IkIiYRdzYCAzJECBg4DBhIUAwYSGAMGEkUDBhJVAwYSWQMGEiAFIAEBEgwDIAAOBCABAQIJIAQB
+CA4SPRJBBSABARJFBAAAElUEAAASWQUAAQESWQQAABIgAwAAAQMoAA4DKAACBCgAEk0ECAASVQQI
+ABJZBAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAA
+KAEAI1NDX2ExMTE4N2FkMDViZjRmNWU4NGU4MjI0ZjcxMTFlNjUwAAAFAQAAAAAWAQARQ29weXJp
+Z2h0IEAgIDIwMTgAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNQEAVA4URnJhbWV3b3Jr
+RGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC41BAEAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3Rl
+bS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1
+bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVz
+b3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAAaD4AAAAAAAAA
+AAAAgj4AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHQ+AAAAAAAAAAAAAAAAX0NvckRsbE1haW4A
+bXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQ
 AAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhA
@@ -4800,7 +4747,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAfD8AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAlD4AAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -4845,7 +4792,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
                   name="MetadataChecksum140"
-                  typeConverter="NOTBROWSABLE">14</property>
+                  typeConverter="NOTBROWSABLE">07</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
@@ -4863,14 +4810,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   hasSideEffects="true"
                   name="Input 0">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\Uzupelnienie pustych pol\Script Component.Inputs[Input 0].Columns[Column13]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Column13"
-                      lineageId="Package\Uzupelnienie pustych pol\OLE DB Source.Outputs[OLE DB Source Output].Columns[Column13]"
-                      usageType="readWrite" />
                     <inputColumn
                       refId="Package\Uzupelnienie pustych pol\Script Component.Inputs[Input 0].Columns[Date]"
                       cachedCodepage="1252"
@@ -5073,8 +5012,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 4]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5086,48 +5025,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TransmitionID]"
-                      cachedDataType="i4"
-                      cachedName="TransmitionID"
-                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TransmitionID]"
-                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TransmitionID]" />
-                    <inputColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TargetID]"
-                      cachedDataType="i4"
-                      cachedName="TargetID"
-                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetID]"
-                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TargetID]" />
-                    <inputColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AMR]"
-                      cachedDataType="r8"
-                      cachedName="AMR"
-                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMR]"
-                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMR]" />
-                    <inputColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AMRpct]"
-                      cachedDataType="r8"
-                      cachedName="AMRpct"
-                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMRpct]"
-                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMRpct]" />
-                    <inputColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RCH]"
-                      cachedDataType="r8"
-                      cachedName="RCH"
-                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCH]"
-                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCH]" />
-                    <inputColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RCHpct]"
-                      cachedDataType="r8"
-                      cachedName="RCHpct"
-                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCHpct]"
-                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCHpct]" />
-                    <inputColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SHRpct]"
-                      cachedDataType="r8"
-                      cachedName="SHRpct"
-                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHRpct]"
-                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SHRpct]" />
                     <inputColumn
                       refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SecondDescription]"
                       cachedCodepage="1252"
@@ -5177,6 +5074,48 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartTime]"
                       lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[StartTime]" />
                     <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TargetID]"
+                      cachedDataType="i4"
+                      cachedName="TargetID"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetID]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TargetID]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TransmitionID]"
+                      cachedDataType="i4"
+                      cachedName="TransmitionID"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TransmitionID]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[TransmitionID]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AMR]"
+                      cachedDataType="r8"
+                      cachedName="AMR"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMR]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMR]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AMRpct]"
+                      cachedDataType="r8"
+                      cachedName="AMRpct"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMRpct]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[AMRpct]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RCH]"
+                      cachedDataType="r8"
+                      cachedName="RCH"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCH]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCH]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RCHpct]"
+                      cachedDataType="r8"
+                      cachedName="RCHpct"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCHpct]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[RCHpct]" />
+                    <inputColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SHRpct]"
+                      cachedDataType="r8"
+                      cachedName="SHRpct"
+                      externalMetadataColumnId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHRpct]"
+                      lineageId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot].Columns[SHRpct]" />
+                    <inputColumn
                       refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TimeID]"
                       cachedDataType="i4"
                       cachedName="TimeID"
@@ -5185,34 +5124,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TransmitionID]"
-                      dataType="i4"
-                      name="TransmitionID" />
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetID]"
-                      dataType="i4"
-                      name="TargetID" />
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMR]"
-                      dataType="r8"
-                      name="AMR" />
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMRpct]"
-                      dataType="r8"
-                      name="AMRpct" />
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCH]"
-                      dataType="r8"
-                      name="RCH" />
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCHpct]"
-                      dataType="r8"
-                      name="RCHpct" />
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHRpct]"
-                      dataType="r8"
-                      name="SHRpct" />
                     <externalMetadataColumn
                       refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SecondDescription]"
                       codePage="1252"
@@ -5249,6 +5160,34 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       dataType="str"
                       length="50"
                       name="StartTime" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TransmitionID]"
+                      dataType="i4"
+                      name="TransmitionID" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TargetID]"
+                      dataType="i4"
+                      name="TargetID" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMR]"
+                      dataType="r8"
+                      name="AMR" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AMRpct]"
+                      dataType="r8"
+                      name="AMRpct" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCH]"
+                      dataType="r8"
+                      name="RCH" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RCHpct]"
+                      dataType="r8"
+                      name="RCHpct" />
+                    <externalMetadataColumn
+                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHRpct]"
+                      dataType="r8"
+                      name="SHRpct" />
                     <externalMetadataColumn
                       refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeID]"
                       dataType="i4"
@@ -5297,7 +5236,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[StageTableTransf]</property>
+                  name="OpenRowset">[dbo].[StageTableFull]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -5332,8 +5271,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 2]"
+                  connectionManagerID="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[hd.database.windows.net.HurtownieDanych.kamil 4]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5488,12 +5427,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Column13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Column13" />
                     <externalMetadataColumn
                       refId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
                       codePage="1252"
@@ -6137,7 +6070,9 @@ public class ScriptMain : UserComponent
         int min = int.Parse(time[1]);
         int sec = int.Parse(time[2]);
 
-        return hour * 10000 + min * 100 + sec;
+        if (hour < 24)
+            return hour * 10000 + min * 100 + sec;
+        return (hour -24) * 10000 + min * 100 + sec;
     }
 
 }
@@ -7046,7 +6981,7 @@ namespace SC_e0822422bda7429097c85c67ec36100e.Properties {
     <msb:CodeName>SC_e0822422bda7429097c85c67ec36100e</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_e0822422bda7429097c85c67ec36100e</msb:DisplayName>
-    <msb:ProjectId>{F9662306-4296-4032-AC7F-0B657E6FB525}</msb:ProjectId>
+    <msb:ProjectId>{28F0A629-54BB-4E35-8A0C-0C5312CFCF73}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_e0822422bda7429097c85c67ec36100e.csproj" />
@@ -7193,14 +7128,14 @@ namespace SC_e0822422bda7429097c85c67ec36100e.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAER+8VoAAAAAAAAAAOAAIiALATAAACoAAAAIAAAAAAAAvkkA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAFTz81oAAAAAAAAAAOAAIiALATAAACoAAAAIAAAAAAAA1kkA
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACgAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAGxJAABPAAAAAGAAAEgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIRJAABPAAAAAGAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAxCkAAAAgAAAAKgAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA3CkAAAAgAAAAKgAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAYAAAAAYAAAAsAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAIAAAAACAAAAMgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACg
-SQAAAAAAAEgAAAACAAUA5CoAANAdAAABAAAAAAAAALRIAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LnJlbG9jAAAMAAAAAIAAAAACAAAAMgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAC4
+SQAAAAAAAEgAAAACAAUA/CoAANAdAAABAAAAAAAAAMxIAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAQArQEAAAEAABECewEAAAQb
 XQoGRQUAAAAFAAAAEgAAAB8AAAAsAAAAOQAAADh2AQAAAgYDKAcAAAY4aQEAAAIGAygGAAAGOFwB
 AAACBgMoBgAABjhPAQAAAgYDKAYAAAY4QgEAAAIGAygHAAAGFgs4LAEAAAJ7BgAABG9UAAAGAnsG
@@ -7219,175 +7154,175 @@ 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
-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
+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
 AQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQAR
 BAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAA
-AQARBAAAAQBxAAAAAgB3AQAAAwAZCAAABADcBwAAAQCYCQAAAgBFCAAAAwCKCQAABADcBwAAAQAZ
-CAAAAQDICgAAAQA5CgAAAQA5CgAAAQARBAkANAgBABEANAgGABkANAgKACkANAgQADEANAgQADkA
-NAgQAEEANAgQAEkANAgQAFEANAgQAFkANAgQAGEANAgQAGkANAgGAJkANAgGALkANAgVAMkANAgG
-AIkAzgMGAIkA2QMGAAwA3AkoANEAMQQzANkA5Qo3ANkALQE6ANkA2QpAAOEAAwJGANkALQFLANkA
-TgRRANkARARVAAwA4AlbANkAAwpoAOkAAwJvAAwANAh0AHEANAh6AHEAGQiEAHEASQmIAHkAOgSM
-AHEAzAaRAHEA2waWAHEA0wYBAPEANAgQAHEAxAqcAHEA9wmcAHEApgoGAHEA9AkGAIkANAgGANkA
-dwmgAIkAXQmoAHkA5AmcAIkAeQCyAJEANAgGAAkBXgG5AAkBzArCAKEANAjIAMEANAgGAC4ACwCJ
-AS4AEwCSAS4AGwCxAS4AIwC6AS4AKwDjAS4AMwDjAS4AOwDjAS4AQwC6AS4ASwDpAS4AUwDjAS4A
-WwAAAkMAYwBKAgMBawBKAoEBewBKAukIcwCxAQkJcwCxARsALgBiAK4AAwABAAQAKwAIAEcACQBJ
-AAAAFgJmAQAA7wVqAQAAfwRmAQAAEgZqAQAApQdmAQAAigZqAQAAnwdmAQAAhAZqAQAAkwFmAQAA
-ygVqAQAAkQBmAQAAQgVqAQAAtwBmAQAAdgVqAQAAoABmAQAAWAVqAQAA1ABmAQAAoQVqAQAAFABm
-AQAAwwRqAQAAHgBmAQAA1ARqAQAACwBmAQAAswRqAQAAKABmAQAA5QRqAQAATgBuAQAABgVqAQAA
-zAByAQAAkgVqAQAAaABuAQAAHwVqAQAA1QlyAQAAxQZqAQAAyglyAQAAswZqAQAAvwlyAQAAoQZq
-AQAAiQByAQAAMwVqAQAAQwBuAQAA9ARqAQAATgBuAQAABgVqAQAAaABuAQAAHwVqAQAAzAB2AQAA
-kgVqAQAA1Ql2AQAAxQZqAQAAiQB2AQAAMwVqAQAAvwl2AQAAoQZqAQAAygl2AQAAswZqAQAAnwdm
-AQAAhAZqAQAApQdmAQAAigZqAQAAfwRmAQAAEgZqAQAAFgJmAQAA7wVqAQAABgdmAQAAJQZqAQAA
-kwFmAQAAygVqAQAAQwBuAQAA9ARqAQAAJAh6AQAA4wF/AQAADQqEAQIACwADAAIADAAFAAIADQAH
-AAIADgAJAAIADwALAAIAEAANAAIAEQAPAAIAEgARAAIAEwATAAIAFAAVAAIAFQAXAAIAFgAZAAIA
-FwAbAAIAGAAdAAIAGQAfAAIAGgAhAAIAGwAjAAIAHAAlAAIAHQAnAAIAHgApAAIAHwArAAIAIAAt
-AAIAIQAvAAIAIgAxAAIAIwAzAAIAJAA1AAEAJQA3AAEAJgA5AAEAJwA7AAEAKAA9AAEAKQA/AAEA
-KgBBAAEAKwBDAAEALABFAAEALQBHAAEALgBJAAEALwBLAAEAMABNAAEAMQBPAAEAMgBRAAEAMwBT
-AAEANABVAAEAOABXAAEAOQBZAAEAOgBbAAEAOwBdAAEAPABfAAEAPQBhAAEAPgBjAAEAPwBlAAEA
-QABnAAEAQQBpAAEAQgBrAAEAQwBtAAEARABvAAEARQBxAAEARgBzAAEARwB1AAEASAB3AAEASQB5
-AAEASgB7AAEASwB9AAEATAB/AAEATQCBAAEATgCDAAEATwCFAAEAUACHAAEAUQCJAAEAUgCLAAEA
-UwCNAAIAYgCPAAIAYwCRAAEAZACRAAIAZQCTACAABIAAAAEAAAAAAAAAAAAAAAAACQEAAAQAAAAA
-AAAAAAAAANAA3QAAAAAADgAAAAAAAAAAAAAA2QBDCgAAAAAOAAAAAAAAAAAAAADZAGUKAAAAAAQA
-AAAAAAAAAAAAANAA5AYAAAAAAAAAAAEAAACTCAAAAAAAAABJbnQzMgBnZXRfQTQxNQBnZXRfQTE2
-NDkAZ2V0X00xNjQ5AGdldF9BNDkAPE1vZHVsZT4Ac2V0X1RpbWVJRABHZXRUaW1lSUQAc2V0X1Ry
-YW5zbWl0aW9uSUQAdHJhbnNJRABzZXRfVGFyZ2V0SUQASW5wdXRJRABHZXRPdXRwdXRJRABzZXRf
-UkNIAGdldF9EdXJhdGlvbklOAGdldF9Ub3RhbEluZGl2aWR1YWxzSU4AZ2V0X1ZhcmlhYmxlVGFy
-Z2V0SU4Ac2V0X0FNUgBnZXRfUG9kZ3J1cGEAbXNjb3JsaWIASW5wdXRzRmluaXNoZWQATWFya091
-dHB1dHNGaW5pc2hlZABTQ19lMDgyMjQyMmJkYTc0MjkwOTdjODVjNjdlYzM2MTAwZQBSZXBsYWNl
-AGRlZmF1bHRJbnN0YW5jZQBEb3VibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5k
-bGUAU2luZ2xlAElucHV0TmFtZQBnZXRfU3RhcnRUaW1lAHNldF9TdGFydFRpbWUATWljcm9zb2Z0
-LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNv
-dXJjZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAUGFyc2UAZ2V0X0RhdGUAc2V0X0Rh
-dGUARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdn
-ZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJs
-ZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmli
-dXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1
-dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0
-cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0
-ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlB
-dHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhl
-Y3V0ZQBHZXRHb29kRmxvYXROb1BjdFZhbHVlAEdldEdvb2RGbG9hdFBjdFZhbHVlAHZhbHVlAFN5
-c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcAR2V0U3RyaW5nAFN1YnN0cmluZwBnZXRf
-TGVuZ3RoAFN5c3RlbS5Db21wb25lbnRNb2RlbABnZXRfQ2hhbm5lbABzZXRfQ2hhbm5lbABTQ19l
-MDgyMjQyMmJkYTc0MjkwOTdjODVjNjdlYzM2MTAwZS5kbGwAZ2V0X0E0MTVfSXNOdWxsAGdldF9B
-MTY0OV9Jc051bGwAZ2V0X00xNjQ5X0lzTnVsbABnZXRfQTQ5X0lzTnVsbABzZXRfVGltZUlEX0lz
-TnVsbABzZXRfVHJhbnNtaXRpb25JRF9Jc051bGwAc2V0X1RhcmdldElEX0lzTnVsbABzZXRfUkNI
-X0lzTnVsbABnZXRfRHVyYXRpb25JTl9Jc051bGwAZ2V0X1RvdGFsSW5kaXZpZHVhbHNJTl9Jc051
-bGwAZ2V0X1ZhcmlhYmxlVGFyZ2V0SU5fSXNOdWxsAHNldF9BTVJfSXNOdWxsAGdldF9Qb2RncnVw
-YV9Jc051bGwAZ2V0X1N0YXJ0VGltZV9Jc051bGwAc2V0X1N0YXJ0VGltZV9Jc051bGwAZ2V0X0Rh
-dGVfSXNOdWxsAHNldF9EYXRlX0lzTnVsbABnZXRfQ2hhbm5lbF9Jc051bGwAc2V0X0NoYW5uZWxf
-SXNOdWxsAHNldF9EdXJhdGlvbl9Jc051bGwAZ2V0X0Rlc2NyaXB0aW9uX0lzTnVsbABzZXRfRGVz
-Y3JpcHRpb25fSXNOdWxsAGdldF9TZWNvbmREZXNjcmlwdGlvbl9Jc051bGwAc2V0X1NlY29uZERl
-c2NyaXB0aW9uX0lzTnVsbABzZXRfUkNIcGN0X0lzTnVsbABzZXRfU0hScGN0X0lzTnVsbABzZXRf
-QU1ScGN0X0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQByZXNvdXJjZU1hbgBTY3JpcHRN
-YWluAHNldF9EdXJhdGlvbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlv
-bgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAGdldF9EZXNjcmlw
-dGlvbgBzZXRfRGVzY3JpcHRpb24AZ2V0X1NlY29uZERlc2NyaXB0aW9uAHNldF9TZWNvbmREZXNj
-cmlwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0
-TWFwAENoYXIASW5wdXQwQnVmZmVyAFBpcGVsaW5lQnVmZmVyAFBpdm90QnVmZmVyAFNjcmlwdEJ1
-ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9yAC5jY3RvcgBpdHIAT3V0cHV0SURzAFN5c3Rl
-bS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNv
-dXJjZXMAU0NfZTA4MjI0MjJiZGE3NDI5MDk3Yzg1YzY3ZWMzNjEwMGUuUHJvcGVydGllcy5SZXNv
-dXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDX2UwODIyNDIyYmRhNzQyOTA5N2M4NWM2
-N2VjMzYxMDBlLlByb3BlcnRpZXMAVmFyaWFibGVzAFByb2Nlc3NOb1BjdFZhbHVlcwBQcm9jZXNz
-UGN0VmFsdWVzAHZhbHVlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENvbHVtbkluZGV4ZXMAU2V0
-dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAEJ1ZmZlcnMARmluaXNoT3V0cHV0cwBDcmVhdGVOZXdP
-dXRwdXRSb3dzAE9iamVjdABzZXRfUkNIcGN0AHNldF9TSFJwY3QAc2V0X0FNUnBjdABHZXQAU2V0
-AGdldF9FbmRPZlJvd3NldABTZXRFbmRPZlJvd3NldABTcGxpdABnZXRfRGVmYXVsdABVc2VyQ29t
-cG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQATWljcm9zb2Z0LlNxbFNlcnZl
-ci5UeFNjcmlwdAByZXN0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AElucHV0MF9Q
-cm9jZXNzSW5wdXQAUHJpbWVPdXRwdXQAQWRkUm93AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cATmV4
-dFJvdwBnZXRfQXNzZW1ibHkAb3BfRXF1YWxpdHkARW1wdHkAAAAJbgAuAGEALgAAgJtJAHMATgB1
-AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8A
-IABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABl
-ACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQAIAAwAAALUABpAHYA
-bwB0AABxUwBDAF8AZQAwADgAMgAyADQAMgAyAGIAZABhADcANAAyADkAMAA5ADcAYwA4ADUAYwA2
-ADcAZQBjADMANgAxADAAMABlAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMA
-ZQBzAAAAAAVUrsw43lVJvOKwCLsTMpcABCABAQgDIAABBSABARERBCABAQ4FIAEBEVkEBwIICAcU
-DQIAAgAABSACDQgIBAcCDgMDIAAOAgYOBSACDg4OBQACAg4OBAABDQ4FIAIOAwMDIAAIBSACDggI
-BiADAQgIDQUHAwgICAYgAR0OHQMEAAEIDgUgAgEICAkgAwESPR0IEkEDBhI9AwYdCAQgAQ4IBCAB
-AggFIAIBCBwDIAACByACAg4RgIEFIAEdCAgDBwEIBgACCBJBDggAARKAhRGAiQUgABKAjQcgAgEO
-EoCNCLd6XFYZNOCJCImEXc2AgMyRAgYICAYUDQIAAgAAAwYSGAMGEhwDBhIQAwYSRQMGElEDBhJV
-AwYSJAUgAQESDAQgAQ0OBiACAQgSDAUgAQgSDAQgAQECBCABAQwEIAEBDQkgBAEIDhI9EkELIAQB
-CB0IHRI9EkEFIAEBEkUEAAASUQQAABJVBQABARJVBAAAEiQDAAABAygADgMoAAIDKAAIAygADAMo
-AA0ECAASUQQIABJVBAgAEiQIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MB
-CAEAAgAAAAAAKAEAI1NDX2UwODIyNDIyYmRhNzQyOTA5N2M4NWM2N2VjMzYxMDBlAAAFAQAAAAAW
-AQARQ29weXJpZ2h0IEAgIDIwMTgAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNQEAVA4U
-RnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC41BAEAAAAAtAAAAM7K774BAAAA
-kQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00
-LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkj
-U3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAA
-AJRJAAAAAAAAAAAAAK5JAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgSQAAAAAAAAAAAAAAAF9D
-b3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AQARBAAAAQARBAAAAQARBAAAAQARBAAAAQARBAAAAQBxAAAAAgB3AQAAAwAZCAAABADcBwAAAQCY
+CQAAAgBFCAAAAwCKCQAABADcBwAAAQAZCAAAAQDICgAAAQA5CgAAAQA5CgAAAQARBAkANAgBABEA
+NAgGABkANAgKACkANAgQADEANAgQADkANAgQAEEANAgQAEkANAgQAFEANAgQAFkANAgQAGEANAgQ
+AGkANAgGAJkANAgGALkANAgVAMkANAgGAIkAzgMGAIkA2QMGAAwA3AkoANEAMQQzANkA5Qo3ANkA
+LQE6ANkA2QpAAOEAAwJGANkALQFLANkATgRRANkARARVAAwA4AlbANkAAwpoAOkAAwJvAAwANAh0
+AHEANAh6AHEAGQiEAHEASQmIAHkAOgSMAHEAzAaRAHEA2waWAHEA0wYBAPEANAgQAHEAxAqcAHEA
+9wmcAHEApgoGAHEA9AkGAIkANAgGANkAdwmgAIkAXQmoAHkA5AmcAIkAeQCyAJEANAgGAAkBXgG5
+AAkBzArCAKEANAjIAMEANAgGAC4ACwCJAS4AEwCSAS4AGwCxAS4AIwC6AS4AKwDjAS4AMwDjAS4A
+OwDjAS4AQwC6AS4ASwDpAS4AUwDjAS4AWwAAAkMAYwBKAgMBawBKAoEBewBKAukIcwCxAQkJcwCx
+ARsALgBiAK4AAwABAAQAKwAIAEcACQBJAAAAFgJmAQAA7wVqAQAAfwRmAQAAEgZqAQAApQdmAQAA
+igZqAQAAnwdmAQAAhAZqAQAAkwFmAQAAygVqAQAAkQBmAQAAQgVqAQAAtwBmAQAAdgVqAQAAoABm
+AQAAWAVqAQAA1ABmAQAAoQVqAQAAFABmAQAAwwRqAQAAHgBmAQAA1ARqAQAACwBmAQAAswRqAQAA
+KABmAQAA5QRqAQAATgBuAQAABgVqAQAAzAByAQAAkgVqAQAAaABuAQAAHwVqAQAA1QlyAQAAxQZq
+AQAAyglyAQAAswZqAQAAvwlyAQAAoQZqAQAAiQByAQAAMwVqAQAAQwBuAQAA9ARqAQAATgBuAQAA
+BgVqAQAAaABuAQAAHwVqAQAAzAB2AQAAkgVqAQAA1Ql2AQAAxQZqAQAAiQB2AQAAMwVqAQAAvwl2
+AQAAoQZqAQAAygl2AQAAswZqAQAAnwdmAQAAhAZqAQAApQdmAQAAigZqAQAAfwRmAQAAEgZqAQAA
+FgJmAQAA7wVqAQAABgdmAQAAJQZqAQAAkwFmAQAAygVqAQAAQwBuAQAA9ARqAQAAJAh6AQAA4wF/
+AQAADQqEAQIACwADAAIADAAFAAIADQAHAAIADgAJAAIADwALAAIAEAANAAIAEQAPAAIAEgARAAIA
+EwATAAIAFAAVAAIAFQAXAAIAFgAZAAIAFwAbAAIAGAAdAAIAGQAfAAIAGgAhAAIAGwAjAAIAHAAl
+AAIAHQAnAAIAHgApAAIAHwArAAIAIAAtAAIAIQAvAAIAIgAxAAIAIwAzAAIAJAA1AAEAJQA3AAEA
+JgA5AAEAJwA7AAEAKAA9AAEAKQA/AAEAKgBBAAEAKwBDAAEALABFAAEALQBHAAEALgBJAAEALwBL
+AAEAMABNAAEAMQBPAAEAMgBRAAEAMwBTAAEANABVAAEAOABXAAEAOQBZAAEAOgBbAAEAOwBdAAEA
+PABfAAEAPQBhAAEAPgBjAAEAPwBlAAEAQABnAAEAQQBpAAEAQgBrAAEAQwBtAAEARABvAAEARQBx
+AAEARgBzAAEARwB1AAEASAB3AAEASQB5AAEASgB7AAEASwB9AAEATAB/AAEATQCBAAEATgCDAAEA
+TwCFAAEAUACHAAEAUQCJAAEAUgCLAAEAUwCNAAIAYgCPAAIAYwCRAAEAZACRAAIAZQCTACAABIAA
+AAEAAAAAAAAAAAAAAAAACQEAAAQAAAAAAAAAAAAAANAA3QAAAAAADgAAAAAAAAAAAAAA2QBDCgAA
+AAAOAAAAAAAAAAAAAADZAGUKAAAAAAQAAAAAAAAAAAAAANAA5AYAAAAAAAAAAAEAAACTCAAAAAAA
+AABJbnQzMgBnZXRfQTQxNQBnZXRfQTE2NDkAZ2V0X00xNjQ5AGdldF9BNDkAPE1vZHVsZT4Ac2V0
+X1RpbWVJRABHZXRUaW1lSUQAc2V0X1RyYW5zbWl0aW9uSUQAdHJhbnNJRABzZXRfVGFyZ2V0SUQA
+SW5wdXRJRABHZXRPdXRwdXRJRABzZXRfUkNIAGdldF9EdXJhdGlvbklOAGdldF9Ub3RhbEluZGl2
+aWR1YWxzSU4AZ2V0X1ZhcmlhYmxlVGFyZ2V0SU4Ac2V0X0FNUgBnZXRfUG9kZ3J1cGEAbXNjb3Js
+aWIASW5wdXRzRmluaXNoZWQATWFya091dHB1dHNGaW5pc2hlZABTQ19lMDgyMjQyMmJkYTc0Mjkw
+OTdjODVjNjdlYzM2MTAwZQBSZXBsYWNlAGRlZmF1bHRJbnN0YW5jZQBEb3VibGUAUnVudGltZVR5
+cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUAU2luZ2xlAElucHV0TmFtZQBnZXRfU3RhcnRUaW1l
+AHNldF9TdGFydFRpbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRf
+Q3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jh
+c2UAUGFyc2UAZ2V0X0RhdGUAc2V0X0RhdGUARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJH
+ZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxl
+QXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRl
+AEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3Nl
+bWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBD
+b21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBB
+c3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0
+dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRy
+aWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQBHZXRHb29kRmxvYXROb1BjdFZhbHVlAEdldEdv
+b2RGbG9hdFBjdFZhbHVlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcA
+R2V0U3RyaW5nAFN1YnN0cmluZwBnZXRfTGVuZ3RoAFN5c3RlbS5Db21wb25lbnRNb2RlbABnZXRf
+Q2hhbm5lbABzZXRfQ2hhbm5lbABTQ19lMDgyMjQyMmJkYTc0MjkwOTdjODVjNjdlYzM2MTAwZS5k
+bGwAZ2V0X0E0MTVfSXNOdWxsAGdldF9BMTY0OV9Jc051bGwAZ2V0X00xNjQ5X0lzTnVsbABnZXRf
+QTQ5X0lzTnVsbABzZXRfVGltZUlEX0lzTnVsbABzZXRfVHJhbnNtaXRpb25JRF9Jc051bGwAc2V0
+X1RhcmdldElEX0lzTnVsbABzZXRfUkNIX0lzTnVsbABnZXRfRHVyYXRpb25JTl9Jc051bGwAZ2V0
+X1RvdGFsSW5kaXZpZHVhbHNJTl9Jc051bGwAZ2V0X1ZhcmlhYmxlVGFyZ2V0SU5fSXNOdWxsAHNl
+dF9BTVJfSXNOdWxsAGdldF9Qb2RncnVwYV9Jc051bGwAZ2V0X1N0YXJ0VGltZV9Jc051bGwAc2V0
+X1N0YXJ0VGltZV9Jc051bGwAZ2V0X0RhdGVfSXNOdWxsAHNldF9EYXRlX0lzTnVsbABnZXRfQ2hh
+bm5lbF9Jc051bGwAc2V0X0NoYW5uZWxfSXNOdWxsAHNldF9EdXJhdGlvbl9Jc051bGwAZ2V0X0Rl
+c2NyaXB0aW9uX0lzTnVsbABzZXRfRGVzY3JpcHRpb25fSXNOdWxsAGdldF9TZWNvbmREZXNjcmlw
+dGlvbl9Jc051bGwAc2V0X1NlY29uZERlc2NyaXB0aW9uX0lzTnVsbABzZXRfUkNIcGN0X0lzTnVs
+bABzZXRfU0hScGN0X0lzTnVsbABzZXRfQU1ScGN0X0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5
+c3RlbQByZXNvdXJjZU1hbgBTY3JpcHRNYWluAHNldF9EdXJhdGlvbgBTeXN0ZW0uQ29uZmlndXJh
+dGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0
+aW9uRXhjZXB0aW9uAGdldF9EZXNjcmlwdGlvbgBzZXRfRGVzY3JpcHRpb24AZ2V0X1NlY29uZERl
+c2NyaXB0aW9uAHNldF9TZWNvbmREZXNjcmlwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJ
+bmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0TWFwAENoYXIASW5wdXQwQnVmZmVyAFBpcGVsaW5lQnVm
+ZmVyAFBpdm90QnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9yAC5j
+Y3RvcgBpdHIAT3V0cHV0SURzAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21w
+aWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU0NfZTA4MjI0MjJiZGE3NDI5MDk3Yzg1YzY3
+ZWMzNjEwMGUuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFND
+X2UwODIyNDIyYmRhNzQyOTA5N2M4NWM2N2VjMzYxMDBlLlByb3BlcnRpZXMAVmFyaWFibGVzAFBy
+b2Nlc3NOb1BjdFZhbHVlcwBQcm9jZXNzUGN0VmFsdWVzAHZhbHVlcwBCdWZmZXJDb2x1bW5JbmRl
+eGVzAEdldENvbHVtbkluZGV4ZXMAU2V0dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAEJ1ZmZlcnMA
+RmluaXNoT3V0cHV0cwBDcmVhdGVOZXdPdXRwdXRSb3dzAE9iamVjdABzZXRfUkNIcGN0AHNldF9T
+SFJwY3QAc2V0X0FNUnBjdABHZXQAU2V0AGdldF9FbmRPZlJvd3NldABTZXRFbmRPZlJvd3NldABT
+cGxpdABnZXRfRGVmYXVsdABVc2VyQ29tcG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21w
+b25lbnQATWljcm9zb2Z0LlNxbFNlcnZlci5UeFNjcmlwdAByZXN0AE1pY3Jvc29mdC5TcWxTZXJ2
+ZXIuUGlwZWxpbmVIb3N0AElucHV0MF9Qcm9jZXNzSW5wdXQAUHJpbWVPdXRwdXQAQWRkUm93AElu
+cHV0MF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBnZXRfQXNzZW1ibHkAb3BfRXF1YWxpdHkARW1w
+dHkAAAAJbgAuAGEALgAAgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4A
+bwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAg
+AHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4A
+AA9JAG4AcAB1AHQAIAAwAAALUABpAHYAbwB0AABxUwBDAF8AZQAwADgAMgAyADQAMgAyAGIAZABh
+ADcANAAyADkAMAA5ADcAYwA4ADUAYwA2ADcAZQBjADMANgAxADAAMABlAC4AUAByAG8AcABlAHIA
+dABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAAPjgUpdPVNtDjjL+veIBzU0ABCABAQgDIAAB
+BSABARERBCABAQ4FIAEBEVkEBwIICAcUDQIAAgAABSACDQgIBAcCDgMDIAAOAgYOBSACDg4OBQAC
+Ag4OBAABDQ4FIAIOAwMDIAAIBSACDggIBiADAQgIDQUHAwgICAYgAR0OHQMEAAEIDgUgAgEICAkg
+AwESPR0IEkEDBhI9AwYdCAQgAQ4IBCABAggFIAIBCBwDIAACByACAg4RgIEFIAEdCAgDBwEIBgAC
+CBJBDggAARKAhRGAiQUgABKAjQcgAgEOEoCNCLd6XFYZNOCJCImEXc2AgMyRAgYICAYUDQIAAgAA
+AwYSGAMGEhwDBhIQAwYSRQMGElEDBhJVAwYSJAUgAQESDAQgAQ0OBiACAQgSDAUgAQgSDAQgAQEC
+BCABAQwEIAEBDQkgBAEIDhI9EkELIAQBCB0IHRI9EkEFIAEBEkUEAAASUQQAABJVBQABARJVBAAA
+EiQDAAABAygADgMoAAIDKAAIAygADAMoAA0ECAASUQQIABJVBAgAEiQIAQAIAAAAAAAeAQABAFQC
+FldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NDX2UwODIyNDIyYmRhNzQyOTA5
+N2M4NWM2N2VjMzYxMDBlAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMTgAAEkBABouTkVURnJh
+bWV3b3JrLFZlcnNpb249djQuNQEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdv
+cmsgNC41BAEAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVh
+ZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tl
+eVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VT
+ZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAKxJAAAAAAAAAAAAAMZJAAAAIAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAC4SQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAABgA
 AIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYYAAA7AMA
 AAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEA
@@ -7415,7 +7350,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAADAAAAMA5AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAADAAAANg5AAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -7710,15 +7645,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </components>
           <paths>
             <path
+              refId="Package\Zamiana kolum i wierszy miejscami.Paths[NONAME]"
+              endId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="NONAME"
+              startId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot]" />
+            <path
               refId="Package\Zamiana kolum i wierszy miejscami.Paths[OLE DB Source Output]"
               endId="Package\Zamiana kolum i wierszy miejscami\Script Component.Inputs[Input 0]"
               name="OLE DB Source Output"
               startId="Package\Zamiana kolum i wierszy miejscami\OLE DB Source.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Zamiana kolum i wierszy miejscami.Paths[Pivot]"
-              endId="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Pivot"
-              startId="Package\Zamiana kolum i wierszy miejscami\Script Component.Outputs[Pivot]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -7727,6 +7662,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       DTS:refId="Package\Zamiana na klucze obce i wypelnienie tabeli faktow"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{70F86A1E-A085-4C6D-8EDE-BAD6CB4C63CD}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -7736,8 +7672,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{EFCCB35F-B042-4DA4-83E5-5BD69CB3B4EE}"
-          SQLTask:SqlStatementSource="&#xA;GO&#xA; &#xA; &#xA;--************************************** [Transmision]&#xA; &#xA;CREATE TABLE [Transmision]&#xA;(&#xA; [TransmitionID]        INT IDENTITY (1, 1)  NOT NULL ,&#xA; [TargetID]                     INT NULL ,&#xA; [AMR]                  FLOAT NULL ,&#xA; [AMRpct]               FLOAT NULL ,&#xA; [RCH]                          FLOAT NULL ,&#xA; [RCHpct]                       FLOAT NULL ,&#xA; [SHRpct]                       FLOAT NULL ,&#xA; [TimeID]                       INT NULL   ,&#xA; [ChannelID]            INT NULL   ,&#xA; [ProgramID]            INT NULL   ,&#xA; [Duration]                     TIME(7) NULL  ,&#xA; [DateID]                       INT NULL   ,&#xA; [DateTVID]                     INT NULL   ,&#xA; &#xA; CONSTRAINT [PK_Transmision] PRIMARY KEY CLUSTERED ([TransmitionID] ASC)&#xA;);&#xA;GO&#xA; &#xA;INSERT INTO [Transmision]&#xA;([TargetID],&#xA; [AMR],&#xA; [AMRpct],&#xA; [RCH],&#xA; [RCHpct],&#xA; [SHRpct],&#xA; [TimeID],&#xA; [Duration],&#xA; [ChannelID],&#xA; [ProgramID],&#xA; [DateID],&#xA; [DateTVID]&#xA;)&#xA; &#xA;SELECT &#xA; &#xA;StageChangedColumns.TargetID as TargetID,&#xA;StageChangedColumns.AMR as AMR,&#xA;StageChangedColumns.AMRpct as AMRpct,&#xA;StageChangedColumns.RCH as RCH,&#xA;StageChangedColumns.RCHpct as RCHpct,&#xA;StageChangedColumns.SHRpct as SHRpct,&#xA; &#xA;StageChangedColumns.TimeID as TimeID,&#xA;StageChangedColumns.Duration as Duration,&#xA; &#xA;(SELECT ChannelID&#xA;FROM Channel&#xA;WHERE dbo.Channel.ChannelName = dbo.StageChangedColumns.Channel&#xA;) as ChannelID,&#xA; &#xA;(SELECT ProgramID&#xA;FROM Program&#xA;WHERE dbo.Program.Description = dbo.StageChangedColumns.Description AND dbo.Program.SecondDescription = dbo.StageChangedColumns.SecondDescription&#xA;) as ProgramID,&#xA; &#xA; &#xA;(SELECT tdateTableID&#xA;FROM tDateTable&#xA;WHERE dbo.tDateTable.date = dbo.StageChangedColumns.date&#xA;) as DateTVID,&#xA; &#xA;(case when TimeID &lt; 240000 then (SELECT tdateTableID &#xA;         FROM tDateTable &#xA;         WHERE dbo.tDateTable.date = dbo.StageChangedColumns.Date)  &#xA; &#xA;                 else (SELECT tdateTableID &#xA;         FROM tDateTable &#xA;         WHERE dbo.tDateTable.date = DATEADD(day,1,(dbo.StageChangedColumns.Date))) end) as DateID&#xA; &#xA; &#xA;FROM dbo.StageChangedColumns" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{E1910883-7E02-4127-BE86-D46E86D14E4B}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="&#xA;--************************************** [Transmition]&#xA;CREATE TABLE [Transmition]&#xA;(&#xA; [TransmitionID] INT IDENTITY (1, 1) NOT NULL ,&#xA; [ProgramID]     INT NOT NULL ,&#xA; [TimeID]        INT NOT NULL ,&#xA; [ChannelID]     INT NOT NULL ,&#xA; [DateID]        INT NOT NULL ,&#xA; [DateTVID]      INT NOT NULL ,&#xA; [TargetID]      INT NOT NULL ,&#xA; [AMR]           FLOAT NOT NULL ,&#xA; [AMRpct]        FLOAT NOT NULL ,&#xA; [RCH]           FLOAT NOT NULL ,&#xA; [RCHpct]        FLOAT NOT NULL ,&#xA; [SHRpct]        FLOAT NOT NULL ,&#xA; [Duration]      TIME(7) NOT NULL ,&#xA; &#xA; CONSTRAINT [PK_Transmition] PRIMARY KEY CLUSTERED ([TransmitionID] ASC),&#xA; CONSTRAINT [FK_240] FOREIGN KEY ([ProgramID])&#xA;  REFERENCES [Program]([ProgramID]),&#xA; CONSTRAINT [FK_244] FOREIGN KEY ([TimeID])&#xA;  REFERENCES [DimTime]([TimeKey]),&#xA; CONSTRAINT [FK_248] FOREIGN KEY ([ChannelID])&#xA;  REFERENCES [Channel]([ChannelID]),&#xA; CONSTRAINT [FK_253] FOREIGN KEY ([DateID])&#xA;  REFERENCES [tDateTable]([tDateTableID]),&#xA; CONSTRAINT [FK_257] FOREIGN KEY ([DateTVID])&#xA;  REFERENCES [tDateTable]([tDateTableID]),&#xA; CONSTRAINT [FK_261] FOREIGN KEY ([TargetID])&#xA;  REFERENCES [Target]([TargetID])&#xA;);&#xA;GO&#xA;INSERT INTO [Transmition]&#xA;([TargetID],&#xA; [AMR],&#xA; [AMRpct],&#xA; [RCH],&#xA; [RCHpct],&#xA; [SHRpct],&#xA; [TimeID],&#xA; [Duration],&#xA; [ChannelID],&#xA; [ProgramID],&#xA; [DateID],&#xA; [DateTVID]&#xA;)&#xA; &#xA;SELECT &#xA; &#xA;StageChangedColumns.TargetID as TargetID,&#xA;StageChangedColumns.AMR as AMR,&#xA;StageChangedColumns.AMRpct as AMRpct,&#xA;StageChangedColumns.RCH as RCH,&#xA;StageChangedColumns.RCHpct as RCHpct,&#xA;StageChangedColumns.SHRpct as SHRpct,&#xA; &#xA;StageChangedColumns.TimeID as TimeID,&#xA;StageChangedColumns.Duration as Duration,&#xA; &#xA;(SELECT ChannelID&#xA;FROM Channel&#xA;WHERE dbo.Channel.ChannelName = dbo.StageChangedColumns.Channel&#xA;) as ChannelID,&#xA; &#xA;(SELECT ProgramID&#xA;FROM Program&#xA;WHERE dbo.Program.Description = dbo.StageChangedColumns.Description AND dbo.Program.SecondDescription = dbo.StageChangedColumns.SecondDescription&#xA;) as ProgramID,&#xA; &#xA; &#xA;(SELECT tdateTableID&#xA;FROM tDateTable&#xA;WHERE dbo.tDateTable.date = dbo.StageChangedColumns.date&#xA;) as DateTVID,&#xA; &#xA;(case when TimeID &lt; 240000 then (SELECT tdateTableID &#xA;         FROM tDateTable &#xA;         WHERE dbo.tDateTable.date = dbo.StageChangedColumns.Date)  &#xA; &#xA;                 else (SELECT tdateTableID &#xA;         FROM tDateTable &#xA;         WHERE dbo.tDateTable.date = DATEADD(day,1,(dbo.StageChangedColumns.Date))) end) as DateID&#xA; &#xA; &#xA;FROM dbo.StageChangedColumns" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -7761,19 +7698,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{AC9D2696-03A8-4831-887F-A0FC39D4A6A0}"
-      DTS:From="Package\Zamiana kolum i wierszy miejscami"
+      DTS:DTSID="{E0C3D50B-0152-47BC-89A2-66C65F2E4A36}"
+      DTS:From="Package\Tworzenie dat"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Tworzenie czasów" />
+      DTS:To="Package\Tworzenie tabel wymiarów i faktu" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{642B96A0-676C-4152-B78D-39F3F9873EB4}"
+      DTS:DTSID="{AF41E380-31F4-4628-B5A7-E5707A70A900}"
       DTS:From="Package\Tworzenie czasów"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
-      DTS:To="Package\Populate Program" />
+      DTS:To="Package\Tworzenie dat" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
@@ -7785,16 +7722,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{69474A1D-F126-4665-8C43-F9699EA8371B}"
-      DTS:From="Package\Populate channel"
+      DTS:DTSID="{889F2504-88FB-4F3C-991A-4D0C1845B41F}"
+      DTS:From="Package\Zamiana kolum i wierszy miejscami"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
-      DTS:To="Package\Tworzenie dat" />
+      DTS:To="Package\Populate Program" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
       DTS:CreationName=""
-      DTS:DTSID="{BB90818F-23DC-4032-BC1D-432EAFE007A1}"
-      DTS:From="Package\Tworzenie dat"
+      DTS:DTSID="{5CF2DB54-A4C3-4D9B-82B5-A51E1C38F384}"
+      DTS:From="Package\Populate channel"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 7"
       DTS:To="Package\Populate Target" />
@@ -7822,38 +7759,46 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="196,42"
           Id="Package\Imprt txt"
-          TopLeft="138,37" />
+          TopLeft="138,45" />
         <NodeLayout
           Size="159,42"
           Id="Package\Populate channel"
-          TopLeft="611.5,25.5" />
+          TopLeft="971.5,278.5" />
         <NodeLayout
           Size="163,42"
           Id="Package\Populate Program"
-          TopLeft="444,83" />
+          TopLeft="952,127" />
         <NodeLayout
-          Size="245,42"
-          Id="Package\Zamiana kolum i wierszy miejscami"
-          TopLeft="83,227" />
+          Size="154,42"
+          Id="Package\Populate Target"
+          TopLeft="786.25,335.75" />
         <NodeLayout
           Size="172,42"
           Id="Package\Tworzenie czasów"
-          TopLeft="412,154" />
+          TopLeft="413,33" />
         <NodeLayout
           Size="146,42"
           Id="Package\Tworzenie dat"
-          TopLeft="702.25,269.75" />
+          TopLeft="683.25,22.75" />
+        <NodeLayout
+          Size="238,42"
+          Id="Package\Tworzenie tabel wymiarów i faktu"
+          TopLeft="958,0" />
         <NodeLayout
           Size="196,42"
           Id="Package\Uzupelnienie pustych pol"
-          TopLeft="97,131" />
+          TopLeft="97,139" />
         <NodeLayout
-          Size="192,80"
+          Size="245,42"
+          Id="Package\Zamiana kolum i wierszy miejscami"
+          TopLeft="83,235" />
+        <NodeLayout
+          Size="320,42"
           Id="Package\Zamiana na klucze obce i wypelnienie tabeli faktow"
-          TopLeft="78,314.75" />
+          TopLeft="77,319.75" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="236,79">
+          TopLeft="236,87">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -7887,7 +7832,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="195,173">
+          TopLeft="195,181">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -7921,30 +7866,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="245,227">
+          TopLeft="829.25,43.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="253,-31"
+              EndConnector="128.75,-22.75"
               Start="0,0"
-              End="253,-23.5">
+              End="121.25,-22.75">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-8.52068126520681" />
+                    End="60.375,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-8.52068126520681"
-                    Point2="0,-12.5206812652068"
-                    Point3="4,-12.5206812652068" />
+                    Point1="60.375,0"
+                    Point2="64.375,0"
+                    Point3="64.375,-4" />
                   <mssgle:LineSegment
-                    End="249,-12.5206812652068" />
+                    End="64.375,-18.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="249,-12.5206812652068"
-                    Point2="253,-12.5206812652068"
-                    Point3="253,-16.5206812652068" />
+                    Point1="64.375,-18.75"
+                    Point2="64.375,-22.75"
+                    Point3="68.375,-22.75" />
                   <mssgle:LineSegment
-                    End="253,-23.5" />
+                    End="121.25,-22.75" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7955,30 +7900,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="498,154">
+          TopLeft="585,54">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="27.5,-29"
+              EndConnector="98.25,-10.25"
               Start="0,0"
-              End="27.5,-21.5">
+              End="90.75,-10.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-10.5" />
+                    End="45.125,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-10.5"
-                    Point2="0,-14.5"
-                    Point3="4,-14.5" />
+                    Point1="45.125,0"
+                    Point2="49.125,0"
+                    Point3="49.125,-4" />
                   <mssgle:LineSegment
-                    End="23.5,-14.5" />
+                    End="49.125,-6.25" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.5,-14.5"
-                    Point2="27.5,-14.5"
-                    Point3="27.5,-18.5" />
+                    Point1="49.125,-6.25"
+                    Point2="49.125,-10.25"
+                    Point3="53.125,-10.25" />
                   <mssgle:LineSegment
-                    End="27.5,-21.5" />
+                    End="90.75,-10.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7989,96 +7934,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="525.5,83">
+          TopLeft="1059.33333333333,169">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="86,-36.5"
+              EndConnector="-8.33333333333326,109.5"
               Start="0,0"
-              End="78.5,-36.5">
+              End="-8.33333333333326,102">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-32.5" />
+                    End="0,40.4386391251519" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-32.5"
-                    Point2="0,-36.5"
-                    Point3="4,-36.5" />
+                    Point1="0,40.4386391251519"
+                    Point2="0,44.4386391251519"
+                    Point3="-4,44.4386391251519" />
                   <mssgle:LineSegment
-                    End="78.5,-36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Populate Target"
-          TopLeft="636.25,378.75" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="775.25,311.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-57.5,67"
-              Start="0,0"
-              End="-57.5,59.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="-4.33333333333326,44.4386391251519" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="-4,33.5" />
+                    Point1="-4.33333333333326,44.4386391251519"
+                    Point2="-8.33333333333326,44.4386391251519"
+                    Point3="-8.33333333333326,48.4386391251519" />
                   <mssgle:LineSegment
-                    End="-53.5,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-53.5,33.5"
-                    Point2="-57.5,33.5"
-                    Point3="-57.5,37.5" />
-                  <mssgle:LineSegment
-                    End="-57.5,59.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="636.25,399.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-366.25,-44.9999999999999"
-              Start="0,0"
-              End="-358.75,-44.9999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-179.125,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-179.125,0"
-                    Point2="-183.125,0"
-                    Point3="-183.125,-4" />
-                  <mssgle:LineSegment
-                    End="-183.125,-40.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-183.125,-40.9999999999999"
-                    Point2="-183.125,-44.9999999999999"
-                    Point3="-187.125,-44.9999999999999" />
-                  <mssgle:LineSegment
-                    End="-358.75,-44.9999999999999" />
+                    End="-8.33333333333326,102" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8089,30 +7968,98 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="691,67.5">
+          TopLeft="245,235">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="84.25,202.25"
+              EndConnector="762.666666666667,-66"
               Start="0,0"
-              End="84.25,194.75">
+              End="762.666666666667,-58.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,97.125" />
+                    End="0,-28.8671934431057" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,97.125"
-                    Point2="0,101.125"
-                    Point3="4,101.125" />
+                    Point1="0,-28.8671934431057"
+                    Point2="0,-32.8671934431057"
+                    Point3="4,-32.8671934431057" />
                   <mssgle:LineSegment
-                    End="80.25,101.125" />
+                    End="758.666666666667,-32.8671934431057" />
                   <mssgle:CubicBezierSegment
-                    Point1="80.25,101.125"
-                    Point2="84.25,101.125"
-                    Point3="84.25,105.125" />
+                    Point1="758.666666666667,-32.8671934431057"
+                    Point2="762.666666666667,-32.8671934431057"
+                    Point3="762.666666666667,-36.8671934431057" />
                   <mssgle:LineSegment
-                    End="84.25,194.75" />
+                    End="762.666666666667,-58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="971.5,299.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="-31.25,57.25"
+              Start="0,0"
+              End="-23.75,57.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-11.625,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.625,0"
+                    Point2="-15.625,0"
+                    Point3="-15.625,4" />
+                  <mssgle:LineSegment
+                    End="-15.625,53.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15.625,53.25"
+                    Point2="-15.625,57.25"
+                    Point3="-19.625,57.25" />
+                  <mssgle:LineSegment
+                    End="-23.75,57.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="786.25,356.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="-389.25,-16"
+              Start="0,0"
+              End="-381.75,-16">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-190.625,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-190.625,0"
+                    Point2="-194.625,0"
+                    Point3="-194.625,-4" />
+                  <mssgle:LineSegment
+                    End="-194.625,-12" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-194.625,-12"
+                    Point2="-194.625,-16"
+                    Point3="-198.625,-16" />
+                  <mssgle:LineSegment
+                    End="-381.75,-16" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8193,7 +8140,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Populate channel">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Populate channel\OLE DB Destination"
@@ -8201,11 +8148,47 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="150,42"
           Id="Package\Populate channel\OLE DB Source"
-          TopLeft="196,55" />
+          TopLeft="194,54" />
         <NodeLayout
           Size="127,42"
           Id="Package\Populate channel\Aggregate"
           TopLeft="237,186" />
+        <EdgeLayout
+          Id="Package\Populate channel.Paths[OLE DB Source Output]"
+          TopLeft="269,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="31.5,90"
+              Start="0,0"
+              End="31.5,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41"
+                    Point2="0,45"
+                    Point3="4,45" />
+                  <mssgle:LineSegment
+                    End="27.5,45" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.5,45"
+                    Point2="31.5,45"
+                    Point3="31.5,49" />
+                  <mssgle:LineSegment
+                    End="31.5,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Populate channel.Paths[Aggregate Output 1]"
           TopLeft="300.5,228">
@@ -8237,41 +8220,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate channel.Paths[OLE DB Source Output]"
-          TopLeft="271,97">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="29.5,89"
-              Start="0,0"
-              End="29.5,81.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40.5"
-                    Point2="0,44.5"
-                    Point3="4,44.5" />
-                  <mssgle:LineSegment
-                    End="25.5,44.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25.5,44.5"
-                    Point2="29.5,44.5"
-                    Point3="29.5,48.5" />
-                  <mssgle:LineSegment
-                    End="29.5,81.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8307,11 +8258,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Populate Program">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Populate Program\OLE DB Source"
-          TopLeft="178,54" />
+          TopLeft="178,52" />
         <NodeLayout
           Size="171,42"
           Id="Package\Populate Program\OLE DB Destination"
@@ -8322,36 +8273,38 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           TopLeft="265,198" />
         <EdgeLayout
           Id="Package\Populate Program.Paths[OLE DB Source Output]"
-          TopLeft="253,96">
+          TopLeft="253,94">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
-              EndConnector="75.5,102"
+              EndConnector="75.5,104"
               Start="0,0"
-              End="75.5,94.5">
+              End="75.5,96.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47" />
+                    End="0,48" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,47"
-                    Point2="0,51"
-                    Point3="4,51" />
+                    Point1="0,48"
+                    Point2="0,52"
+                    Point3="4,52" />
                   <mssgle:LineSegment
-                    End="71.5,51" />
+                    End="71.5,52" />
                   <mssgle:CubicBezierSegment
-                    Point1="71.5,51"
-                    Point2="75.5,51"
-                    Point3="75.5,55" />
+                    Point1="71.5,52"
+                    Point2="75.5,52"
+                    Point3="75.5,56" />
                   <mssgle:LineSegment
-                    End="75.5,94.5" />
+                    End="75.5,96.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8385,7 +8338,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8418,144 +8373,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Zamiana kolum i wierszy miejscami">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Zamiana kolum i wierszy miejscami\OLE DB Source"
-          TopLeft="236,79" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Zamiana kolum i wierszy miejscami\Script Component"
-          TopLeft="313,172" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination"
-          TopLeft="329,318" />
-        <EdgeLayout
-          Id="Package\Zamiana kolum i wierszy miejscami.Paths[Pivot]"
-          TopLeft="394.5,214">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="20,104"
-              Start="0,0"
-              End="20,96.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48"
-                    Point2="0,52"
-                    Point3="4,52" />
-                  <mssgle:LineSegment
-                    End="16,52" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16,52"
-                    Point2="20,52"
-                    Point3="20,56" />
-                  <mssgle:LineSegment
-                    End="20,96.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-1.40138671875,57,22.8027734375,9.470703125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Zamiana kolum i wierszy miejscami.Paths[OLE DB Source Output]"
-          TopLeft="311,121">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="83.5,51"
-              Start="0,0"
-              End="83.5,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5"
-                    Point2="0,25.5"
-                    Point3="4,25.5" />
-                  <mssgle:LineSegment
-                    End="79.5,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="79.5,25.5"
-                    Point2="83.5,25.5"
-                    Point3="83.5,29.5" />
-                  <mssgle:LineSegment
-                    End="83.5,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <AnnotationLayout
-          Text="sh"
-          ParentId="Package\Zamiana kolum i wierszy miejscami"
-          Size="40,37"
-          Id="d9fcbe41-5241-4fd5-992f-68dba7e790ad"
-          TopLeft="1912,5.5">
-          <AnnotationLayout.FontInfo>
-            <mssge:FontInfo>
-              <mssge:FontInfo.TextDecorations>
-                <av:TextDecorationCollection />
-              </mssge:FontInfo.TextDecorations>
-            </mssge:FontInfo>
-          </AnnotationLayout.FontInfo>
-        </AnnotationLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Zamiana kolum i wierszy miejscami\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\Uzupelnienie pustych pol">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Uzupelnienie pustych pol\Script Component"
-          TopLeft="147,185" />
         <NodeLayout
           Size="150,42"
           Id="Package\Uzupelnienie pustych pol\OLE DB Source"
@@ -8564,42 +8385,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Size="171,42"
           Id="Package\Uzupelnienie pustych pol\OLE DB Destination"
           TopLeft="166,359" />
-        <EdgeLayout
-          Id="Package\Uzupelnienie pustych pol.Paths[Output 0]"
-          TopLeft="228.5,227">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="23,132"
-              Start="0,0"
-              End="23,124.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,62"
-                    Point2="0,66"
-                    Point3="4,66" />
-                  <mssgle:LineSegment
-                    End="19,66" />
-                  <mssgle:CubicBezierSegment
-                    Point1="19,66"
-                    Point2="23,66"
-                    Point3="23,70" />
-                  <mssgle:LineSegment
-                    End="23,124.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Uzupelnienie pustych pol\Script Component"
+          TopLeft="147,185" />
         <EdgeLayout
           Id="Package\Uzupelnienie pustych pol.Paths[OLE DB Source Output]"
           TopLeft="244,105">
@@ -8636,6 +8425,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Uzupelnienie pustych pol.Paths[Output 0]"
+          TopLeft="228.5,227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="23,132"
+              Start="0,0"
+              End="23,124.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62"
+                    Point2="0,66"
+                    Point3="4,66" />
+                  <mssgle:LineSegment
+                    End="19,66" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19,66"
+                    Point2="23,66"
+                    Point3="23,70" />
+                  <mssgle:LineSegment
+                    End="23,124.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -8654,6 +8479,136 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Uzupelnienie pustych pol\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Zamiana kolum i wierszy miejscami">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Zamiana kolum i wierszy miejscami\OLE DB Source"
+          TopLeft="236,77" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Zamiana kolum i wierszy miejscami\Script Component"
+          TopLeft="313,172" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination"
+          TopLeft="329,318" />
+        <EdgeLayout
+          Id="Package\Zamiana kolum i wierszy miejscami.Paths[OLE DB Source Output]"
+          TopLeft="311,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="83.5,53"
+              Start="0,0"
+              End="83.5,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="4,26.5" />
+                  <mssgle:LineSegment
+                    End="79.5,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.5,26.5"
+                    Point2="83.5,26.5"
+                    Point3="83.5,30.5" />
+                  <mssgle:LineSegment
+                    End="83.5,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Zamiana kolum i wierszy miejscami.Paths[NONAME]"
+          TopLeft="394.5,214">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="20,104"
+              Start="0,0"
+              End="20,96.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48"
+                    Point2="0,52"
+                    Point3="4,52" />
+                  <mssgle:LineSegment
+                    End="16,52" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16,52"
+                    Point2="20,52"
+                    Point3="20,56" />
+                  <mssgle:LineSegment
+                    End="20,96.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-1.40138671875,57,22.8027734375,9.470703125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="sh"
+          ParentId="Package\Zamiana kolum i wierszy miejscami"
+          Size="40,37"
+          Id="d9fcbe41-5241-4fd5-992f-68dba7e790ad"
+          TopLeft="1912,5.5">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo>
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zamiana kolum i wierszy miejscami\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zamiana kolum i wierszy miejscami\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
