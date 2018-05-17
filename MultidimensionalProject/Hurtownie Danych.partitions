@@ -1,25 +1,421 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2854ae5a-0637-4d82-a6c9-6aa5444bdffd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d463a6f5-d672-4249-bbb6-c415a726bc7e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Hurtownie Danych</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Transmition</ID>
       <Partitions>
-        <Partition dwd:design-time-name="7b9784f2-bdaa-4790-ba2b-5b9e13db395e">
+        <Partition dwd:design-time-name="7681611a-1c7a-4335-97a7-e6ff3256c2f0">
           <ID>Transmition</ID>
           <Name>Transmition</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9673de0b-a2fc-4374-a340-00951134779d">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="df700243-4c11-46f9-9d91-3234c384eda2">
             <DataSourceViewID>Hurtownie Danych</DataSourceViewID>
             <TableID>dbo_Transmition</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>86592</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
       </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2018-05-10T12:13:28.496667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-05-10T12:13:28.496667Z</LastSchemaUpdate>
+          <EstimatedRows>86592</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Target</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Target ID</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Target Name</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Program</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Program ID</AttributeID>
+                  <EstimatedCount>567</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Description</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Second Description</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date TVID</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Tdate Table ID</AttributeID>
+                  <EstimatedCount>47483</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dw</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dy</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Wy</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Qy</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mname</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dname</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Endm</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Start Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>End Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dfloat</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dint</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Dim Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Time Key</AttributeID>
+                  <EstimatedCount>86400</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Hour</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Hour TV</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Minute</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Second</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Channel</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Channel ID</AttributeID>
+                  <EstimatedCount>33</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Channel Name</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Tdate Table ID</AttributeID>
+                  <EstimatedCount>47483</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dw</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dy</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Wy</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Qy</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mname</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dname</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Endm</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Start Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>End Day</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dfloat</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dint</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Target</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Target ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Program</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date TVID</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Channel</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Channel ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Target</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Target ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Program</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date TVID</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Channel</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Target</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Target ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Program</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Program ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date TVID</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Channel</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Target</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Program</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date TVID</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Channel</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Channel ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Target</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Program</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date TVID</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Channel</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Target</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Program</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Program ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date TVID</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Channel</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Target</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Program</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Program ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date TVID</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Channel</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Channel ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>
